@@ -1,7 +1,11 @@
 .tarif-card-wrapp{
     &.mobile{
         .first-block-wrapp{
-            padding: 15px;
+            padding: 15px;   
+            
+            .first-block-1, .first-block-2{
+                border-right: 1px dashed #C5CEE0;
+            }
         }
         .m_logo{
             height: 52px;
@@ -13,6 +17,71 @@
                 max-height: 52px;
                 //height: 100%;
             }
+        }
+
+        .first-block-2-1-row-mobile{
+            padding-bottom: 20px;
+        }
+
+        .first-block-2-col-mobil-border{
+            border-left: 1px solid #8F9BB3;
+            border-right: 1px solid #8F9BB3;
+        }
+
+        .tarif-info-wrap-mobile{
+            display: flex;
+            color: #2E3A59;
+            max-width: 97px;
+        }
+        .tarif-info-icon-mobile{
+            line-height: 32px;
+            >i, img, span{
+                max-height: 13px;
+                height: 13px;
+                line-height: 13px;                
+            }  
+            
+            .lte{
+                font-size: 10px;
+                font-family: Roboto;
+                font-weight: bold;
+                color: #fff;
+                text-transform: uppercase;
+                background: #2A53CC;
+                border-radius: 2px;
+                padding-left: 2px;
+                padding-right: 2px;
+            }
+        }
+        .tarif-info-title-mobile{
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 16px;
+            max-width: 68px;
+            padding-left: 10px;
+        }
+
+        .tarif-atr-wrap-mobile{
+            ul{
+                list-style: none;
+                padding-left: 0;
+            }
+            li{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                &.warning{
+                    color: #85080F;
+                }
+
+                span{
+                    font-size: 20px;
+                    margin-top: -3px;
+                    padding-right: 3px;
+                }
+
+            }
+            
         }
     }
 }
