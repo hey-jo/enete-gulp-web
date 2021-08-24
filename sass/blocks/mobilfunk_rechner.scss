@@ -4,6 +4,9 @@
             padding: 15px;
         }
         .m_logo{
+            height: 52px;
+            line-height: 52px;
+
             img{
                 max-width: 191px;
                 //width: 100%;
@@ -11,24 +14,78 @@
                 //height: 100%;
             }
         }
-
     }
 }
 
-.acq_commission_wrap_second_mobile{
-    display: none;
-    @media screen and (min-width: 768px) and (max-width: 1385px){
-        display: flex;
-        flex: 0 0 100%;
-        justify-content: flex-end;
+.duration_mobile{
+    padding-top: 14px;
+    padding-bottom: 4px;
+    line-height: 16px;
 
-        font-size: 12px;
+    .kalender_icon_mobil, .wifi_icon_mobil, .netz_icon_mobil{
+        width: 16px;
+        height: 16px;
+        
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .wifi_icon_mobil{
+        margin-left: -9px;
+    }
+
+    .netz_icon_mobil{
+        margin-left: 12px;
+    }
+
+    div:first-child{
+        border-right: 1px solid #8F9BB3;;
+    }
+
+    .term_mobil{
+        font-size: 10px;
+        line-height: 16px;
+        padding-left: 12px;
+        color: #8F9BB3;
+    }
+}
+
+.tariff_name_mobile{
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 145%;
+    font-weight: 400;
+    font-family: Roboto;
+    color: #2E3A59;
+
+    .tariff_id{
+        font-size: 10px;
+        line-height: 16px;
+        background-color: #E5E5E5;
+        border-radius: 2px;
+        padding: 1px 4px;
+    }
+}
+
+
+.acq_commission_wrap_mobil{
+    flex: 1;
+    text-align: end;
+
+    .acq_commission_tittle{
+        text-transform: uppercase;
         font-family: Roboto;
         font-weight: 700;
+        font-size: 12px;
         line-height: 24px;
-        text-transform: uppercase;
-    }
-    .follow_up_comm_tittle_second_mobile{
-        padding-left: 20px;
+        color: #2E3A59;
+    }   
+
+    @media screen and (max-width: 767px){
+        display: flex;
     }
 }
+
