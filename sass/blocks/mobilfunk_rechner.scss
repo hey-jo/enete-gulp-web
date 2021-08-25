@@ -34,7 +34,8 @@
             max-width: 97px;
         }
         .tarif-info-icon-mobile{
-            line-height: 32px;
+            align-items: center;
+            display: flex;
             >i, img, span{
                 max-height: 13px;
                 height: 13px;
