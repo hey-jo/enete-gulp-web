@@ -1,3 +1,144 @@
-.tariff-filter{
-    max-width: 254px;
+.tarif-filter-wrap{
+    max-width: 284px;
+    padding-top: 20px;
+
+    .tarif-filter{
+        padding: 33px 15px;
+        background-color: #f3eeef;
+        border-radius: 8px;
+    }
+
+    .checkbox_switch{
+        margin-bottom: 16px;
+    }
+
+    h6{
+        color: #222B45;
+    }
+
+    .main-select{
+        border-bottom: 2px solid #e6e6e6;
+        padding-bottom: 15px;
+    }
+
+    .details-select{
+        border-bottom: 2px solid #e6e6e6;
+        padding-bottom: 20px;
+    }
+
+    .sort-select{
+        border-bottom: 2px solid #e6e6e6;
+        // padding-bottom: 20px;
+    }
+
+    .customer-select{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #8f9bb3;
+
+        padding-left: 3px;
+
+        border-bottom: 2px solid #e6e6e6;
+        padding-bottom: 20px;
+
+    }
+
+    .options-select{
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #8f9bb3;
+
+        padding-left: 3px;
+
+        //border-bottom: 2px solid #e6e6e6;
+        padding-bottom: 20px;
+
+    }
+
+
+
+    .block-group{
+        display: flex;
+        padding-top: 15px;
+        
+    }
+
+    .img-filter{
+        display: flex;
+        height: 42px;
+        align-items: center;
+    }
+
+    .btn-radio{
+        display: flex;
+        align-items: center;
+    }
+
+    .font-label{
+        padding-top: 10px;
+        color: #8F9BB3;
+    }
+
+    .block-left{
+        width:50%;
+       
+        .img-filter{
+            margin-left: 15px;
+        }
+    }
+
+    .block-right{
+        width: 50%;
+       
+        .img-filter{
+            margin-left: 20px;
+        }
+
+        .btn-radio{
+            justify-content: center;
+        }
+
+        .font-label{
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+    }
+
+    .details-select{
+        padding: 2px 0;
+    }
+    .filter-form-group{
+        margin: 10px 0;
+
+        .form-control{
+            height: 40px;
+            border-color: #E4E9F2;
+            background-color: #F7F9FC;
+            color: #8F9BB3;
+        }
+
+        .font-label{
+            margin-bottom: 8px;
+            padding-top: 0;
+            display: flex;
+
+            span{
+                display: flex;
+                flex-basis: auto;
+                flex-grow: 1;
+                max-width: 100%;
+
+                &:last-child{
+                    justify-content: flex-end;
+                }   
+            }
+        }
+    }
 }

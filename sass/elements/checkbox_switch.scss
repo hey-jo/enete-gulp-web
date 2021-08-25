@@ -17,7 +17,7 @@
 
 //html,body{ text-align: center; font-family: 'Sanchez', serif;}
 
-.chekbox_switsh{
+.checkbox_switch{
     transition: 400ms all ease-in-out 50ms;
     box-sizing: border-box;
     backface-visibility: hidden;
@@ -29,19 +29,19 @@
         box-sizing: border-box;
         backface-visibility: hidden;
 
-        &:checked ~ .c_switsh{
-            background: $bg_color_checkbox_switsh;
-            box-shadow: 0 0 2px $bg_color_checkbox_switsh;
+        &:checked ~ .c_switch{
+            background: $bg_color_checkbox_switch;
+            box-shadow: 0 0 2px $bg_color_checkbox_switch;
         }
 
-        &:checked ~ .c_switsh label{
+        &:checked ~ .c_switch label{
             left: 22px;
             transform: rotate(360deg);
             &::before{
                 height: 15px;
                 top: calc(55% - 7px);
                 left: calc(60% - 1.5px);
-                background: $bg_color_checkbox_switsh;
+                background: $bg_color_checkbox_switch;
                 transition: 400ms all ease-in-out 50ms;
                 box-sizing: border-box;
                 backface-visibility: hidden;
@@ -50,7 +50,7 @@
                 width: 7px;
                 top: calc(95% - 10px);
                 left: calc(22.5% - -0.9px);
-                background: $bg_color_checkbox_switsh;
+                background: $bg_color_checkbox_switch;
                 transition: 400ms all ease-in-out 50ms;
                 box-sizing: border-box;
                 backface-visibility: hidden;
@@ -59,7 +59,7 @@
     }
 }
 
-.chekbox_switsh_label{
+.checkbox_switch_label{
     font-family: Open Sans;
     line-height: 31px;
     font-size: 13px;
@@ -68,7 +68,7 @@
     margin-left: 10px;
 }
 
-.c_switsh{
+.c_switch{
     height: 32px;
     width: 52px;
     background: #8F9BB3;

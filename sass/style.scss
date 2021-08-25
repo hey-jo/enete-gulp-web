@@ -16,7 +16,7 @@
 @import "blocks/energie_rechner.scss";
 @import "blocks/energie_order_entry.scss";
 @import "blocks/mobilfunk_rechner.scss";
-@import "elements/checkbox_switsh.scss";
+@import "elements/checkbox_switch.scss";
 @import "elements/radio_btn_rechner.scss";
 @import "elements/checkbox.scss";
 @import "elements/radio.scss";
@@ -34,4 +34,73 @@ html{
 
 body{
     height: 100%;
+    font-family: Open Sans;
+}
+
+h6{
+    /* Text Font / H6 Headline */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+}
+
+.font-label{
+    /* Text Font / LABEL */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+text-transform: uppercase;
+}
+
+.font-c1{
+    /* Text Font / C1 Caption */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 16px;
+/* identical to box height, or 160% */
+
+text-align: right;
+}
+
+.font-p1{
+    /* Text Font / P1 Paragraph */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height, or 133% */
+}
+
+/* Color */
+
+.clr-b600{
+    /* Basic / 600 */
+
+    color: #8F9BB3;
+}
+
+.clr-b700{
+    /* Basic / 700 */
+
+    color: #2E3A59;
+}
+
+.clr-b800{
+    /* Basic / 800 */
+
+    color: #222B45;
 }
