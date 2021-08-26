@@ -2,6 +2,10 @@
     max-width: 284px;
     padding-top: 20px;
 
+
+    // @media screen and (min-width: 1360px){
+    //     display: none;
+    // }
     .tarif-filter{
         padding: 33px 15px;
         background-color: #f3eeef;
@@ -14,11 +18,12 @@
 
     h6{
         color: #222B45;
+        
     }
 
     .main-select{
         border-bottom: 2px solid #e6e6e6;
-        padding-bottom: 15px;
+        padding-bottom: 15px;       
     }
 
     .details-select{
@@ -31,36 +36,58 @@
         // padding-bottom: 20px;
     }
 
-    .customer-select{
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 20px;
-        color: #8f9bb3;
-
-        padding-left: 3px;
+    .options-select{
+        // font-family: Open Sans;
+        // font-style: normal;
+        // font-weight: normal;
+        // font-size: 15px;
+        // line-height: 20px;
+        // color: #8f9bb3;
 
         border-bottom: 2px solid #e6e6e6;
         padding-bottom: 20px;
 
+        > div:last-child{
+            display: flex;
+            padding-top: 10px;
+            > div{
+                flex-grow: 1;
+                
+            }   
+            .font-s2{
+                padding-left: 6px;
+                line-height: 20px;
+            }
+        }
     }
 
-    .options-select{
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 20px;
+    .customer-select{
         color: #8f9bb3;
 
-        padding-left: 3px;
-
         //border-bottom: 2px solid #e6e6e6;
-        padding-bottom: 20px;
-
+        padding: 22px 0px 10px;
+        
+        > div:first-child{
+            margin-bottom: 19px;
+        }
     }
 
+    .other-select{
+        margin-top: 10px;
+
+        
+        > div:first-child{
+            margin-bottom: 19px;
+            border-top: 2px solid #e6e6e6;
+            padding-top: 20px;
+        }
+        
+        span{
+            &.label_title{
+                padding-left: 9px;
+            }
+        }
+    }
 
 
     .block-group{
@@ -78,6 +105,22 @@
     .btn-radio{
         display: flex;
         align-items: center;
+
+        span{
+            padding-left: 9px;
+        }
+
+        circle{
+            stroke: rgba(143, 155, 179, 0.16);
+            fill: #F7F9FC // rgba(143, 155, 179, 0.16);
+        }
+    }
+
+    .checkbox_custom{
+        input{
+            background: #F7F9FC;
+        }
+
     }
 
     .font-label{
@@ -139,6 +182,7 @@
                     justify-content: flex-end;
                 }   
             }
+            
         }
     }
 }
