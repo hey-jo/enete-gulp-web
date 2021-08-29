@@ -70,8 +70,6 @@ font-weight: normal;
 font-size: 10px;
 line-height: 16px;
 /* identical to box height, or 160% */
-
-text-align: right;
 }
 
 .font-p1{
@@ -83,6 +81,27 @@ font-weight: normal;
 font-size: 15px;
 line-height: 20px;
 /* identical to box height, or 133% */
+}
+
+.font-s1{
+/* Text Font / S1 Subtitle */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 24px;
+/* identical to box height, or 160% */
+}
+
+.font-s2{
+    /* Text Font / S2 Subtitle */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 24px;
 }
 
 /* Color */
