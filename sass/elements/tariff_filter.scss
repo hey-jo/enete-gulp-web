@@ -12,9 +12,12 @@
         border-radius: 8px;
     }
 
-    .checkbox_switch{
+    .checkbox_switch_mobil{
+        display: flex;
+        justify-content: flex-start;
         margin-bottom: 16px;
     }
+
 
     h6{
         color: #222B45;
