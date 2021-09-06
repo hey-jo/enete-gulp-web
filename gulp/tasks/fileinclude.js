@@ -4,7 +4,7 @@ const fileinclude = require('gulp-file-include');
 const paths = {
     scripts: {
         src: './',
-        dest: './build/'
+        dest: './'
     }
 }
 
