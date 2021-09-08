@@ -109,17 +109,29 @@ line-height: 24px;
 .clr-b600{
     /* Basic / 600 */
 
-    color: #8F9BB3;
+    color: $clr-b600;
 }
 
 .clr-b700{
     /* Basic / 700 */
 
-    color: #2E3A59;
+    color: $clr-b700;
 }
 
 .clr-b800{
     /* Basic / 800 */
 
-    color: #222B45;
+    color: $clr-b800;
+}
+
+.clr-b1000{
+    /* Basic / 1000 */
+
+    color: $clr-b1000;
+}
+
+.clr-i600{
+    /* Info / 600 */
+
+    color: $clr-i600;
 }

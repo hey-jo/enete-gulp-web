@@ -160,25 +160,46 @@
 }
 
 
-.pricebox{
+.pricebox {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0px;   
 
-    .monthly{
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-        margin: 5px 0px;
+    .row {
+        padding: 0px 15px 5px;
 
+    }
+
+    .label{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         text-align: right;
+        color: $clr-b700;
+
+    }
+
+    .big-sum{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+
+    }
+
+    .small-sum{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: $clr-b700;
 
     }
 }
