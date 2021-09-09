@@ -160,7 +160,7 @@
 }
 
 
-.pricebox {
+.pricebox-top, .pricebox-bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -193,6 +193,7 @@
     }
 
     .small-sum{
+        padding-bottom: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
