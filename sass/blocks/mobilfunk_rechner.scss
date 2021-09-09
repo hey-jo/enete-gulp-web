@@ -193,7 +193,6 @@
     }
 
     .small-sum{
-        padding-bottom: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -203,4 +202,8 @@
         color: $clr-b700;
 
     }
+}
+
+.pricebox-top{
+    padding-bottom: 10px;
 }
