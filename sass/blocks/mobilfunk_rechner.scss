@@ -120,6 +120,13 @@
         line-height: 16px;
         padding-left: 12px;
         color: #8F9BB3;
+
+        
+        @media screen and (max-width: 1278px){
+        padding-left: 0px;
+        }
+            
+
     }
 }
 

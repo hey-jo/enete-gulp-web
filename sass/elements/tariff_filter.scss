@@ -3,9 +3,9 @@
     padding-top: 20px;
 
 
-    // @media screen and (min-width: 1360px){
-    //     display: none;
-    // }
+    @media screen and (max-width: 1000px){
+        display: none;
+     }
     .tarif-filter{
         position:-webkit-sticky;
         position:sticky;
