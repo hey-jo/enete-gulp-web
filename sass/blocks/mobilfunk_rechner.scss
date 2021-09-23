@@ -3,8 +3,29 @@
         .first-block-wrapp{
             padding: 15px;   
             
-            .first-block-1, .first-block-2{
-                border-right: 1px dashed #C5CEE0;
+            @media screen and (min-width: 575px){
+                
+                .first-block-1, .first-block-2{
+                    border-right: 1px dashed #C5CEE0;
+                }
+            }
+
+            @media screen and (max-width: 575px){
+                
+                .first-block-2-1-row-mobile{
+                    margin: 0px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-top: 1px solid #ebeff2;
+                    border-bottom: 1px solid #ebeff2;
+                }
+            }
+
+            @media screen and (max-width: 575px){
+                
+                .tarif-atr-wrap-mobile{
+                    padding-top: 10px;
+                }
             }
         }
         .m_logo{
@@ -13,7 +34,7 @@
 
             img{
                 max-width: 191px;
-                //width: 100%;
+                width: 100%;
                 max-height: 52px;
                 //height: 100%;
             }
@@ -21,6 +42,7 @@
 
         .first-block-2-1-row-mobile{
             padding-bottom: 20px;
+            //padding-top: 50px;
         }
 
         .first-block-2-col-mobil-border{
@@ -32,10 +54,15 @@
             display: flex;
             color: #2E3A59;
             max-width: 97px;
+
+            @media screen and (max-width: 1526px){
+                flex-direction: column;
+            }
         }
         .tarif-info-icon-mobile{
             align-items: center;
             display: flex;
+
             >i, img, span{
                 max-height: 13px;
                 height: 13px;
@@ -60,6 +87,15 @@
             line-height: 16px;
             max-width: 68px;
             padding-left: 10px;
+
+            @media screen and (max-width: 1526px){
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                padding: 10px 0px 0px 0px;
+            }
+
         }
 
         .tarif-atr-wrap-mobile{
