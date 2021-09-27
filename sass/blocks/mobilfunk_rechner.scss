@@ -1,3 +1,17 @@
+.vp-filter_mobile_tk_dsl{
+    @media screen and (min-width: 1000px){
+        display: none 
+    }   
+}
+
+.vp-filter-wrapp{
+    &.tk_dsl{
+        @media screen and (min-width: 1000px){
+            display: none;
+        }
+    }
+}
+
 .tarif-card-wrapp{
     &.mobile{
         .first-block-wrapp{
@@ -246,4 +260,12 @@
 
 .pricebox-top{
     padding-bottom: 10px;
+}
+
+.hw_bundle{
+    margin-left: 10px;
+
+    .manufacturer{
+      font-weight: bold;  
+    }
 }
