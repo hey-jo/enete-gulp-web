@@ -186,7 +186,8 @@
 
 .acq_commission_wrap_mobil{
     flex: 1;
-    text-align: end;
+    text-align: start;
+    padding: 10px 0px;
 
     .acq_commission_tittle{
         text-transform: uppercase;
@@ -196,10 +197,6 @@
         line-height: 24px;
         color: #2E3A59;
     }   
-
-    @media screen and (max-width: 767px){
-        display: flex;
-    }
 }
 
 
