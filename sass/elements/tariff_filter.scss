@@ -7,8 +7,10 @@
         display: none;
      }
     .tarif-filter{
-        position:-webkit-sticky;
-        position:sticky;
+        overflow-y: auto;
+        position: fixed;
+        //position: -webkit-sticky;
+        //position: sticky;
         top: 10px;
         padding: 33px 15px;
         background-color: #f3eeef;
