@@ -227,25 +227,25 @@
           </div>
           <div class="row">
             <div class="col">
-                                    <!-- VP-FILTER BLOCK -->
-                                    <div class="col-sm-12 col-md-12 col-xl-12 vp_filter_mobile_tk_dsl">
-                                      <div class="vp-filter-wrapp tk_dsl">
-                                          <div class="checkbox_switch">
-                                              <input type="checkbox" id="toggle"/>
-                                              <div class="c_switch">
-                                                  <label for="toggle"></label>
-                                              </div>
-                                              <span class="checkbox_switch_label">VP-Ansicht</span>
-                                          </div>
-                                          <div class="filter_rechner">
-                                              <span class="filter_title">Filter</span>
-                                              <button class="btn filter_rechner_btn" data-toggle="modal" data-target="#tariffCalcFilter">
-                                                <i class="fas fa-cog filter_icon"></i>
-                                              </button>   
-                                          </div>
-                                      </div>
-                                    </div>
-                                  <!--END VP-FILTER BLOCK -->   
+              <!-- VP-FILTER BLOCK -->
+              <div class="col-sm-12 col-md-12 col-xl-12 vp_filter_mobile_tk_dsl">
+                <div class="vp-filter-wrapp tk_dsl">
+                    <div class="checkbox_switch">
+                        <input type="checkbox" id="toggle"/>
+                        <div class="c_switch">
+                            <label for="toggle"></label>
+                        </div>
+                        <span class="checkbox_switch_label">VP-Ansicht</span>
+                    </div>
+                    <div class="filter_rechner">
+                        <span class="filter_title">Filter</span>
+                        <button class="btn filter_rechner_btn" data-toggle="modal" data-target="#tariffFilter">
+                          <i class="fas fa-cog filter_icon"></i>
+                        </button>   
+                    </div>
+                </div>
+              </div>
+            <!--END VP-FILTER BLOCK -->   
               <!-- Tarif 1 -->
               <div class="row tarif-card-wrapp mobile">
                 <div class="col">
@@ -3843,7 +3843,10 @@
                       </div>
                       <span class="checkbox_switch_label">VP-Ansicht</span>
                     </div>
-                    <h6>Tarife filtern</h6>
+                    <div class="close-filter">
+                      <button type="button" class="close" data-dismiss="modal"></button>
+                    </div>
+                      <h6>Tarife filtern</h6>
                     <div>
                       <div class="block-group">
                         <div class="block-left">

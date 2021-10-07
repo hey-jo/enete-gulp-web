@@ -1,31 +1,48 @@
 .tarif-filter-wrap{
     max-width: 284px;
     padding-top: 20px;
+    padding-right: 15px;
 
 
-    @media screen and (max-width: 1000px){
-        display: none;
-     }
     .tarif-filter{
-        
-        //overflow-y:scroll;
-        //position: -webkit-sticky;
-        //position:relative;
-        //height: 100px;
-        //top: 10px;
-        //padding: 33px 15px;
-        //background-color: #f3eeef;
-        //border-radius: 8px;
+
     }
 
     .tarif-filter-sticky{
         position: sticky;
+        position: -webkit-sticky;
         overflow-y: scroll;
-        height: 100vh;
+        height: 80vh;
         top: 10px;
         padding: 33px 15px;
         background-color: #f3eeef;
         border-radius: 8px;
+
+            & {
+                scrollbar-width: thin;
+                scrollbar-color: #C6CCD9 orange;
+            }
+            
+            /* Works on Chrome, Edge, and Safari */
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+            
+            &::-webkit-scrollbar-track {
+                //background: orange;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background-color: #C6CCD9;
+                border-radius: 20px;
+                border: 8px solid #C6CCD9;
+
+            @media screen and (max-width: 1000px){
+                    border-radius: 0px;
+                }
+            }
+
+          
     }
 
     .checkbox_switch_mobil{
@@ -39,6 +56,33 @@
         color: #222B45;
         
     }
+
+    .close {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+      }
+      .close:hover {
+        opacity: 1;
+      }
+      .close:before, .close:after {
+        position: absolute;
+        left: 15px;
+        top: 0px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+      }
+      .close:before {
+        transform: rotate(45deg);
+      }
+      .close:after {
+        transform: rotate(-45deg);
+      }
 
     .main-select{
         border-bottom: 2px solid #e6e6e6;
@@ -202,6 +246,31 @@
                 }   
             }
             
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        //display: none;
+        position: fixed;
+        max-width: 100%;
+        top: -20;
+        right: -15px;
+        z-index: 70;
+
+        .tarif-filter-sticky{
+            height: 100vh;
+            border-radius: 0px;
+        }
+
+        .checkbox_switch_mobil{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1000px){
+
+        .close-filter{
+            display: none;
         }
     }
 }
