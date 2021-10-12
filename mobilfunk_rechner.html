@@ -17,6 +17,8 @@
   <!-- End Head -->
   
   <body>
+    <a href="#alert" class="span3" tabindex="0">Hide Me</a>
+    <a href="#" class="span2" tabindex="0">Show Me</a>
     <div class="container-fluid" style="height: 100%;">
       <!-- Block Header -->
         <header class="row header">
@@ -239,8 +241,10 @@
                     </div>
                     <div class="filter_rechner">
                         <span class="filter_title">Filter</span>
-                        <button class="btn filter_rechner_btn" data-toggle="modal" data-target="#tariffFilter">
-                          <i class="fas fa-cog filter_icon"></i>
+                        <button class="btn filter_rechner_btn">
+                          <a href="#" class="span3" tabindex="0">
+                            <i class="fas fa-cog filter_icon"></i>
+                          </a>
                         </button>   
                     </div>
                 </div>
@@ -3832,7 +3836,7 @@
             </div>
         
             <!-- Tarif Filter -->
-            <div class="tarif-filter-wrap">
+            <div id="alert" class="tarif-filter-wrap alert">
               <div class="tarif-filter-sticky">
                 <div class="tarif-filter">
                   <div class="main-select">
@@ -3843,8 +3847,8 @@
                       </div>
                       <span class="checkbox_switch_label">VP-Ansicht</span>
                     </div>
-                    <div class="close-filter">
-                      <button type="button" class="close" data-dismiss="modal"></button>
+                    <div class="close-filter"><a href="#alert" class="span3" tabindex="0">
+                      <button type="button" class="close"></button></a>
                     </div>
                       <h6>Tarife filtern</h6>
                     <div>

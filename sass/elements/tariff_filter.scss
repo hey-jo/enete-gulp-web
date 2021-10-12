@@ -1,10 +1,28 @@
+//body{
+//    display: block;
+//}
+
+.alert:target { display: none; }
+
 .tarif-filter-wrap{
     max-width: 284px;
     padding-top: 20px;
     padding-right: 15px;
+    display: block;
 
+    .span333:focus ~ .alert {
+        display: none;
+      }
+      .span222:focus ~ .alert {
+        display: block;
+      }
+    
+      .alert:target{
+          display: none;
+      }
 
     .tarif-filter{
+
 
     }
 
@@ -52,6 +70,7 @@
     }
 
 
+
     h6{
         color: #222B45;
         
@@ -64,10 +83,12 @@
         width: 32px;
         height: 32px;
         opacity: 0.3;
-      }
+    }
+    
       .close:hover {
         opacity: 1;
-      }
+    }
+
       .close:before, .close:after {
         position: absolute;
         left: 15px;
@@ -76,13 +97,13 @@
         height: 33px;
         width: 2px;
         background-color: #333;
-      }
+    }
       .close:before {
         transform: rotate(45deg);
-      }
+    }
       .close:after {
         transform: rotate(-45deg);
-      }
+    }
 
     .main-select{
         border-bottom: 2px solid #e6e6e6;
@@ -274,3 +295,5 @@
         }
     }
 }
+
+
