@@ -1,25 +1,21 @@
-//body{
-//    display: block;
-//}
+// Filter ein und ausschalten bis iPad Größe
+.alert:target {
 
-.alert:target { display: none; }
+    @media screen and (min-width: 1000px){
+        display: block;
+    }
+
+    @media screen and (max-width: 1000px){
+        display: none;
+    }
+
+}
 
 .tarif-filter-wrap{
     max-width: 284px;
     padding-top: 20px;
     padding-right: 15px;
     display: block;
-
-    .span333:focus ~ .alert {
-        display: none;
-      }
-      .span222:focus ~ .alert {
-        display: block;
-      }
-    
-      .alert:target{
-          display: none;
-      }
 
     .tarif-filter{
 
@@ -271,12 +267,13 @@
     }
 
     @media screen and (max-width: 1000px){
-        //display: none;
         position: fixed;
         max-width: 100%;
         top: -20;
-        right: -15px;
+        right: -16px;
         z-index: 70;
+        transition: left 3s 3s;	
+
 
         .tarif-filter-sticky{
             height: 100vh;
@@ -286,14 +283,19 @@
         .checkbox_switch_mobil{
             display: none;
         }
+
     }
 
     @media screen and (min-width: 1000px){
-
+           
         .close-filter{
             display: none;
         }
+
+       
+
     }
 }
+
 
 
