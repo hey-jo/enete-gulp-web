@@ -1,14 +1,25 @@
+.deal-card-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.deal-card-flex > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
 .deal-card{
     background: rgba(143, 155, 179, 0.08);
     border: 0.5px solid rgba(0, 0, 0, 0.08);
-    box-sizing: border-box;
     border-radius: 4px;
-
-    @media screen and (max-width: 991px) {
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-    }
+    //flex: 1;
+    min-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
     
     .dividing_line{
         margin-top: 0px;
@@ -20,18 +31,21 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 8px 15px;
+        padding: 5px 15px;
         background: #54BC2B;
         border-radius: 4px 4px 0px 0px;
 
         .card-title, .card-dealdate{
-            margin-bottom: 0px;
             font-family: Poppins;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 20px;
             color: #FFFFFF;
+        }
+        
+        .card-dealdate {
+            padding-left: 10px;
         }
 
         .card-sub-title{
@@ -44,10 +58,27 @@
         }
     }
 
+
+
+.card-content-title{
+    font-family: Poppins;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #151A30;
+    margin: 20px 15px 0px;
 }
 
 .card-content{
-    padding: 22px 25px 0px;
+    padding: 22px 15px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
 
     &.overview{
         padding-top: 0px;
@@ -65,15 +96,6 @@
         max-width: 70px;
     }
 
-    .card-content-title{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: #151A30;
-        margin: 0px 15px;
-    }
 
 
     .action_btn{
