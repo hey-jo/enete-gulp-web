@@ -2,12 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
+    & .primary {
+        border-left: 4px solid #7D1120;
+    }
 }
 
 .deal-card-flex > * {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 300px;
+
 }
 
 .deal-card{
@@ -19,6 +24,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    
 }
     
     .dividing_line{
@@ -36,6 +42,7 @@
         border-radius: 4px 4px 0px 0px;
 
         .card-title, .card-dealdate{
+            margin-bottom: 0px;
             font-family: Poppins;
             font-style: normal;
             font-weight: 500;
@@ -536,4 +543,42 @@
             }
         }
     }
+}
+
+.card-features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px 155px;
+    
+    
+}
+
+.card-feature-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    
+    letter-spacing: 0.1px;
+    
+    /* Basic / 700 */
+    color: $clr-b700;  
+
+}
+
+.card-feature-value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    
+    text-align: right;
+    letter-spacing: 0.2px;
+    
+    /* Basic / 700 */
+    color: $clr-b700;  
+
 }
