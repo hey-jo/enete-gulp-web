@@ -1,3 +1,9 @@
+.accordion-tarifdetails-wrap{
+    
+    padding: 0px 5px 0px;
+
+}    
+
 .deal-card-flex{
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +17,7 @@
 .deal-card-flex > * {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 300px;
+    flex-basis: 288px;
 
 }
 
@@ -19,15 +25,19 @@
     background: rgba(143, 155, 179, 0.08);
     border: 0.5px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
-    //flex: 1;
     min-height: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     
 }
     
     .dividing_line{
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+
+    .dividing-line-feature{
         margin-top: 0px;
         margin-bottom: 24px;
     }
@@ -63,7 +73,15 @@
             color: #151A30;
             margin: 0px 15px;
         }
+
+
     }
+
+.card-sub-line {
+    margin-top: 6px;
+    border-bottom: 1px solid #E4E9F2;
+    transform: rotate(180deg);
+}
 
 
 
@@ -71,8 +89,8 @@
     font-family: Poppins;
     font-style: bold;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 20px;
     color: #151A30;
     margin: 20px 15px 0px;
 }
@@ -545,12 +563,21 @@
     }
 }
 
-.card-features-wrapper {
+.card-features-wrapper-flex {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0px 155px;
+    flex-direction: column;
+    padding-top: 22px;
+    padding-bottom: 12px;   
     
+}
+
+.card-features-wrapper {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  
     
 }
 
@@ -558,13 +585,18 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 25px;
     
     letter-spacing: 0.1px;
     
     /* Basic / 700 */
-    color: $clr-b700;  
+    color: $clr-b700;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 15px;
 
 }
 
@@ -572,13 +604,18 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 23px;
     
     text-align: right;
     letter-spacing: 0.2px;
     
     /* Basic / 700 */
-    color: $clr-b700;  
+    color: $clr-b700;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 15px;
 
 }
