@@ -21,7 +21,7 @@
 
 }
 
-.deal-card{
+.deal-card, .features-card{
     background: rgba(143, 155, 179, 0.08);
     border: 0.5px solid rgba(0, 0, 0, 0.08);
     border-radius: 4px;
@@ -31,6 +31,8 @@
     margin-bottom: 18px;
     
 }
+
+.features-card {border-radius: 0px;}
     
     .dividing_line{
         margin-top: 0px;
