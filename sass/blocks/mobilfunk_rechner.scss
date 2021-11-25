@@ -345,6 +345,10 @@ color: #7d1120;
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
+
+    &.hw-modal {
+        margin: 0px;
+    }
 }
 
 .model-area{
@@ -552,6 +556,11 @@ color: #7d1120;
     flex-grow: 0;
     margin: 0px 0px;
 
+    &:hover {
+        cursor: pointer;
+        background: rgba(52, 73, 94, 0.16);
+      }
+
 }
 
 .hw-btn-content-area{
@@ -617,6 +626,7 @@ color: #7d1120;
     align-self: center;
     flex-grow: 0;
     margin: 0px 0px;
+
 }
 
 
