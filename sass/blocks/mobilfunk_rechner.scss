@@ -276,25 +276,28 @@ color: #7d1120;
 
 // Ab hier NUR HARDWARE ANSICHT
 
-/* Auto Layout */
+
 .hw-row {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    //align-items: flex-start;
     padding: 0px;
+    align-self: stretch;
 
-    position: static;
-    width: 268px;
-    height: 426px;
-    left: 0px;
-    top: 0px;
+}
+
+.hw-row > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 288px;
+    margin-bottom: 10px;
 
 }
 
 .hw-card{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 0px;
     
     /*position: static;
@@ -315,7 +318,7 @@ color: #7d1120;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 20px;
+    padding: 10px 10px;
 
     flex: none;
     order: 0;
@@ -334,6 +337,10 @@ color: #7d1120;
 
     letter-spacing: 0.1px;
 
+    &.bigger {
+        font-size: 18px;
+    }
+
     /* Text Color/Accent (Link) */
 
     color: #7D1120;
@@ -348,6 +355,7 @@ color: #7d1120;
 
     &.hw-modal {
         margin: 0px;
+
     }
 }
 
@@ -374,6 +382,10 @@ color: #7d1120;
 
     text-transform: uppercase;
 
+    &.bigger {
+        font-size: 14px;
+    }
+
     color: #222B45;
 
     /* Inside Auto Layout */
@@ -382,6 +394,10 @@ color: #7d1120;
     order: 0;
     flex-grow: 1;
     margin: 0px 0px;
+
+    &.center {
+        text-align: center;
+    }
         
 }
 
@@ -389,7 +405,7 @@ color: #7d1120;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 20px;
+    padding: 10px 10px;
 
     /* Inside Auto Layout */
 
@@ -442,16 +458,36 @@ color: #7d1120;
     flex: none;
     order: 4;
     align-self: stretch;
-    flex-grow: 1;
+    flex-grow: 0;
     margin: 0px 0px;
+    
+
+    &.hw-modal {
+        /* Auto Layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0px 10px;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0pxpx;
+
+    }
 }
 
 .hw-pic {
     flex: none;
     order: 0;
-    align-self: stretch;
+    align-self: center;
     flex-grow: 1;
-    margin: 10px 0px;;
+    margin: 10px 0px;
+    
 }
 
 .hw-line {
@@ -628,6 +664,79 @@ color: #7d1120;
     margin: 0px 0px;
 
 }
+
+// Modal Body Abstände entfernen aus Energie-Rechner-Modal
+.modal-body {
+    padding: 0px;
+}
+
+.hw-body-area {
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 0px;
+
+}
+
+.hw-body-pic {
+    /* Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+}
+
+.hw-body-text {
+    /* Auto Layout */
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px 0px 0px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+
+    @media screen and (min-width: 576px){
+        display: flex;
+    }
+
+    @media screen and (max-width: 575px){
+        display: none;
+    }
+
+}
+
+.hw-body-text-mobile {
+    @media screen and (max-width: 575px){
+        display: flex;
+        padding-left: 10px;
+        padding-right: 20px;
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 576px){
+        display: none;
+    }
+}
+
+
 
 
 
