@@ -17,11 +17,6 @@
     padding-right: 15px;
     display: block;
 
-    .tarif-filter{
-
-
-    }
-
     .tarif-filter-sticky{
         position: sticky;
         position: -webkit-sticky;
@@ -42,9 +37,10 @@
                 width: 6px;
             }
             
+            /* Scrollbar Farbe anpassen
             &::-webkit-scrollbar-track {
                 //background: orange;
-            }
+            } */
             
             &::-webkit-scrollbar-thumb {
                 background-color: #C6CCD9;
