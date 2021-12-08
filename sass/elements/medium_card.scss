@@ -66,8 +66,15 @@
         }
 
         @media screen and (min-width: 768px){
-            min-width: 196px;
+            /********
+            verursacht Darstellungsfehler in der Auftragserfassung Mobilfunk
+            min-width: 196px; 
+            besser: flex: 1 1 auto;
+            *********/
+            flex: 1 1 auto;
+
         }
+
 
         height: 40px;
         box-sizing: border-box;
@@ -176,6 +183,23 @@
             //padding: 10px;
             i{
                 color: #54BC2B;
+            }
+        }
+
+        &.yellow{
+            border-color: #D8BB00;           
+            background: rgba(216, 187, 0, 0.08);;
+
+            &:hover{
+                background: rgba(216, 187, 0, 0.16);
+            }
+            
+            span{
+                color: #D8BB00;
+            }
+            //padding: 10px;
+            i{
+                color: #D8BB00;
             }
         }
 
@@ -300,6 +324,11 @@
         margin-right: -24px;
         padding-top: 16px;
         padding-bottom: 16px;
+
+        &.mobile{
+            margin: 0px;
+            padding: 0px;
+        }
 
         &>.col{
             padding-left: 24px;
