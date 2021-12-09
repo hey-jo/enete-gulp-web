@@ -277,12 +277,17 @@
         }
     }
 
-    .custom_label{
-        padding-top: 10px;
+    .custom_label :not(.mobile) {
+        padding-top: 10px;    
     }
 
     .form-group{
         margin-bottom: 0px;
+    }
+
+    input:focus{
+        background: #fff;
+        border: 1px solid #007bff;
     }
 
 
@@ -292,6 +297,10 @@
         margin-right: -24px;
         padding-top: 16px;
         padding-bottom: 24px;
+
+        &.refer{
+            margin: 0px -16px;
+        }
 
         .col{
             padding-left: 24px;
@@ -327,7 +336,7 @@
 
         &.mobile{
             margin: 0px;
-            padding: 0px;
+            padding: 10px 0px;
         }
 
         &>.col{
@@ -427,12 +436,22 @@
             border-radius: 4px;
             padding: 4px 8px;
             margin-bottom: 24px;
+
+            &.mobile{
+                padding: 4px;
+                margin-bottom: 14px;;
+            }
         }
         .overview_info_icon{
             align-items: center;
             display: flex;
             font-size: 17px;
             color: #2A53CC;
+
+            &.mobile{
+                padding: 8px 0px 8px 4px;
+
+            }
         }
         .overview_info_text{
             margin-left: 8px;
@@ -441,6 +460,12 @@
             font-size: 12px;
             line-height: 16px;
             color: #5A80E0;
+
+            &.mobile{
+                display: flex;
+                align-items: center;
+
+            }
         }
     }
     
