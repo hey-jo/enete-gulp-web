@@ -50,7 +50,7 @@
                         <div class="form-group has-search ">
                             <input type="text" class="form-control" placeholder="SUCHE...">
                             <span class="fa fa-search form-control-feedback"></span>
-                        </div>>
+                        </div>
                     </div>
                     <!-- Search Desk -->
                     <div class="fav_ipad">
@@ -442,7 +442,7 @@
                                                 <div class="form-row">
                                                     <div class="col-md-6 col-12">
                                                         <label for="evn-yes" class="btn-radio">
-                                                            <input type="radio" id="evn-yes" name="evn-yes">
+                                                            <input type="radio" id="evn-yes" name="evn-yes" checked>
                                                             <svg width="20px" height="20px" viewBox="0 0 20 20">
                                                                 <circle cx="10" cy="10" r="9"></circle>
                                                                 <path
@@ -483,14 +483,14 @@
                                                     <svg viewBox="0 0 21 21">
                                                         <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
                                                     </svg>
-                                                    <span class="label_title">Rechnungsadresse ist abweichend</span>
+                                                    <span class="label_title">Portierung</span>
                                                 </label>
                                             </div>
                                             <div class="col-md-6 col-12">
                                                 <div class="form-row">
                                                     <div class="col-md-6 col-12">
                                                         <label for="contrct" class="btn-radio">
-                                                            <input type="radio" id="contrct" name="contrct">
+                                                            <input type="radio" id="contrct" name="contrct" checked>
                                                             <svg width="20px" height="20px" viewBox="0 0 20 20">
                                                                 <circle cx="10" cy="10" r="9"></circle>
                                                                 <path
@@ -551,11 +551,14 @@
                                         </div>
 
                                         <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <!-- <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Nachweis der
-                                                        Selbstständigkeit:</label> -->
+                                            <div class="col d-flex align-items-center">
+                                                <select class="form-control basic basic custom_input">
+                                                    <option selected>o2 Nr. sofort + Vertragsende</option>
+                                                    <option>sofort</option>
+                                                    <option>zu Vertragsende</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please choose a username.
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col">
@@ -565,8 +568,38 @@
                                                                 class="fas fa-info-circle"></i></div>
                                                         <div class="overview_info_text mobile">
                                                             <p>
-                                                            <strong>Wechselzeitpunkt zu Vertragsende</strong><br>
-                                                            In der Regel übergibt der alte Anbieter die zu portierende Rufnummer einige Tage nach Vertragsende.
+                                                            <strong>Wechselzeitpunkt sofort + Vertragsende</strong><br>
+                                                            Die Kunden erhalten bei Vertragsabschluss eine vorläufige O2 Rufnummer. Die
+                                                            bisherige Rufnummer wird am Portierungstermin übertragen und ersetzt automatisch
+                                                            die O2 Rufnummer. Bei dieser Auswahl ist eine Kündigung beim bisherigen Anbieter
+                                                            erforderlich.
+                                                        </p>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-groupp form-row">
+                                            <div class="col d-flex align-items-center">
+                                                <select class="form-control basic basic custom_input">
+                                                    <option selected>zum Vertragsende</option>
+                                                    <option>sofort</option>
+                                                    <option>xy</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please choose a username.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col">
+                                                <div class="overview_block mobile">
+                                                    <div class="overview_info mobile">
+                                                        <div class="overview_info_icon mobile"><i
+                                                                class="fas fa-info-circle"></i></div>
+                                                        <div class="overview_info_text mobile">
+                                                            <p>
+                                                            <strong>Wechselzeitpunkt zum Vertragsende</strong><br>
+                                                            In der Regel übergibt der alte Anbieter die zu portierende Rufnummer einige Tage nach Vertragsende
                                                         </p>
                                                     </div>
                                                     </div>
@@ -616,33 +649,55 @@
                                                 Please choose a username.
                                               </div>
                                             </div>
-                                          </div>
+                                        </div>
 
-                                          <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                              <input type="date" class="form-control basic custom_input" placeholder="Geburtstag">
-                                              <div class="invalid-feedback">
-                                                Please choose a username.
-                                              </div>
-                                              <div class="invalid-feedback">
-                                                Please choose a username.
-                                              </div>
+                                        <div class="form-row">
+                                        <div class="col-md-6 col-12">
+                                            <input type="text" class="form-control basic custom_input" placeholder="Bisherige Kundennummer">
+                                            <div class="invalid-feedback">
+                                            Please choose a username.
                                             </div>
-                                            <div class="col-md-6 col-12">
-                                                <input type="date" class="form-control basic custom_input" placeholder="Geburtstag">
-                                                <div class="invalid-feedback">
-                                                  Please choose a username.
-                                                </div>
-                                                <div class="invalid-feedback">
-                                                  Please choose a username.
-                                                </div>
-                                              </div>
-                                          </div>
+                                            <div class="invalid-feedback">
+                                            Please choose a username.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 input-icon">
+                                            <input type="text" class="mask-date form-control basic custom_input" placeholder="Vertragsende">
+                                            <i class="fas fa-calendar-alt"></i>
+
+                                            <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                                            <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+                                            <script>
+                                            $('.mask-date').mask('99.99.9999');
+                                            </script>
+
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                            </div>
+                                        </div>
 
                                         <div class="form-row">
                                             <div class="col-md-6 col-12">
-                                                <label for="trade_license" class="btn-radio">
-                                                    <input type="radio" id="trade_license" name="change-option">
+                                                <label class="checkbox_custom bounce">
+                                                    <input type="checkbox" class="" checked>
+                                                    <svg viewBox="0 0 21 21">
+                                                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
+                                                    </svg>
+                                                    <span class="label_title">abweichende Personaldaten</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="form-row">
+                                            <div class="col-md-6 col-12">
+                                                <label for="porting-private-customer" class="btn-radio">
+                                                    <input type="radio" id="porting-private-customer" name="porting-private-customer" checked>
                                                     <svg width="20px" height="20px" viewBox="0 0 20 20">
                                                         <circle cx="10" cy="10" r="9"></circle>
                                                         <path
@@ -652,12 +707,12 @@
                                                             d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
                                                             class="outer"></path>
                                                     </svg>
-                                                    <span>Gewerbeschein</span>
+                                                    <span>Privatkunde</span>
                                                 </label>
                                             </div>
                                             <div class="col-md-6 col-12">
-                                                <label for="com_register" class="btn-radio">
-                                                    <input type="radio" id="com_register" name="change-option">
+                                                <label for="porting-company-customer" class="btn-radio">
+                                                    <input type="radio" id="porting-company-customer" name="porting-company-customer">
                                                     <svg width="20px" height="20px" viewBox="0 0 20 20">
                                                         <circle cx="10" cy="10" r="9"></circle>
                                                         <path
@@ -667,7 +722,7 @@
                                                             d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
                                                             class="outer"></path>
                                                     </svg>
-                                                    <span>Handelsregisterauszug</span>
+                                                    <span>Firmenkunde</span>
                                                 </label>
                                             </div>
                                         </div>
@@ -743,31 +798,40 @@
                                                         <div class="overview_info_icon mobile"><i
                                                                 class="fas fa-info-circle"></i></div>
                                                         <div class="overview_info_text mobile">Deine Angaben müssen mit
-                                                            den Daten im Ausweis
-                                                            übereinstimmen.</div>
+                                                            den Daten im Ausweis übereinstimmen.  Falsch hinterlegte Daten
+                                                            beim alten Anbieter müssen entweder vorher geändert werden oder in gleicher
+                                                            Schreibweise angegeben werden.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Bisherige Kundennummer">
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
+                                        <div class="form-groupp form-row align-items-md-center">
+                                            <div class="col-md-6 col input-icon">
+                                                <input type="text" class="mask-date form-control basic custom_input" placeholder="Geburtstag">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                                                <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+                                                <script>
+                                                $('.mask-date').mask('99.99.9999');
+                                                </script>
                                                 <div class="invalid-feedback">
                                                     Please choose a username.
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-12">
-                                                <select disabled class="form-control disable custom_input">
-                                                    <option selected>Deutschland</option>
-                                                    <option>...</option>
-                                                </select>
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
+                                            <div class="col-md-6 col">
+                                                <div class="overview_block mobile">
+                                                    <div class="overview_info mobile">
+                                                        <div class="overview_info_icon mobile"><i
+                                                                class="fas fa-info-circle"></i></div>
+                                                        <div class="overview_info_text mobile">
+                                                            <p>
+                                                            <strong>Wichtig:</strong><br>
+                                                            Deine Angaben müssen mit den Daten beim Altbanbieter übereinstimmen. 
+                                                        </p>
+                                                    </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -785,7 +849,7 @@
                                             </div>
                                             <div class="col-md-6 col-12">
                                                 <select class="form-control basic custom_input">
-                                                    <option selected>Stadt</option>
+                                                    <option selected>Ort</option>
                                                     <option>Dwergte</option>
                                                     <option>Ermke</option>
                                                     <option>Grönheim</option>
@@ -824,322 +888,64 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-primary">Staatsangehörigkeit
-                                                        (Ausweisart)</label>
+                                        <hr class="divider">
+
+                                        <div class="form-groupp form-row align-items-md-center">
+                                            <div class="col-md-6 col input-icon">
+                                                <input type="text" class="mask-date form-control basic custom_input" placeholder="Kundenkennwort">
+                                                <i class="fas fa-lock"></i>
+                                                <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+                                                <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+                                                <script>
+                                                $('.mask-date').mask('99.99.9999');
+                                                </script>
+                                                <div class="invalid-feedback">
+                                                    Please choose a username.
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-12">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Firma">
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
+                                            <div class="col-md-6 col">
+                                                <div class="overview_block mobile">
+                                                    <div class="overview_info mobile">
+                                                        <div class="overview_info_icon mobile"><i
+                                                                class="fas fa-info-circle"></i></div>
+                                                        <div class="overview_info_text mobile">
+                                                            <p>
+                                                            <strong>Legitimation an der Hotline:</strong><br>
+                                                            Zur Auskunft von persönlichen Daten an der Service-Hotline. 
+                                                        </p>
+                                                    </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="col-md-6 col-12">
-                                                <label for="id_card_german" class="btn-radio">
-                                                    <input type="radio" id="id_card_german" name="change-option"
-                                                        checked>
-                                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="9"></circle>
-                                                        <path
-                                                            d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
-                                                            class="inner"></path>
-                                                        <path
-                                                            d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
-                                                            class="outer"></path>
+                                                <label class="checkbox_custom bounce">
+                                                    <input type="checkbox" class="" checked>
+                                                    <svg viewBox="0 0 21 21">
+                                                        <polyline points="5 10.75 8.5 14.25 16 6"></polyline>
                                                     </svg>
-                                                    <span>deutscher Personalausweis</span>
+                                                    <span class="label_title">schnellstmögliche Aktivierung</span>
                                                 </label>
                                             </div>
-                                            <div class="col-md-6 col-12">
-                                                <label for="new_eu_id" class="btn-radio">
-                                                    <input type="radio" id="new_eu_id" name="change-option">
-                                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="9"></circle>
-                                                        <path
-                                                            d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
-                                                            class="inner"></path>
-                                                        <path
-                                                            d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
-                                                            class="outer"></path>
-                                                    </svg>
-                                                    <span>Reisepass / EU-Ausweis</span>
-                                                </label>
+                                            <div class="col-md-6 col input-icon">
+                                                <input type="text" class="mask-date form-control basic disable custom_input" placeholder="Aktivierung zum">
+                                                <i class="fas fa-calendar-alt disable"></i>
                                             </div>
+
                                         </div>
 
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-                                                            <p><strong>Personalsausweis beidseitig!</strong><br>
-                                                                Die Adresse auf dem Ausweis sollte mit den
-                                                                Bestellangaben übereinstimmen.
-                                                                Bei Abweichungen durch veraltete Adresse, muss eine
-                                                                aktuelle Meldebestätigung
-                                                                als Adressnachweis vorgelegt werden.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <hr class="divider">
 
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                                <label for="id_card_german" class="btn-radio">
-                                                    <input type="radio" id="id_card_german" name="change-option"
-                                                        checked>
-                                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="9"></circle>
-                                                        <path
-                                                            d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
-                                                            class="inner"></path>
-                                                        <path
-                                                            d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
-                                                            class="outer"></path>
-                                                    </svg>
-                                                    <span>deutscher Personalausweis</span>
-                                                </label>
-                                            </div>
-                                            <div class="col-md-6 col-12">
-                                                <label for="new_eu_id" class="btn-radio">
-                                                    <input type="radio" id="new_eu_id" name="change-option" checked>
-                                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="9"></circle>
-                                                        <path
-                                                            d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
-                                                            class="inner"></path>
-                                                        <path
-                                                            d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
-                                                            class="outer"></path>
-                                                    </svg>
-                                                    <span>Reisepass / EU-Ausweis</span>
-                                                </label>
-                                            </div>
-                                        </div>
+                                        <div class="form-group">
+                                            <label for="textarea"></label>
+                                            <textarea class="form-control basic custom_input"
+                                            placeholder="Notizen zum Vertrag" id="exampleFormControlTextarea5" rows="12"></textarea>
+                                        
+                                          </div>
 
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-
-                                                            <strong>Reisepass oder EU-Ausweis!</strong>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-                                                            <p><br><br>
-                                                                <strong>Adressnachweis für Deutschland</strong>
-
-                                                                Meldebescheinigung nicht älter als 3 Monate.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                                <label for="id_card_german" class="btn-radio">
-                                                    <input type="radio" id="id_card_german" name="change-option"
-                                                        checked>
-                                                    <svg width="20px" height="20px" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="9"></circle>
-                                                        <path
-                                                            d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
-                                                            class="inner"></path>
-                                                        <path
-                                                            d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
-                                                            class="outer"></path>
-                                                    </svg>
-                                                    <span>Reisepass (Nicht-EU-Ausland)</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-                                                            <strong>Reisepass!</strong>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-                                                            <p><br><br><strong>Adressnachweis für Deutschland,</strong>
-                                                                Meldebescheinigung nicht älter als 3 Monate.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-groupp form-row">
-                                            <div class="col-md-6 col-12 d-flex">
-                                                <div class="text_block_overview refer">
-                                                    <label for="inputPassword3"
-                                                        class="col-sm-12 custom_label clr-warning">Weitere Dokumente
-                                                        erforderlich:</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col">
-                                                <div class="overview_block mobile">
-                                                    <div class="overview_info mobile">
-                                                        <div class="overview_info_icon mobile"><i
-                                                                class="fas fa-info-circle"></i></div>
-                                                        <div class="overview_info_text mobile">
-                                                            <p><br><br><strong>Aufenthaltstitel,</strong>
-
-                                                                min. 12 Monate gültig oder unbefristet!</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12 input-icon">
-                                                <input type="email" class="form-control basic basic custom_input"
-                                                    placeholder="E-Mail">
-                                                <i class="fas fa-envelope"></i>
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-12 input-icon">
-                                                <input type="email" class="form-control basic custom_input"
-                                                    placeholder="E-Mail wiederholen">
-                                                <i class="fas fa-envelope"></i>
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Vorwahl">
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-12 input-icon">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Telefonnummer">
-                                                <i class="fas fa-phone-alt"></i>
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="col-md-6 col-12">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Vorwahl">
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-12 input-icon">
-                                                <input type="text" class="form-control basic custom_input"
-                                                    placeholder="Mobilfunknummer">
-                                                <i class="fas fa-mobile-alt"></i>
-
-                                                <div class="invalid-feedback">
-                                                    Please choose a username.
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <div class="form-row">
                                             <div class="col d-flex">
                                                 <button class="btn action_btn dev ">
