@@ -99,12 +99,23 @@
 
     .main-select{
         border-bottom: 2px solid #e6e6e6;
-        padding-bottom: 15px;       
+        padding-bottom: 15px;
+
+        &.dsl-sort-title{
+            padding-top: 15px;
+            padding-bottom: 0px;
+        }
+        
     }
 
     .details-select{
         border-bottom: 2px solid #e6e6e6;
         padding-bottom: 20px;
+
+        &.border-0{
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
     }
 
     .sort-select{
