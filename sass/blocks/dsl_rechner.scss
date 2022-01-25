@@ -1,0 +1,48 @@
+.dsl_logo{
+    height: 100%;
+    line-height: 47px;
+
+    img{
+        max-width: 100%;
+            width: auto;
+            height: 47px;
+    }
+}
+
+.provider_name_dsl{
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 145%;
+    font-weight: 400;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8F9BB3;
+    
+}
+
+.dsl_logo, .provider_name_dsl{
+    text-align: center;
+
+    @media screen and (max-width: 575px){
+        text-align: left;
+    }
+}
+
+.tariff_id_dsl{
+    font-size: 10px;
+    line-height: 16px;
+    background-color: #E5E5E5;
+    border-radius: 2px;
+    padding: 1px 4px;
+}
+
+.acq_commission_wrap_mobil{
+
+    @media screen and (max-width: 575px){
+        display: none;
+    }
+
+}
+
