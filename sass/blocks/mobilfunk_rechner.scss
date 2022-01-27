@@ -161,6 +161,10 @@
         margin-left: 12px;
     }
 
+    .router_icon_mobil{
+        margin-left: 15px;
+    }
+
     div:first-child{
         border-right: 1px solid #8F9BB3;;
     }
@@ -254,6 +258,12 @@
         line-height: 16px;
 
         color: $clr-b700;
+
+        &.disabled{
+            text-decoration-line: line-through;
+            margin-right: 2px;
+            color: $clr-disabled;
+        }
 
     }
 }

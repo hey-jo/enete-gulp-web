@@ -53,57 +53,57 @@ h6{
 .font-label{
     /* Text Font / LABEL */
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-/* identical to box height, or 133% */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
 
-text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .font-c1{
     /* Text Font / C1 Caption */
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 16px;
-/* identical to box height, or 160% */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    /* identical to box height, or 160% */
 }
 
 .font-p1{
     /* Text Font / P1 Paragraph */
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 20px;
-/* identical to box height, or 133% */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
 }
 
 .font-s1{
 /* Text Font / S1 Subtitle */
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 24px;
-/* identical to box height, or 160% */
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
 }
 
 .font-s2{
     /* Text Font / S2 Subtitle */
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 /* Color */
@@ -140,10 +140,15 @@ line-height: 24px;
 
 .clr-warning{
     /* Warning / 500 */
-    color: #D8BB00;
+    color: $clr-warning;
 }
 
 .clr-primary{
     /* Pimary / 500 - Default */
-    color: #7D1120;
+    color: $clr-primary;
+}
+
+.clr-disabled{
+    /* Text Color / Disabled */
+    color: $clr-disabled;
 }

@@ -1,5 +1,5 @@
 .dsl_logo{
-    height: 100%;
+    height: auto;
     line-height: 47px;
 
     img{
@@ -42,6 +42,106 @@
 
     @media screen and (max-width: 575px){
         display: none;
+    }
+
+}
+
+.duration_dsl{
+    padding-top: 14px;
+    padding-bottom: 4px;
+    line-height: 16px;
+
+    .kalender_wrap{
+        padding-right: 10px;
+    }
+
+    .features_icon_wrap{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .kalender_icon_mobil, .wifi_icon_mobil, .netz_icon_mobil{
+        width: 16px;
+        height: 16px;
+        
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .wifi_icon_mobil{
+        //margin-left: -9px;
+    }
+
+    .netz_icon_mobil{
+        //margin-left: 12px;
+    }
+
+    .router_icon_mobil{
+        //margin-left: 15px;
+    }
+
+    div:first-child{
+        border-right: 1px solid #8F9BB3;;
+    }
+
+    .term_mobil{
+        font-size: 10px;
+        line-height: 16px;
+        padding-left: 12px;
+        color: #8F9BB3;
+
+        
+        @media screen and (max-width: 1278px){
+        padding-left: 0px;
+        }
+            
+
+    }
+}
+
+.tarif-info-title-dsl{
+    font-family: Roboto;
+    font-size: 16px;
+    text-align: left;
+    line-height: 18px;
+    max-width: 85px;
+
+    @media screen and (max-width: 1526px){
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        padding: 10px 0px 0px 0px;
+    }
+
+}
+
+.tarif-info-icon-dsl{
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 14px;
+
+    >i, img, span{
+        max-height: 13px;
+        height: 13px;
+        line-height: 13px;                
+    }  
+     
+    .lte{
+        font-size: 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        background: #2A53CC;
+        border-radius: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
 }
