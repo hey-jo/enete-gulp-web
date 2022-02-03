@@ -50,6 +50,7 @@
     padding-top: 14px;
     padding-bottom: 4px;
     line-height: 16px;
+    max-width: 300px;
 
     .kalender_wrap{
         padding-right: 10px;
@@ -72,17 +73,7 @@
         }
     }
 
-    .wifi_icon_mobil{
-        //margin-left: -9px;
-    }
 
-    .netz_icon_mobil{
-        //margin-left: 12px;
-    }
-
-    .router_icon_mobil{
-        //margin-left: 15px;
-    }
 
     div:first-child{
         border-right: 1px solid #8F9BB3;;
@@ -144,5 +135,25 @@
         padding-right: 4px;
     }
 
+}
+
+.tarif-info-icon-features{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 0px 0px;
+    margin: 0px 13px;
+
+    @media screen and (max-width: 1526px){
+        display: none;
+    }
+
+}
+
+.tarif-info-group-dsl{
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
 }
 
