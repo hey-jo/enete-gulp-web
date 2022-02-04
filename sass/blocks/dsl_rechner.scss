@@ -157,3 +157,172 @@
   flex-basis: auto;
 }
 
+
+.tarif-info-wrap-dsl{
+
+    &.last-block{
+        /* No less than 576px, no greater than 650px */
+        @media (min-width:576px) and (max-width:650px){
+            display:none;
+        }
+    }
+}
+
+.btn1-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+
+    .btn1-inside{
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        margin: 0px 0px;
+    }
+}
+
+.btn1-wrap-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+
+    .btn1-inside{
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        margin: 0px 0px;
+    }
+}
+
+.btn1-wrap-small{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 132px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+
+    .btn1-inside{
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+        margin: 0px 0px;
+    }
+}
+
+.btn1-wrap-setup{
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+
+    /* Transparent Success / 8% */
+
+    background: rgba(84, 188, 43, 0.08);
+    /* Success / 500 - Default */
+
+    border: 1px solid #54BC2B;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    .btnn-inside{
+        order: 0;
+        flex-grow: 1;
+        margin: 0px 0px;
+
+        
+    }
+}
+
+.icon-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    .btn1-inside{
+        flex: none;
+        order: 2;
+        align-self: flex-start;
+        flex-grow: 0;
+        margin: 0px 0px;
+
+        
+    }
+}
+
+.btn1-text-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px;
+
+    width: 95px;
+    height: 16px;
+    left: 8px;
+    top: 8px;
+
+    .btn1-inside{
+        flex: none;
+        order: 1;
+        align-self: flex-start;
+        flex-grow: 0;
+        margin: 0px 0px;
+
+        
+    }
+}
+
+.btn1-text{
+    position: static;
+    height: 16px;
+    left: 8px;
+    right: 8px;
+    top: calc(50% - 16px/2);
+
+    
+    /* Button Font AA/ Small */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Success / 500 - Default */
+
+    color: #54BC2B;
+
+
+
+    .btn1-inside{
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+
+        img{
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        .text1{
+            //display: block;
+            border-right: 10px;
+        }
+    }
+}
+
