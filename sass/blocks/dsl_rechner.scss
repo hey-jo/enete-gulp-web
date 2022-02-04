@@ -204,10 +204,7 @@
     align-items: flex-start;
     padding: 0px;
 
-    width: 132px;
-    height: 32px;
-    left: 0px;
-    top: 0px;
+    
 
     .btn1-inside{
         flex: none;
@@ -234,7 +231,7 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    .btnn-inside{
+    .btn1-inside{
         order: 0;
         flex-grow: 1;
         margin: 0px 0px;
@@ -248,39 +245,9 @@
     flex-direction: row;
     align-items: center;
     padding: 0px;
-
-    .btn1-inside{
-        flex: none;
-        order: 2;
-        align-self: flex-start;
-        flex-grow: 0;
-        margin: 0px 0px;
-
-        
-    }
 }
 
-.btn1-text-wrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 8px;
 
-    width: 95px;
-    height: 16px;
-    left: 8px;
-    top: 8px;
-
-    .btn1-inside{
-        flex: none;
-        order: 1;
-        align-self: flex-start;
-        flex-grow: 0;
-        margin: 0px 0px;
-
-        
-    }
-}
 
 .btn1-text{
     position: static;
