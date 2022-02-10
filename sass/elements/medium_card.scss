@@ -266,7 +266,7 @@
     }
 
 
-    .btn-radio{
+    .btn-radio:not(.mb-0){
         margin-bottom: 24px;
         span{
             font-size: 15px;
