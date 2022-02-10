@@ -1924,6 +1924,7 @@
         flex-wrap: wrap;
     }
 
+    
     .offer_logo{
         max-width: 80px;
         @media screen and (max-width: 550px){
@@ -1932,6 +1933,7 @@
 
         img{
             max-width: 80px;
+            margin: 0 0 5 0;
             @media screen and (max-width: 550px){
                 max-width: 70px;
             }
@@ -1962,6 +1964,10 @@
             min-width: 92px;
             margin-left: -4px;
             font-size: 11px;
+
+            &.center{
+                min-width: 0;
+            }
         }
         span{
             font-size: 15px;
