@@ -1,5 +1,6 @@
 .product-wrap{
-    
+
+       
     &.border{
         /* Theme/White/Default */
         background: #FFFFFF;
@@ -9,12 +10,22 @@
         box-sizing: border-box;
         border-radius: 16px;
     }
-
-
-   
-
    
 }
+
+.form-row{
+    
+    margin: 0px -20px;
+
+    &.pc-nav{
+        padding: -500px;
+    }
+}
+
+.bottom-24{
+    margin-bottom: 24px;
+}
+
 
 .inner_wrap{
     margin: 7px 0px 5px;
@@ -103,6 +114,13 @@
         line-height: 24px;
         white-space: nowrap;
         /* or 133% */
+
+        @media screen and (max-width: 575px){
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+
 
         display: flex;
         align-items: center;
