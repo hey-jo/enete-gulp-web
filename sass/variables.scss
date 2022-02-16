@@ -45,3 +45,12 @@ $clr-i600: #1E3FAF;
 $clr-warning: #D8BB00;
 $clr-primary: #7D1120;
 $clr-disabled: rgba(143, 155, 179, 0.5);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
