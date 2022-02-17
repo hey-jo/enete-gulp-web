@@ -1,0 +1,77 @@
+.wcard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    /* H3 - medium 15 (23, 0.1px) */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    /* identical to box height, or 153% */
+
+    letter-spacing: 0.1px;
+
+    /* Basic / 700 */
+
+    color: #2E3A59;
+
+
+}
+
+.wcard-title{
+
+    >h3{
+        /* H3 - medium 15 (23, 0.1px) */
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        /* identical to box height, or 153% */
+
+        letter-spacing: 0.1px;
+
+        /* Basic / 700 */
+
+        color: #2E3A59;
+    }
+}
+
+.form-control {
+    
+    &.border-0{
+    border: none;
+    padding: 0px;
+    }
+}
+
+
+
+.shadow-none {
+    box-shadow: none;
+}
+
+.ms-auto{
+    margin-left: auto;
+}
+
+.custom_input{
+    
+    &.clr-primary{
+        color: $clr-primary;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+        /* identical to box height, or 153% */
+
+        letter-spacing: 0.1px;
+    }
+}
