@@ -1,3 +1,16 @@
+.card{
+
+    &.bg-white{
+        /* Neutral / White */
+
+background: #FFFFFF;
+/* box shadow */
+
+box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+    }
+}
+
 .wcard-header{
     display: flex;
     flex-direction: row;
@@ -29,8 +42,8 @@
         /* H3 - medium 15 (23, 0.1px) */
 
         font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
+        font-style:normal;
+        font-weight: 700;
         font-size: 15px;
         line-height: 23px;
         /* identical to box height, or 153% */
@@ -41,6 +54,21 @@
 
         color: #2E3A59;
     }
+}
+
+.wcard-show{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.1px;
+
+    /* Neutral / Filter gray */
+
+    color: #6A707E;
 }
 
 .form-control {
@@ -75,3 +103,113 @@
         letter-spacing: 0.1px;
     }
 }
+
+.svg-circle{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 0px;
+}
+
+.wcard-pchart-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+}
+
+.wcard-legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 100%;
+    justify-content:space-around;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress-loader 5s ease-out forwards;
+  }
+  
+  @keyframes progress-loader {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.clr-primary .circle {
+    stroke: #7D1120;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #7D1120;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+  .wcard-legend{
+
+    >.start{
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    >.end{
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 0px;
+    }
+
+    .end>.circle-active{
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 13px;
+        
+        border: 2px solid #7D1120;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        height: 100%;
+        border-radius:50%;
+        width: 100%;
+        }
+
+    }
+  
