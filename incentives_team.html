@@ -239,7 +239,7 @@
       <!-- END ipad & desc Main menu -->
 
       <!-- content -->
-      <div class="col content">
+      <div class="ene_content col content">
         <div class="row">
           <div class="col bread_krums d-none d-md-block">Team-Ranking nach Stufe</div>
         </div>
@@ -252,7 +252,8 @@
                 <div>
                   <div>
                     <div class="tab-wrapper row d-flex justify-content-between">
-                      <div class="btn-group d-none d-md-flex switch-primary" role="tablist" aria-label="justified button group">
+                      <div class="btn-group d-none d-md-flex switch-primary" role="tablist"
+                        aria-label="justified button group">
                         <a href="#second-level-menu1" class="level 1 active btn btn-default" role="tab"
                           data-toggle="tab">VL</a>
                         <a href="#second-level-menu2" class="level 1 btn btn-default" role="tab"
@@ -267,14 +268,10 @@
                       <div class="btn-group d-md-none" id="sortBtns" role="tablist" aria-label="justified button group">
                         <a href="#second-level-menu1" class="level 1 active btn btn-default" role="tab"
                           data-toggle="tab">VL</a>
-                        <a href="#second-level-menu2" class="level 1 btn btn-sm" role="tab"
-                          data-toggle="tab">TL</a>
-                        <a href="#second-level-menu3" class="level 1 btn btn-sm" role="tab"
-                          data-toggle="tab">OL</a>
-                        <a href="#second-level-menu4" class="level 1 btn btn-sm" role="tab"
-                          data-toggle="tab">TM</a>
-                        <a href="#second-level-menu4" class="level 1 btn btn-sm" role="tab"
-                          data-toggle="tab">OM</a>
+                        <a href="#second-level-menu2" class="level 1 btn btn-sm" role="tab" data-toggle="tab">TL</a>
+                        <a href="#second-level-menu3" class="level 1 btn btn-sm" role="tab" data-toggle="tab">OL</a>
+                        <a href="#second-level-menu4" class="level 1 btn btn-sm" role="tab" data-toggle="tab">TM</a>
+                        <a href="#second-level-menu4" class="level 1 btn btn-sm" role="tab" data-toggle="tab">OM</a>
                       </div>
                       <div class="btn-group d-none d-md-flex pull-right switch-primary" role="tabpanel"
                         aria-label="justified button group" id="second-level-menu1">
@@ -291,8 +288,7 @@
                           data-toggle="tab">Monat</a>
                         <a href="#second-level-menu1-content2" class="btn btn-sm" role="tab"
                           data-toggle="tab">Quartal</a>
-                        <a href="#second-level-menu1-content3" class="btn btn-sm" role="tab"
-                          data-toggle="tab">Jahr</a>
+                        <a href="#second-level-menu1-content3" class="btn btn-sm" role="tab" data-toggle="tab">Jahr</a>
                       </div>
                     </div>
                     <div class="tab-content">
@@ -947,20 +943,210 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-footer clearfix">
-                  <ul class="pagination pagination-sm no-margin pull-right">
+
+                <div class="fixed-table-pagination">
+                  <div class="float-right pagination-detail">
+                    <div class="page-list">
+                      <div class="btn-group dropdown dropup">
+                        <button class="btn btn-secondary-lg btn-secondary-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                          <span class="page-size">
+                            10
+                          </span>
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item active" href="#">10</a>
+                          <a class="dropdown-item " href="#">25</a>
+                          <a class="dropdown-item " href="#">50</a>
+                          <a class="dropdown-item " href="#">100</a>
+                        </div>
+                      </div> Aufträge pro Seite
+                    </div>
+                  </div>
+                  <div class="float-left">
+                    <ul class="flex-wrap pagination">
+                      <li class="page-item page-pre">
+                        <a class="page-link" aria-label="previous page" href="javascript:void(0)">‹</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" aria-label="to page 1" href="javascript:void(0)">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" aria-label="to page 2" href="javascript:void(0)">2</a>
+                      </li>
+
+                      <li class="page-item page-last-separator disabled"><a class="page-link" aria-label=""
+                          href="javascript:void(0)">...</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" aria-label="to page 80"
+                          href="javascript:void(0)">80</a>
+                      </li>
+                      <li class="page-item page-next"><a class="page-link" aria-label="next page"
+                          href="javascript:void(0)">›</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-none float-right pagination">
+                    <ul class="pagination">
+                      <li class="page-item page-pre">
+                        <a class="page-link" aria-label="previous page" href="javascript:void(0)">‹</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" aria-label="to page 1" href="javascript:void(0)">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" aria-label="to page 2" href="javascript:void(0)">2</a>
+                      </li>
+
+                      <li class="page-item page-last-separator disabled"><a class="page-link" aria-label=""
+                          href="javascript:void(0)">...</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" aria-label="to page 80"
+                          href="javascript:void(0)">80</a>
+                      </li>
+                      <li class="page-item page-next"><a class="page-link" aria-label="next page"
+                          href="javascript:void(0)">›</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div class="container-fluid containerbox-footer clearfix">
+                  <div class="col-sm">
+                    <ul class="pagination pagination-sm justify-content-start">
                       <li><a href="#" data-abc="true">«</a></li>
                       <li><a href="#" data-abc="true">1</a></li>
                       <li><a href="#" data-abc="true">2</a></li>
                       <li><a href="#" data-abc="true">3</a></li>
+
+                      <li><a href="#" data-abc="true">1</a></li>
+                      <li><a href="#" data-abc="true">2</a></li>
+                      <li><a href="#" data-abc="true">3</a></li>
+
+                      <li><a href="#" data-abc="true">1</a></li>
+                      <li><a href="#" data-abc="true">2</a></li>
+                      <li><a href="#" data-abc="true">3</a></li>
+
+                      <li><a href="#" data-abc="true">1</a></li>
+                      <li><a href="#" data-abc="true">2</a></li>
+                      <li><a href="#" data-abc="true">3</a></li>
                       <li><a href="#" data-abc="true">»</a></li>
-                  </ul>
-              </div>
+                    </ul>
+                  </div>
+                  <div class="col-sm form-inline pagination pagination-sm pagination justify-content-end"
+                    id="pageCounter"
+                    true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer">
+                    <label id="id32-w-lbl"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer_label__attr-56167426"
+                      for="id32"> Aufträge pro Seite&nbsp;&nbsp;&nbsp;</label>
+                    <select class="form-control keyNav-element"
+                      name="multiDeleteCheckGroup:orderPagingBottom:itemPerPageCountContainer:itemPerPageCount"
+                      id="id32"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer_itemPerPageCount">
+                      <option value="0">10</option>
+                      <option selected="selected" value="1">20</option>
+                      <option value="2">40</option>
+                      <option value="3">60</option>
+                    </select>
+                  </div>
+                </div> -->
+
+
+                <!-- <ul class="pagination pagination-sm pull-right">
+
+
+
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0" class="active">
+                    <a true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0_pageLink"
+                      disabled="disabled" title="Seite 1" class="keyNav-element" href="#">1</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1">
+                    <a href="#"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1_pageLink"
+                      title="Seite 2" class="keyNav-element">2</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2">
+                    <a href="./orderoverview?0-1.-resultView-orderForm-multiDeleteCheckGroup-orderPagingBottom-pagingLoop-2-pageLink&amp;orderFilter=status"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2_pageLink"
+                      title="Seite 3" class="keyNav-element">3</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0" class="active">
+                    <a true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0_pageLink"
+                      disabled="disabled" title="Seite 1" class="keyNav-element" href="#">1</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1">
+                    <a href="#"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1_pageLink"
+                      title="Seite 2" class="keyNav-element">2</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2">
+                    <a href="./orderoverview?0-1.-resultView-orderForm-multiDeleteCheckGroup-orderPagingBottom-pagingLoop-2-pageLink&amp;orderFilter=status"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2_pageLink"
+                      title="Seite 3" class="keyNav-element">3</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0" class="active">
+                    <a true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0_pageLink"
+                      disabled="disabled" title="Seite 1" class="keyNav-element" href="#">1</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1">
+                    <a href="#"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1_pageLink"
+                      title="Seite 2" class="keyNav-element">2</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2">
+                    <a href="./orderoverview?0-1.-resultView-orderForm-multiDeleteCheckGroup-orderPagingBottom-pagingLoop-2-pageLink&amp;orderFilter=status"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2_pageLink"
+                      title="Seite 3" class="keyNav-element">3</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0" class="active">
+                    <a true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_0_pageLink"
+                      disabled="disabled" title="Seite 1" class="keyNav-element" href="#">1</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1">
+                    <a href="#"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_1_pageLink"
+                      title="Seite 2" class="keyNav-element">2</a>
+                  </li>
+                  <li true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2">
+                    <a href="./orderoverview?0-1.-resultView-orderForm-multiDeleteCheckGroup-orderPagingBottom-pagingLoop-2-pageLink&amp;orderFilter=status"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_pagingLoop_2_pageLink"
+                      title="Seite 3" class="keyNav-element">3</a>
+                  </li>
+
+
+                  <li>
+                    <a href="./orderoverview?0-1.-resultView-orderForm-multiDeleteCheckGroup-orderPagingBottom-nextLink&amp;orderFilter=status"
+                      aria-label="Next" true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_nextLink"
+                      title="nächste Seite" class="keyNav-element"><span aria-hidden="true">»</span></a>
+                  </li>
+
+
+                  <div class="form-inline">
+                    <div class="form-group float-right" id="pageCounter"
+                      true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer">
+                      <label id="id32-w-lbl"
+                        true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer_label__attr-56167426"
+                        for="id32"> Aufträge pro Seite&nbsp;&nbsp;&nbsp;</label>
+                      <select class="form-control keyNav-element"
+                        name="multiDeleteCheckGroup:orderPagingBottom:itemPerPageCountContainer:itemPerPageCount"
+                        id="id32"
+                        true="resultView_orderForm_multiDeleteCheckGroup_orderPagingBottom_itemPerPageCountContainer_itemPerPageCount">
+                        <option value="0">10</option>
+                        <option selected="selected" value="1">20</option>
+                        <option value="2">40</option>
+                        <option value="3">60</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+
+                </ul> -->
               </div>
             </div>
           </div>
         </div>
-        
+
         <!-- END content -->
 
       </div>
