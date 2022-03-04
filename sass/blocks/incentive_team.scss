@@ -16,13 +16,32 @@ img {
   padding: 8px 0px 20px 0px;
   margin-bottom: 15px;
   margin-top: 15px;
-  
+ 
 }
 
 @media (max-width:500px) {
   .fixed-table-pagination {
     padding: 0px;
   }
+}
+
+.t1-footer .page-item.active .page-link{
+  color: #fff;
+  background-color: #af0000;
+  border-color: #f5f6f8;
+}
+
+.t1-footer .page-link:hover{
+  color: #d70d0d;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+
+}
+
+.t1-footer .page-link:focus{
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #efebdc85;
 }
 
 
