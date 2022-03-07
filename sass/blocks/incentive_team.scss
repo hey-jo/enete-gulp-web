@@ -25,7 +25,7 @@ img {
   }
 }
 
-/* t1-footer ohne Eingeschaften,
+/* t1-footer ohne Eigeschaften,
 verändert Bootstrap-Werte ohne zu überschreiben*/
 .t1-footer .page-item.active .page-link{
   color: #fff;
@@ -101,6 +101,7 @@ verändert Bootstrap-Werte ohne zu überschreiben*/
     display: flex;
     padding: 0px 15px;
 }
+
 .btn-default {
   
   padding: 12px 16px;
@@ -207,7 +208,7 @@ a:hover {
 }
 
 //Start Table
-table {
+.table-incentives.table {
   width: 100%;
   margin: 0px;
   border-collapse: collapse;
