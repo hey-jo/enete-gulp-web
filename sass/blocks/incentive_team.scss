@@ -29,12 +29,12 @@ img {
 verändert Bootstrap-Werte ohne zu überschreiben*/
 .t1-footer .page-item.active .page-link{
   color: #fff;
-  background-color: #af0000;
+  background-color: $clr-danger;
   border-color: #f5f6f8;
 }
 
 .t1-footer .page-link:hover{
-  color: #d70d0d;
+  color: $clr-danger;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -45,6 +45,18 @@ verändert Bootstrap-Werte ohne zu überschreiben*/
   outline: 0;
   box-shadow: 0 0 0 0.2rem #efebdc85;
 }
+
+.t1-footer .dropdown-item {
+  
+  &.active{
+  color: #fff;
+  text-decoration: none;
+  background-color: $clr-danger;
+  }
+
+  &:active{background-color: $clr-danger;}
+}
+
 
 
 
