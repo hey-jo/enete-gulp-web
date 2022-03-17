@@ -241,18 +241,18 @@
       <!-- content -->
       <div class="col ene_content content">
         <div class="row">
-          <div class="col bread_krums bg-transparent">Incentives - Ranking</div>
+          <div class="col bread_krums bg-transparent">Abrechnung</div>
         </div>
-        <div class="row widget_row align-items-stretch">
+        <div class="row widget_row align-items-center">
           <div class="col-xl-6 col-md-12 widget_col card-deck">
             <div class="col-xl-12 col-lg-12 widget_col">
               <a href="incentives_team.html" class="widget_wrapp active bg-white">
                 <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-briefcase"></i>
+                  <i class="fas fa-file-invoice"></i>
                 </div>
                 <div class="widget_content">
-                  <span class="widget_name">Team</span>
-                  <span class="widget_desc d-none d-md-block">Wettbewerb unter den Besten nach Karrierestufe.</span>
+                  <span class="widget_name">Abrechnungen</span>
+                  <span class="widget_desc d-none d-md-block">Meine Provisionsabrechnungen einsehen.</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
@@ -264,11 +264,11 @@
             <div class="col-xl-12 col-lg-12 widget_col">
               <a href="/incentives_top_seller.html" class="widget_wrapp active bg-white">
                 <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-medal"></i>
+                  <i class="fas fa-file"></i>
                 </div>
                 <div class="widget_content">
-                  <span class="widget_name">Top-Verkäufer</span>
-                  <span class="widget_desc d-none d-md-block">Die Besten nach Eigenumsatz - Monat | Quartal |
+                  <span class="widget_name">Jahresabschluss</span>
+                  <span class="widget_desc d-none d-md-block">Auszahlungsliste für die Buchhaltung nach Zeitraum
                     Jahr</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
@@ -278,91 +278,81 @@
 
             </div>
 
-
-            <div class="col-xl-12 col-lg-12 widget_col pb-0 align-self-end">
-              <a href="/incentives_travel.html" class="widget_wrapp active inline_module bg-white">
-                <div class="widget_icon_1_wrapp h-100">
-                  <i class="fas fa-flag"></i>
+            <div class="col-xl-12 col-lg-12 widget_col">
+              <a href="/incentives_top_seller.html" class="widget_wrapp active bg-white">
+                <div class="widget_icon_1_wrapp">
+                  <i class="fas fa-chart-line"></i>
                 </div>
-                <div class="widget_inline_wrap">
-                  <div class="widget_content">
-                    <span class="widget_name">Reise</span>
-                    <span class="widget_desc p0 d-none d-md-block">Aktuelle Ergebnisse - Qualifikation Reise
-                      Incentive</span>
-                  </div>
-                  <div class="widget_progress">
-
-                    <div class="container">
-                      <div class="progress2 progress-moved">
-                        <div class="progress-bar2"></div>
-                      </div>
-                    </div>
-
-                    <script type="text/javascript">
-                      CSS.registerProperty({
-                        name: "--p",
-                        syntax: "<integer>",
-                        initialValue: 0,
-                        inherits: true,
-                      });
-                    </script>
-                    <p class="widget_progress_desc d-none d-md-block">
-                      Du hast <span class="loader"></span> von 30000 Sternen gesammelt.
-                    </p>
-                  </div>
+                <div class="widget_content">
+                  <span class="widget_name">Statistik</span>
+                  <span class="widget_desc d-none d-md-block">Von Anfang an richtig planen
+                    Jahr</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
                 </div>
               </a>
-
             </div>
           </div>
-          <div class="col-xl-6 col-md-12 widget_col card-deck">
+          <div class="col-xl-6 col-md-12 widget_col card-deck 1min-vh-100">
 
-            <table class="graph">
-              <caption>Bar Chart HTML From HTML Table</caption>
+            <div class="card-body">
+              <div class="card bg-white   container-flex">
+                <div class="p-3 border-bottom">
+                  <!-- title -->
+                  <div class="d-md-flex">
+                    <div class="wcard-title wcard-header">
+                      <h3 class="wcard-title mb-0">Provisionsübersicht</h3>
+                    </div>
+                    <div class="ms-auto">
+                      <div class="wcard-header">
+                        <span class="wcard-show px-2">Zeige</span>
+                        <select class="form-control border-0 custom_input clr-primary mb-0">
+                          <option value="0" selected="">6 Monate</option>
+                          <option value="1">12 Monate</option>
+                          <option value="2">letztes Jahr</option>
+                          <option value="3">alle</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- title end -->
+                </div>  
+            <table class="graph mt-3 card-body mh-50">
               <thead>
                 <tr>
-                  <th scope="col">Item</th>
-                  <th scope="col">Percent</th>
+                  <th scope="row" class="text-right pr-3">Provision</th>
+                  <th scope="row">Monat</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr style="height:85%">
-                  <th scope="row">Your Blog</th>
-                  <td><span>85%</span></td>
+              <tbody class="mt-0 h-50">
+                <tr style="height:43%">
+                  <th scope="row">435 €</th>
+                  <td class="prim-25"><span>Jan</span></td>
                 </tr>
-                <tr style="height:23%">
-                  <th scope="row">Medium</th>
-                  <td><span>23%</span></td>
+                <tr style="height:73%">
+                  <th scope="row">734 €</th>
+                  <td><span>Feb</span></td>
                 </tr>
-                <tr style="height:7%">
-                  <th scope="row">Tumblr</th>
-                  <td><span>7%</span></td>
+                <tr style="height:87%">
+                  <th scope="row">807 €</th>
+                  <td><span>Apr</span></td>
                 </tr>
-                <tr style="height:38%">
-                  <th scope="row">Facebook</th>
-                  <td><span>38%</span></td>
+                <tr style="height:58%">
+                  <th scope="row">580 €</th>
+                  <td class="prim-25"><span>Mai</span></td>
                 </tr>
-                <tr style="height:35%">
-                  <th scope="row">Youtube</th>
-                  <td><span>35%</span></td>
+                <tr style="height:22%">
+                  <th scope="row">220 €</th>
+                  <td class="prim-15"><span>Jun</span></td>
                 </tr>
-                <tr style="height:30%">
-                  <th scope="row">LinkedIn</th>
-                  <td><span>30%</span></td>
-                </tr>
-                <tr style="height:5%">
-                  <th scope="row">Twitter</th>
-                  <td><span>5%</span></td>
-                </tr>
-                <tr style="height:20%">
-                  <th scope="row">Other</th>
-                  <td><span>20%</span></td>
+                <tr style="height:12%">
+                  <th scope="row">120 €</th>
+                  <td class="prim-10"><span>Jul</span></td>
                 </tr>
               </tbody>
             </table>
+          </div></div> 
 
             <!---- STARTE TEST -->
             <!-- <div class="card bg-white">

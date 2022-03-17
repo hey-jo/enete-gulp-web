@@ -1,6 +1,19 @@
+.container-flex {
+	//min-height: -webkit-fill-available;
+	min-height: 50vh;
+	//min-height Widget bei Verwendung auf anderen Seite anpassen
+	//width: 100%;
+	display:flex;
+	flex-direction: column;
+	//border: 2px solid red;
+	
+	
+  }
+
 .graph {
 	margin-bottom:1em;
-  font:normal 100%/150% arial,helvetica,sans-serif;
+  	font:normal 100%/150% arial,helvetica,sans-serif;
+	
 }
 
 .graph caption {
@@ -10,6 +23,7 @@
 
 .graph tbody th {
 	text-align:right;
+	padding-right: 15px;
 }
 
 @supports (display:grid) {
@@ -17,9 +31,9 @@
 	@media (min-width:32em) {
 
 		.graph {
-			display:block;
+			display:grid;
 			width:95%;
-			height:auto;
+			
 		}
 
 		.graph caption {
@@ -39,13 +53,13 @@
 			height:100%;
 			margin:3em 0 1em 2.8em;
 			padding:0 1em;
-			border-bottom:2px solid rgba(0,0,0,0.5);
+			border-bottom:1px dashed #D3D8DD;
 			background:repeating-linear-gradient(
 				180deg,
-				rgba(170,170,170,0.7) 0,
-				rgba(170,170,170,0.7) 1px,
+				rgba(42, 51, 81, 0.12),
+				rgba(42, 51, 81, 0.12),
 				transparent 1px,
-				transparent 20%
+				transparent 40%,
 			);
 		}
 
@@ -71,6 +85,7 @@
 		.graph tr {
 			position:relative;
 			display:block;
+			color: rgba(125, 17, 32, 1)
 		}
 
 		.graph tr:hover {
@@ -90,7 +105,7 @@
 			width:100%;
 			font-weight:normal;
 			text-align:center;
-      white-space:nowrap;
+      		white-space:nowrap;
 			text-indent:0;
 			transform:rotate(-45deg);
 		}
@@ -102,9 +117,25 @@
 		.graph td {
 			width:100%;
 			height:100%;
-			background:#F63;
+			background:$clr-primary;
 			border-radius:0.5em 0.5em 0 0;
-			transition:background 0.5s;
+
+			&.prim-10{
+				background: #F8D7CD;
+			}
+
+			&.prim-15{
+				background: #F2AA9E;
+			}
+
+			&.prim-25{
+				background: #D86D68; 
+			}
+
+			&.prim-35{
+				background: #B13E43; 
+			}
+		
 		}
 
 		.graph tr:hover td {
