@@ -224,7 +224,7 @@ a:hover {
   width: 100%;
   margin: 0px;
   border-collapse: collapse;
-  //border: 1px solid #eee;
+  border: 1px solid #eee;
   border-bottom: 2px solid $clr-primary;
 
   tr:nth-child(odd) {
@@ -250,7 +250,7 @@ a:hover {
   }
   th {
     background: $clr-primary;
-    border: 1px solid §$clr-primary;
+    border: 1px solid $clr-primary;
     color: #fff;
     text-transform: uppercase;
     font-family: Open Sans;
@@ -260,14 +260,47 @@ a:hover {
     line-height: 140%;
     /* or 22px */
 
-    text-transform: capitalize;
-    font-feature-settings: "tnum" on, "lnum" on;
     &.last {
       border-right: none;
     }
   }
 }
 //End Table
+
+// Start Table invoice changes
+
+.table-incentives, table{ 
+  
+  .invoice{
+
+    td {
+      color: #222;
+      border: none;
+      padding: 12px 8px;
+      border-collapse: collapse;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    th {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      /* or 22px */
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      text-transform: none;
+    }
+
+    /* change icon color*/
+    .material-icons-outlined.clr-danger { color:$clr-danger; }
+    .material-icons-outlined.clr-success { color:$clr-succes; }
+  }
+}
 
 @media (max-width: 767px) {
   .tariff {
