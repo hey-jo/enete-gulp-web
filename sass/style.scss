@@ -20,6 +20,7 @@
 @import "blocks/mobilfunk_rechner.scss";
 @import "blocks/dsl_rechner.scss";
 @import "blocks/incentive_travel.scss";
+@import "blocks/billing_invoice.scss";
 @import "elements/product_card.scss";
 @import "elements/checkbox_switch.scss";
 @import "elements/radio_btn_rechner.scss";
@@ -143,6 +144,12 @@ h6{
     /* Info / 600 */
 
     color: $clr-i600;
+}
+
+.clr-i400{
+    /* Info / 600 */
+
+    color: $clr-i400;
 }
 
 .clr-warning{

@@ -3,476 +3,599 @@
 <!-- Head -->
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
-    <link
-        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-        rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
 
-    <title>Hello, world!</title>
+  <title>Hello, world!</title>
 </head>
 <!-- End Head -->
 
 <body>
-    <div class="container-fluid" style="height: 100%;">
-        <!-- Block Header -->
-        <header class="row header">
-            <!-- Logo Desktop -->
-            <div class="col-3 d-none d-xl-block">
-                <div class="logo_wrap_desk">
-                    <img class="logo_desk" alt="Logo" src="img/logo.svg">
-                </div>
-            </div>
-            <!-- Logo Desktop Ende-->
-
-            <!-- Logo iPad -->
-            <div class="col-2 d-none d-md-block d-xl-none">
-                <div class="logo_wrap_ipad">
-                    <img class="logo_ipad" alt="Logo" src="img/logo_klein.svg">
-                </div>
-            </div>
-            <!-- Logo iPad Ende -->
-            <!-- Search and Favoriten iPad / Desktop-->
-            <div class="col-7 col-xl-7 d-none d-md-block">
-                <div class="wrap_search_and_fav_ipad_desk">
-                    <!-- Search iPad -->
-                    <button class="btn search_ipad d-none d-md-block d-xl-none">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <!-- Search iPad END -->
-                    <!-- Search Desk -->
-                    <div class="d-none d-xl-block">
-                        <div class="form-group has-search ">
-                            <input type="text" class="form-control" placeholder="SUCHE...">
-                            <span class="fa fa-search form-control-feedback"></span>
-                        </div>
-                    </div>
-                    <!-- Search Desk -->
-                    <div class="fav_ipad">
-                        <button type="button" class="btn btn-outline-white">
-                            <i class="fas fa-star"></i>
-                            <span class="btn_name_ipad">Provision</span>
-                        </button>
-                        <button type="button" class="btn btn-outline-white">
-                            <i class="fas fa-star"></i>
-                            <span class="btn_name_ipad">Statistik</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- Search and favoriten iPad Ende -->
-
-            <div class="col-3 col-xl-2 d-none d-md-block">
-                <div class="user_and_logut_wrap_ipad_desk">
-                    <button class="btn btn-outline-white"><i class="far fa-user"></i></button>
-                    <button class="btn btn-outline-white"><i class="fas fa-sign-out-alt"></i></button>
-                </div>
-            </div>
-
-            <!-- Bock Navigation Mobile -->
-            <div class="col-4 d-block d-md-none">
-                <nav class="navbar navbar-expand-md navbar-light custom_mobil_nav">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
-            <!-- Bock Navigation Mobile Ende -->
-
-            <!-- Block Title Mobil-->
-            <div class="col-4 header_title_wrapp d-block d-md-none">
-                <span class="header_title">Dashboard</span>
-            </div>
-            <!-- Block Title Mobil Ende-->
-
-            <!-- Block Bell and Logo Mobil-->
-            <div class="col-4 d-block d-md-none">
-                <div class="logo_and_ball">
-                    <div class="bell_wrapp">
-                        <i class="fas fa-bell"></i>
-                        <span class="bell_circle"></span>
-                    </div>
-                    <div class="logo_wrapp">
-                        <img class="logo" alt="Logo" src="img/logo_klein.svg">
-                    </div>
-                </div>
-            </div>
-            <!-- Block Bell and Logo Mobil Ende -->
-        </header>
-        <!-- Block Header Ende -->
-
-        <!-- Menu Mobil -->
-        <div class="row mobile_menu_collapse">
-            <div class="col collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </div>
-            </div>
+  <div class="container-fluid" style="height: 100%;">
+    <!-- Block Header -->
+    <header class="row header">
+      <!-- Logo Desktop -->
+      <div class="col-3 d-none d-xl-block">
+        <div class="logo_wrap_desk">
+          <img class="logo_desk" alt="Logo" src="img/logo.svg">
         </div>
-        <!-- Menu Mobil Ende -->
+      </div>
+      <!-- Logo Desktop Ende-->
 
-        <!-- cntent wrap-->
-        <div class="row content_wrap overflow-hidden">
-            <!-- ipad & desc Main menu -->
-            <div class="nav_wrap d-none d-md-flex">
-                <nav class="sidebar_menu">
-                    <ul class="list-unstyled components">
-                        <li>
-                            <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a> -->
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="/index.html">
-                                    <i class="fas fa-home menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Home</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="product_selection.html">
-                                    <i class="fas fa-shopping-cart menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Produkte</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="#">
-                                    <i class="fas fa-user-friends menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Kundenportal</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="#">
-                                    <i class="fas fa-sign-in-alt menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Vertriebsportal</span>
-                                </a>
-                                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
-                                    data-toggle="collapse" data-target="#vertriebSubmenu"
-                                    aria-controls="vertriebSubmenu" aria-expanded="false"></button>
-                            </div>
-                            <ul class="collapse list-unstyled" id="vertriebSubmenu">
-                                <li>
-                                    <div class="sub_menu_item_wrap">
-                                        <a class="sub_menu_item" href="#">
-                                            <i class="fas fa-home sub_menu_icon"></i>
-                                            <span class="sub_menu_title">Mein Team</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sub_menu_item_wrap">
-                                        <a class="sub_menu_item" href="#">
-                                            <i class="fas fa-home sub_menu_icon"></i>
-                                            <span class="sub_menu_title">Statistik</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="/incentives_selection.html">
-                                    <i class="fas fa-gift menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Incentives</span>
-                                </a>
-                                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
-                                    data-toggle="collapse" data-target="#incentivesSubmenu"
-                                    aria-controls="incentivesSubmenu" aria-expanded="false"></button>
-                            </div>
-                            <ul class="collapse list-unstyled" id="incentivesSubmenu">
-                                <li>
-                                    <div class="sub_menu_item_wrap">
-                                        <a class="sub_menu_item" href="#">
-                                            <i class="fas fa-briefcase sub_menu_icon"></i>
-                                            <span class="sub_menu_title">Team Ranking</span>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="#">
-                                    <i class="fas fa-bookmark menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Bildung</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="#">
-                                    <i class="fas fa-user-plus menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Vision Club</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="#">
-                                    <i class="fas fa-camera menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Galerie</span>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="active">
-                            <div class="menu_item_wrap">
-                                <a class="menu_item" href="/billing_selection.html">
-                                    <i class="fas fa-credit-card menu_icon"></i>
-                                    <span class="menu_title d-none d-xl-block">Abrechnungen</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+      <!-- Logo iPad -->
+      <div class="col-2 d-none d-md-block d-xl-none">
+        <div class="logo_wrap_ipad">
+          <img class="logo_ipad" alt="Logo" src="img/logo_klein.svg">
+        </div>
+      </div>
+      <!-- Logo iPad Ende -->
+      <!-- Search and Favoriten iPad / Desktop-->
+      <div class="col-7 col-xl-7 d-none d-md-block">
+        <div class="wrap_search_and_fav_ipad_desk">
+          <!-- Search iPad -->
+          <button class="btn search_ipad d-none d-md-block d-xl-none">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- Search iPad END -->
+          <!-- Search Desk -->
+          <div class="d-none d-xl-block">
+            <div class="form-group has-search ">
+              <input type="text" class="form-control" placeholder="SUCHE...">
+              <span class="fa fa-search form-control-feedback"></span>
             </div>
-            <!-- END ipad & desc Main menu -->
+          </div>
+          <!-- Search Desk -->
+          <div class="fav_ipad">
+            <button type="button" class="btn btn-outline-white">
+              <i class="fas fa-star"></i>
+              <span class="btn_name_ipad">Provision</span>
+            </button>
+            <button type="button" class="btn btn-outline-white">
+              <i class="fas fa-star"></i>
+              <span class="btn_name_ipad">Statistik</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search and favoriten iPad Ende -->
 
-            <!-- content -->
-            <div class="ene_content col content">
-                <div class="row">
-                    <div class="col bread_krums d-none d-md-block">Abrechnungen</div>
-                </div>
+      <div class="col-3 col-xl-2 d-none d-md-block">
+        <div class="user_and_logut_wrap_ipad_desk">
+          <button class="btn btn-outline-white"><i class="far fa-user"></i></button>
+          <button class="btn btn-outline-white"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+      </div>
 
-                <div class="123">
-                    <div class="col-xs-12">
-                        <div class="invoice-filter">
-                               <p><strong>Zeitraum:</strong>Label von (float: left), span til, div bis, div Auftrags-ID, Button suchen</p>
-                        </div>
-                        <div class="white-box">
-                            <!-- Tabs VL TL OL TM -->
-                            <div class="whitebox second-level-menu">
-                                <div>
-                                    <div>
-                                        <div class="tab-content table-incentives">
-                                            <div role="tabpanel" class="tab-pane active" id="second-level-menu1-content1">
-                                                <div> 
-                                                </div>
-                                                <table class="invoice">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Monat</th>
-                                                            <th class="d-none d-sm-table-cell">erhalten</th>
-                                                            <th class="d-none d-sm-table-cell">gelesen</th>
-                                                            <th class="text-center">überwiesen</th>
-                                                            <th>Summe</th>
-                                                            <th><span class="mpl-n1 material-icons-outlined">visibility</span></th>
-                                                            <th class="d-none d-sm-table-cell"><span class="material-icons-outlined">download_for_offline</span></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>2021M05</td>
-                                                            <td class="d-none d-sm-table-cell">25.06.2021</td>
-                                                            <td class="d-none d-sm-table-cell"><span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span></td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-danger">highlight_off</span></td>
-                                                            <td>1.986,13 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>2021M04</td>
-                                                            <td class="d-none d-sm-table-cell">25.05.2021</td>
-                                                            <td class="d-none d-sm-table-cell"><span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span></td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>2.546,69 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>3</td>
-                                                            <td>2021M03</td>
-                                                            <td class="d-none d-sm-table-cell">25.04.2021</td>
-                                                            <td class="d-none d-sm-table-cell"><span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span></td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-danger">highlight_off</span></td>
-                                                            <td>1.768,66 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>4</td>
-                                                            <td>2021M02</td>
-                                                            <td class="d-none d-sm-table-cell">25.03.2021</td>
-                                                            <td class="d-none d-sm-table-cell">26.05.2021</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>1.730,66 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>5</td>
-                                                            <td>2021M01</td>
-                                                            <td class="d-none d-sm-table-cell">25.02.2021</td>
-                                                            <td class="d-none d-sm-table-cell">01.03.2021</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>1.005,24 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>6</td>
-                                                            <td>2020M12</td>
-                                                            <td class="d-none d-sm-table-cell">25.01.2021</td>
-                                                            <td class="d-none d-sm-table-cell">28.01.2021</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>3.957,78 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>7</td>
-                                                            <td>2020M11</td>
-                                                            <td class="d-none d-sm-table-cell">25.12.2020</td>
-                                                            <td class="d-none d-sm-table-cell">05.01.2021</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>414,47 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>8</td>
-                                                            <td>2020M10</td>
-                                                            <td class="d-none d-sm-table-cell">25.11.2020</td>
-                                                            <td class="d-none d-sm-table-cell">26.11.2020</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>1.747,26 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>9</td>
-                                                            <td>2020M09</td>
-                                                            <td class="d-none d-sm-table-cell">25.10.2020</td>
-                                                            <td class="d-none d-sm-table-cell">27.10.2020</td>
-                                                            <td class="text-center"><span class="pl-3 material-icons-outlined clr-success">check_circle_outline</span></td>
-                                                            <td>1.805,37 €</td>
-                                                            <td><span class="material-icons-outlined clr-danger">visibility</span></td>
-                                                            <td class="d-none d-sm-table-cell"><span class="material-icons-outlined clr-danger">download_for_offline</span></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+      <!-- Bock Navigation Mobile -->
+      <div class="col-4 d-block d-md-none">
+        <nav class="navbar navbar-expand-md navbar-light custom_mobil_nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+      <!-- Bock Navigation Mobile Ende -->
 
-                                <div class="fixed-table-pagination">
-                                    <div class="float-right pagination-detail">
-                                        <div class="page-list t1-footer">
-                                            <div class="btn-group dropdown dropup">
-                                                <button class="btn btn-secondary-lg btn-secondary-sm dropdown-toggle"
-                                                    type="button" data-toggle="dropdown">
-                                                    <span class="page-size">
-                                                        10
-                                                    </span>
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item active" href="#">10</a>
-                                                    <a class="dropdown-item " href="#">25</a>
-                                                    <a class="dropdown-item " href="#">50</a>
-                                                    <a class="dropdown-item " href="#">100</a>
-                                                </div>
-                                            </div> <span class="d-none d-sm-inline-block">pro Seite</span>
-                                        </div>
-                                    </div>
-                                    <div class="float-left">
-                                        <ul class="t1-footer flex-wrap pagination">
-                                            <li class="page-item page-pre">
-                                                <a class="page-link" aria-label="previous page"
-                                                    href="javascript:void(0)">‹</a>
-                                            </li>
-                                            <li class="page-item active">
-                                                <a class="page-link" aria-label="to page 1"
-                                                    href="javascript:void(0)">1</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" aria-label="to page 2"
-                                                    href="javascript:void(0)">2</a>
-                                            </li>
+      <!-- Block Title Mobil-->
+      <div class="col-4 header_title_wrapp d-block d-md-none">
+        <span class="header_title">Dashboard</span>
+      </div>
+      <!-- Block Title Mobil Ende-->
 
-                                            <li class="page-item page-last-separator disabled"><a class="page-link"
-                                                    aria-label="" href="javascript:void(0)">...</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" aria-label="to page 80"
-                                                    href="javascript:void(0)">80</a>
-                                            </li>
-                                            <li class="page-item page-next"><a class="page-link" aria-label="next page"
-                                                    href="javascript:void(0)">›</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <!-- Block Bell and Logo Mobil-->
+      <div class="col-4 d-block d-md-none">
+        <div class="logo_and_ball">
+          <div class="bell_wrapp">
+            <i class="fas fa-bell"></i>
+            <span class="bell_circle"></span>
+          </div>
+          <div class="logo_wrapp">
+            <img class="logo" alt="Logo" src="img/logo_klein.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Block Bell and Logo Mobil Ende -->
+    </header>
+    <!-- Block Header Ende -->
+
+    <!-- Menu Mobil -->
+    <div class="row mobile_menu_collapse">
+      <div class="col collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Mobil Ende -->
+
+    <!-- cntent wrap-->
+    <div class="row content_wrap overflow-hidden">
+      <!-- ipad & desc Main menu -->
+      <div class="nav_wrap d-none d-md-flex">
+        <nav class="sidebar_menu">
+          <ul class="list-unstyled components">
+            <li>
+              <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a> -->
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/index.html">
+                  <i class="fas fa-home menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Home</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="product_selection.html">
+                  <i class="fas fa-shopping-cart menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Produkte</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-user-friends menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Kundenportal</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-sign-in-alt menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Vertriebsportal</span>
+                </a>
+                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
+                  data-toggle="collapse" data-target="#vertriebSubmenu" aria-controls="vertriebSubmenu"
+                  aria-expanded="false"></button>
+              </div>
+              <ul class="collapse list-unstyled" id="vertriebSubmenu">
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-home sub_menu_icon"></i>
+                      <span class="sub_menu_title">Mein Team</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-home sub_menu_icon"></i>
+                      <span class="sub_menu_title">Statistik</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/incentives_selection.html">
+                  <i class="fas fa-gift menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Incentives</span>
+                </a>
+                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
+                  data-toggle="collapse" data-target="#incentivesSubmenu" aria-controls="incentivesSubmenu"
+                  aria-expanded="false"></button>
+              </div>
+              <ul class="collapse list-unstyled" id="incentivesSubmenu">
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-briefcase sub_menu_icon"></i>
+                      <span class="sub_menu_title">Team Ranking</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-bookmark menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Bildung</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-user-plus menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Vision Club</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-camera menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Galerie</span>
+                </a>
+              </div>
+            </li>
+            <li class="active">
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/billing_selection.html">
+                  <i class="fas fa-credit-card menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Abrechnungen</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- END ipad & desc Main menu -->
+
+      <!-- content -->
+      <div class="ene_content col content">
+        <div class="row">
+          <div class="col bread_krums d-none d-md-block">Abrechnungen</div>
+        </div>
+
+        <div class="123">
+          <div class="col-xs-12">
+            <div class="invoice_filter">
+              <div class="row">
+                <div class="col-12 col-sm-8 col-md-10 tariff_action .tariff_action_switc">
+                  <form>
+                    <div class="form-row m-2">
+                      <span class="col period">Zeitraum:</span>
+                      <div class="col form-group">
+                        <input type="text" class="form-control" placeholder="12.2021">
+                      </div>
+                      <span class="til">—</span>
+                      <div class="col form-group">
+                        <input type="text" class="form-control" placeholder="03.2022">
+                      </div>
+                      <div class="col-sm-12 col-md-3 form-group">
+                        <input type="text" class="form-control" placeholder="Auftrags-ID">
+                      </div>
+                      <button class="btn-custom tariff_action_switch btn-invoice ml-3">Suchen <i class="fas fa-zoom-alt"></i></button>
                     </div>
+
+                  </form>
                 </div>
-
-                <!-- END content -->
-
+              </div>
             </div>
-            <!-- END cntent wrap -->
+            <div class="white-box">
+              <!-- Tabs VL TL OL TM -->
+              <div class="whitebox second-level-menu">
+                <div>
+                  <div>
+                    <div class="tab-content table-incentives">
+                      <div role="tabpanel" class="tab-pane active" id="second-level-menu1-content1">
+                        <div>
+                        </div>
+                        <table class="invoice">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Monat</th>
+                              <th class="d-none d-sm-table-cell">erhalten</th>
+                              <th class="d-none d-sm-table-cell">gelesen</th>
+                              <th class="text-center">überwiesen</th>
+                              <th>Summe</th>
+                              <th><span class="mpl-n1 material-icons-outlined">visibility</span>
+                              </th>
+                              <th class="d-none d-sm-table-cell"><span
+                                  class="material-icons-outlined">download_for_offline</span>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>2021M05</td>
+                              <td class="d-none d-sm-table-cell">25.06.2021</td>
+                              <td class="d-none d-sm-table-cell">
+                                <span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span>
+                              </td>
+                              <td class="text-center">
+                                <!-- Tooltip -->
+                                <div class="tooltip_invoice">
+                                  <span class="pl-3 material-icons-outlined clr-danger">highlight_off</span>
+                                  <span class="text_invoice">
+                                    Auszahlung gesperrt!
+                                  </span>
+                                </div>
+                              </td>
+                              <td>1.986,13 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>2021M04</td>
+                              <td class="d-none d-sm-table-cell">25.05.2021</td>
+                              <td class="d-none d-sm-table-cell">08.06.2021</td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>2.546,69 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell"><span
+                                  class="material-icons-outlined clr-danger">download_for_offline</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>2021M03</td>
+                              <td class="d-none d-sm-table-cell">25.04.2021</td>
+                              <td class="d-none d-sm-table-cell"><span
+                                  class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span>
+                              </td>
+                              <td class="text-center">
+                                <!-- Tooltip -->
+                                <div class="tooltip_invoice">
+                                  <span class="pl-3 material-icons-outlined clr-danger">highlight_off</span>
+                                  <span class="text_invoice">
+                                    Auszahlung gesperrt!
+                                  </span>
+                                </div>
+                              </td>
+                              <td>1.768,66 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>2021M02</td>
+                              <td class="d-none d-sm-table-cell">25.03.2021</td>
+                              <td class="d-none d-sm-table-cell">26.05.2021</td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>1.730,66 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell"><span
+                                  class="material-icons-outlined clr-danger">download_for_offline</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>2021M01</td>
+                              <td class="d-none d-sm-table-cell">25.02.2021</td>
+                              <td class="d-none d-sm-table-cell">01.03.2021</td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>1.005,24 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>2020M12</td>
+                              <td class="d-none d-sm-table-cell">25.01.2021</td>
+                              <td class="d-none d-sm-table-cell">
+                                <span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span>
+                              </td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>3.957,78 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>2020M11</td>
+                              <td class="d-none d-sm-table-cell">25.12.2020</td>
+                              <td class="d-none d-sm-table-cell">05.01.2021</td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>414,47 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell"><span
+                                  class="material-icons-outlined clr-danger">download_for_offline</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>2020M10</td>
+                              <td class="d-none d-sm-table-cell">25.11.2020</td>
+                              <td class="d-none d-sm-table-cell">26.11.2020</td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>1.747,26 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>9</td>
+                              <td>2020M09</td>
+                              <td class="d-none d-sm-table-cell">25.10.2020</td>
+                              <td class="d-none d-sm-table-cell">
+                                <span class="pl-3 material-icons-outlined clr-danger">mark_email_unread</span>
+                              </td>
+                              <td class="text-center"><span
+                                  class="pl-3 material-icons-outlined clr-success">check_circle_outline</span>
+                              </td>
+                              <td>1.805,37 €</td>
+                              <td>
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" rel="noopener noreferrer";>
+                                <span class="material-icons-outlined clr-danger">visibility</span>
+                                </a>
+                              </td>
+                              <td class="d-none d-sm-table-cell">
+                                <a href="img/Provisionsabrechnung_Anna_Hartung.pdf" target="_blank" download>
+                                <span class="material-icons-outlined clr-danger">download_for_offline</span>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <!-- second mobile menu -->
-            <div class="row secon_mobile_menu d-flex d-md-none">
-                <div class="col">
-                    <button class="btn btn_custom">
-                        <i class="fas fa-home"></i>
-                    </button>
+                <div class="fixed-table-pagination">
+                  <div class="float-right pagination-detail">
+                    <div class="page-list t1-footer">
+                      <div class="btn-group dropdown dropup">
+                        <button class="btn btn-secondary-lg btn-secondary-sm dropdown-toggle" type="button"
+                          data-toggle="dropdown">
+                          <span class="page-size">
+                            10
+                          </span>
+                          <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item active" href="#">10</a>
+                          <a class="dropdown-item " href="#">25</a>
+                          <a class="dropdown-item " href="#">50</a>
+                          <a class="dropdown-item " href="#">100</a>
+                        </div>
+                      </div> <span class="d-none d-sm-inline-block">pro Seite</span>
+                    </div>
+                  </div>
+                  <div class="float-left">
+                    <ul class="t1-footer flex-wrap pagination">
+                      <li class="page-item page-pre">
+                        <a class="page-link" aria-label="previous page" href="javascript:void(0)">‹</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" aria-label="to page 1" href="javascript:void(0)">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" aria-label="to page 2" href="javascript:void(0)">2</a>
+                      </li>
 
+                      <li class="page-item page-last-separator disabled"><a class="page-link" aria-label=""
+                          href="javascript:void(0)">...</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" aria-label="to page 80"
+                          href="javascript:void(0)">80</a>
+                      </li>
+                      <li class="page-item page-next"><a class="page-link" aria-label="next page"
+                          href="javascript:void(0)">›</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col">
-                    <button class="btn btn_custom active">
-                        <i class="fas fa-shopping-cart"></i>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn_custom">
-                        <i class="fas fa-user-friends"></i>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn_custom">
-                        <i class="fas fa-sign-in-alt"></i>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn_custom">
-                        <i class="fas fa-gift"></i>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="btn btn_custom">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
+              </div>
             </div>
-            <!--END second mobile menu -->
+          </div>
+        </div>
 
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- END content -->
 
-            <script src="js/all.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-                integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-                crossorigin="anonymous"></script>
+      </div>
+      <!-- END cntent wrap -->
+
+      <!-- second mobile menu -->
+      <div class="row secon_mobile_menu d-flex d-md-none">
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-home"></i>
+          </button>
+
+        </div>
+        <div class="col">
+          <button class="btn btn_custom active">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-user-friends"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-gift"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+      </div>
+      <!--END second mobile menu -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      <script src="js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

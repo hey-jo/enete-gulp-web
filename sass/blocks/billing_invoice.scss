@@ -1,0 +1,31 @@
+.invoice_filter{
+  align-self: center;
+
+  .period{ 
+    font-weight:bold;
+    align-self: center;
+    padding-bottom: 15px;
+   }
+
+   .til{ 
+    font-weight:bold;
+    align-self: center;
+    padding-bottom: 20px;
+   }
+   .btn-invoice{ 
+    height: 38px;
+    width: 20%;
+   }
+
+   .tariff_action{
+     padding-bottom: 0px;
+
+     @media screen and (min-width: 768px){
+      justify-content: start;
+     }
+     
+   }
+
+ 
+}
+
