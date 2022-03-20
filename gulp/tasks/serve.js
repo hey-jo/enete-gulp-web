@@ -10,7 +10,7 @@ module.exports = function () {
     // $.gulp.watch('include_html/*.html', $.gulp.series('html'));
     $.gulp.watch('js/**/*.js', $.gulp.series('scripts'));
     $.gulp.watch('css/**/*.css', $.gulp.series('css'));
-    $.gulp.watch('img/**/*.{png,jpg,svg}', $.gulp.series('allimg'));
+    $.gulp.watch('img/**/*.{png,jpg,svg,pdf}', $.gulp.series('allimg'));
     $.gulp.watch('img/**/*.{svg}', $.gulp.series('svg'));
   });
 };

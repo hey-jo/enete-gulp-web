@@ -1,24 +1,24 @@
 .invoice_filter{
-  align-self: center;
+  align-self: end;
 
   .period{ 
     font-weight:bold;
-    align-self: center;
-    padding-bottom: 15px;
+    align-self: start;
+    padding-top: 10px;
    }
 
    .til{ 
     font-weight:bold;
     align-self: center;
-    padding-bottom: 20px;
+    padding-bottom: 3rem;
    }
    .btn-invoice{ 
     height: 38px;
     width: 20%;
    }
 
-   .tariff_action{
-     padding-bottom: 0px;
+  .tariff_action{
+    padding-bottom: 0px;
 
      @media screen and (min-width: 768px){
       justify-content: start;
@@ -26,6 +26,18 @@
      
    }
 
- 
+  .form-control .basic{ 
+    background: none;
+  }
+
 }
+
+@media (min-width: 570px) and (max-width: 6650px){
+  table.invoice td.disabled {
+    
+    display: none;
+    
+  }
+}
+
 
