@@ -5,7 +5,7 @@
   .period{ 
     font-weight:bold;
     align-self: start;
-    padding-top: 10px;
+    padding-top: 8px;
    }
 
    .til{ 
@@ -32,6 +32,8 @@
   }
 
 }
+
+.invoice_filter span,.til{  padding-top: 5px;  }
 
 @media (min-width: 570px) and (max-width: 6650px){
   table.invoice td.disabled {
