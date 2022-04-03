@@ -18,6 +18,11 @@
     width: 20%;
    }
 
+   .btn-report{ 
+    height: 38px;
+    width: 33%;
+   }
+
   .tariff_action{
     padding-bottom: 0px;
 
@@ -40,6 +45,35 @@
     
     display: none;
     
+  }
+}
+
+.invoice_filter .tariff_action .tariff_action_switch{
+
+  i{
+      margin-left: 8px;
+      @media screen and (max-width: 980px){
+          display: none;
+      }
+  }
+
+  a{
+    color: #7D1120;
+
+    &:hover{
+      background-color: #7D1120;
+      color: #fff;
+    }
+
+  }
+
+  &:focus{
+    outline: 0px;
+  }
+
+  &:hover{
+      background-color: #7D1120;
+      color: #fff;
   }
 }
 
