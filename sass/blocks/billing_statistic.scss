@@ -1,0 +1,106 @@
+.career-cards {
+
+  &.row-partner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    
+  }
+
+  &>.partner-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px;
+
+    background: #FBE1CD;
+    border-radius: 16px;
+
+    &.btn-partner{
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 20px;
+    }
+
+    
+
+  }
+
+  .count {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+  
+    letter-spacing: -0.02em;
+  
+    /* Basic / 700 */
+  
+    color: #2E3A59;
+  
+  
+    /* Inside auto layout */
+  
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .level{
+    /* Bold 40 (1 px) */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    /* Info/400 */
+
+    color: #5A80E0;
+
+    &.climb-left{
+      animation: uparrow 2.2s infinite alternate ease-out;
+      opacity:0.2;
+    }
+
+    &.climb-right{
+      animation: downarrow 2.2s infinite alternate ease-out;
+      opacity:0.2;
+    }
+
+    @keyframes uparrow {
+      0% { 
+        -webkit-opacity: 0.9;
+        opacity: 0.9;
+      }
+      100% {
+        -webkit-opacity: 0.4; 
+         opacity: 0.4; 
+        }
+    }
+
+    @keyframes downarrow {
+      0% { 
+        -webkit-opacity: 0.9;
+        opacity: 0.9;
+      }
+      100% {
+        -webkit-opacity: 0.4; 
+         opacity: 0.4; 
+        }
+    }
+  }
+ 
+
+}
+
+
+
+
