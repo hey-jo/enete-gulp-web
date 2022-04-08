@@ -97,6 +97,16 @@
         }
     }
   }
+
+  .progress .bg-primary-400 { border-radius: 16px; background-color: #B13E43; }
+
+  .progress .bg-i-400 { border-radius: 16px; background-color: #5A80E0; }
+
+  a { color: $clr-b700; 
+    
+    &:hover{ text-decoration:none; color: $clr-primary; }
+  
+  }
  
 
 }
