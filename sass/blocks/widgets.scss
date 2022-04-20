@@ -204,3 +204,47 @@
       --p: 18000;
     }
   }
+
+  .contract_statistic{
+
+    .badge-default {
+      background-color: #999999;
+    }
+    
+    .badge-primary {
+      background-color: #428bca;
+    }
+    
+    .badge-success {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #3CC13B;
+      color: #3CC13B;
+    }
+    
+    .badge-info {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #3E66FB;
+      color: #3E66FB;
+    }
+    
+    .badge-warning {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F03738;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #F3BB1C;
+      color: #F3BB1C;
+    }
+    
+    .badge-danger {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: #F03738;
+      color: #F03738;
+    }
+
+  }

@@ -244,15 +244,15 @@
           <div class="col bread_krums bg-transparent">Kundenportal</div>
         </div>
         <div class="row widget_row align-items-center">
-          <div class="col-xl-6 col-md-12 widget_col card-deck">
+          <div class="col-xl-5 col-lg-6 col-md-12 widget_col card-deck">
             <div class="col-xl-12 col-lg-12 widget_col">
               <a href="/billing_invoice.html" class="widget_wrapp active bg-white">
                 <div class="widget_icon_1_wrapp">
                   <i class="fas fa-file-invoice"></i>
                 </div>
                 <div class="widget_content">
-                  <span class="widget_name">Abrechnungen</span>
-                  <span class="widget_desc d-none d-md-block">Meine Provisionsabrechnungen einsehen.</span>
+                  <span class="widget_name">Verträge</span>
+                  <span class="widget_desc d-none d-md-block">Kundenverwaltung und Auftragsübersicht.</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
@@ -267,8 +267,8 @@
                   <i class="fas fa-file"></i>
                 </div>
                 <div class="widget_content">
-                  <span class="widget_name">Jahresabschluss</span>
-                  <span class="widget_desc d-none d-md-block">Auszahlungsliste für die Buchhaltung nach Zeitraum
+                  <span class="widget_name">Termine</span>
+                  <span class="widget_desc d-none d-md-block">Termine überwachen und anlegen
                     Jahr</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
@@ -284,8 +284,8 @@
                   <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="widget_content">
-                  <span class="widget_name">Statistik</span>
-                  <span class="widget_desc d-none d-md-block">Von Anfang an richtig planen
+                  <span class="widget_name">Geburtstage</span>
+                  <span class="widget_desc d-none d-md-block">Kundengeburtage nicht verpassen
                     Jahr</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
@@ -294,66 +294,63 @@
               </a>
             </div>
           </div>
-          <div class="col-xl-6 col-md-12 widget_col card-deck 1min-vh-100">
+          <div class="col-xl-5 col-lg-6 col-md-12 float-right">
 
-            <div class="card-body">
-              <div class="card bg-white   container-flex">
-                <div class="p-3 border-bottom">
-                  <!-- title -->
-                  <div class="d-md-flex">
-                    <div class="wcard-title wcard-header">
-                      <h3 class="wcard-title mb-0">Provisionsübersicht</h3>
-                    </div>
-                    <div class="ms-auto">
-                      <div class="wcard-header">
-                        <span class="wcard-show px-2">Zeige</span>
-                        <select class="form-control border-0 custom_input clr-primary mb-0">
-                          <option value="0" selected="">6 Monate</option>
-                          <option value="1">12 Monate</option>
-                          <option value="2">letztes Jahr</option>
-                          <option value="3">alle</option>
-                        </select>
+            <div class="">
+              <div class="">
+                  <div class="">
+                      <div class="col-xl-12 col-md-12">
+                          <div class="card">
+                            <div class="card-header bg-transparent p-3">
+                              <div class="d-md-flex">
+                                <div class="wcard-title wcard-header">
+                                  <h3 class="wcard-title mb-0">Statistik</h3>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="card-body">
+                                  <div class="contract_statistic">
+                                      <table class="table mb-0">
+                                          <tbody>
+                                              <tr>
+                                                  <td class="pl-0 border-0">Notwendige Nachbearbeitung</td>
+                                                  <td class="pr-0 border-0 text-right">
+                                                      <div class="badge badge-danger badge-pill">7</div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="pl-0">Erneuter Wechsel möglich</td>
+                                                  <td class="pr-0 text-right">
+                                                      <div class="badge badge-success badge-pill">278</div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="pl-0">Stornierte Aufträge</td>
+                                                  <td class="pr-0 text-right">
+                                                      <div class="badge badge-danger badge-pill">4</div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="pl-0">Eingereichte Aufträge im September</td>
+                                                  <td class="pr-0 text-right">
+                                                      <div class="badge badge-info badge-pill">45</div>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td class="pl-0">im Entwurf</td>
+                                                  <td class="pr-0 text-right">
+                                                      <div class="badge badge-warning badge-pill">12</div>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                  <!-- title end -->
-                </div>
-                <table class="graph mt-3 card-body mh-50">
-                  <thead>
-                    <tr>
-                      <th scope="row" class="text-right pr-3">Provision</th>
-                      <th scope="row">Monat</th>
-                    </tr>
-                  </thead>
-                  <tbody class="mt-0 h-50">
-                    <tr style="height:43%">
-                      <th scope="row">435 €</th>
-                      <td class="prim-25"><span>Jan</span></td>
-                    </tr>
-                    <tr style="height:73%">
-                      <th scope="row">734 €</th>
-                      <td><span>Feb</span></td>
-                    </tr>
-                    <tr style="height:87%">
-                      <th scope="row">807 €</th>
-                      <td><span>Apr</span></td>
-                    </tr>
-                    <tr style="height:58%">
-                      <th scope="row">580 €</th>
-                      <td class="prim-25"><span>Mai</span></td>
-                    </tr>
-                    <tr style="height:22%">
-                      <th scope="row">220 €</th>
-                      <td class="prim-15"><span>Jun</span></td>
-                    </tr>
-                    <tr style="height:12%">
-                      <th scope="row">120 €</th>
-                      <td class="prim-10"><span>Jul</span></td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
-            </div>
+          </div>
 
           </div>
         </div>
