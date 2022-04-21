@@ -207,6 +207,25 @@
 
   .contract_statistic{
 
+    .customer_selection{
+
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 16px;
+      color: #2E3A59;
+      @media screen and (max-width: 580px){
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+
+        .material-icons-outlined{font-size: 22px;}
+      }
+    }
+
     .badge-default {
       background-color: #999999;
     }
@@ -232,19 +251,19 @@
     }
     
     .badge-warning {
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F03738;
-      border-radius: 10px;
-      border: 1px solid;
-      border-color: #F3BB1C;
-      color: #F3BB1C;
-    }
-    
-    .badge-danger {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
       border-radius: 10px;
       border: 1px solid;
-      border-color: #F03738;
-      color: #F03738;
+      border-color: $clr-warning;
+      color: $clr-warning;
+    }
+    
+    .badge-danger {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F03738;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color: $clr-danger;
+      color: $clr-danger;
     }
 
   }

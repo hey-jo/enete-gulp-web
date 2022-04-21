@@ -680,8 +680,12 @@ color: #7d1120;
 }
 
 // Modal Body Abstände entfernen aus Energie-Rechner-Modal
-.modal-body {
+.hw-popup{
+
+    &.modal-body {
     padding: 0px;
+    }
+
 }
 
 .hw-body-area {

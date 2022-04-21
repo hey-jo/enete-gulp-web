@@ -244,7 +244,7 @@
           <div class="col bread_krums bg-transparent">Kundenportal</div>
         </div>
         <div class="row widget_row align-items-center">
-          <div class="col-xl-5 col-lg-6 col-md-12 widget_col card-deck">
+          <div class="col-xl-5 col-lg-7 col-md-12 widget_col card-deck">
             <div class="col-xl-12 col-lg-12 widget_col">
               <a href="/billing_invoice.html" class="widget_wrapp active bg-white">
                 <div class="widget_icon_1_wrapp">
@@ -252,13 +252,14 @@
                 </div>
                 <div class="widget_content">
                   <span class="widget_name">Verträge</span>
-                  <span class="widget_desc d-none d-md-block">Kundenverwaltung und Auftragsübersicht.</span>
+                  <span class="widget_desc d-none d-md-block">
+                    Kundenverwaltung und Auftragsübersicht.
+                  </span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
                 </div>
               </a>
-
             </div>
 
             <div class="col-xl-12 col-lg-12 widget_col">
@@ -268,25 +269,24 @@
                 </div>
                 <div class="widget_content">
                   <span class="widget_name">Termine</span>
-                  <span class="widget_desc d-none d-md-block">Termine überwachen und anlegen
-                    Jahr</span>
+                  <span class="widget_desc d-none d-md-block">
+                    Termine überwachen und anlegen.</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
                 </div>
               </a>
-
             </div>
 
             <div class="col-xl-12 col-lg-12 widget_col">
               <a href="/billing_statistic.html" class="widget_wrapp active bg-white">
                 <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-chart-line"></i>
+                  <i class="fas fa-birthday-cake"></i>
                 </div>
                 <div class="widget_content">
                   <span class="widget_name">Geburtstage</span>
-                  <span class="widget_desc d-none d-md-block">Kundengeburtage nicht verpassen
-                    Jahr</span>
+                  <span class="widget_desc d-none d-md-block">
+                    Kundengeburtstage nicht verpassen.</span>
                 </div>
                 <div class="widget_icon_2_wrapp">
                   <i class="fas fa-chevron-right"></i>
@@ -294,67 +294,70 @@
               </a>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-6 col-md-12 float-right">
-
-            <div class="">
-              <div class="">
-                  <div class="">
-                      <div class="col-xl-12 col-md-12">
-                          <div class="card">
-                            <div class="card-header bg-transparent p-3">
-                              <div class="d-md-flex">
-                                <div class="wcard-title wcard-header">
-                                  <h3 class="wcard-title mb-0">Statistik</h3>
-                                </div>
-                              </div>
-                            </div>
-                              <div class="card-body">
-                                  <div class="contract_statistic">
-                                      <table class="table mb-0">
-                                          <tbody>
-                                              <tr>
-                                                  <td class="pl-0 border-0">Notwendige Nachbearbeitung</td>
-                                                  <td class="pr-0 border-0 text-right">
-                                                      <div class="badge badge-danger badge-pill">7</div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="pl-0">Erneuter Wechsel möglich</td>
-                                                  <td class="pr-0 text-right">
-                                                      <div class="badge badge-success badge-pill">278</div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="pl-0">Stornierte Aufträge</td>
-                                                  <td class="pr-0 text-right">
-                                                      <div class="badge badge-danger badge-pill">4</div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="pl-0">Eingereichte Aufträge im September</td>
-                                                  <td class="pr-0 text-right">
-                                                      <div class="badge badge-info badge-pill">45</div>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <td class="pl-0">im Entwurf</td>
-                                                  <td class="pr-0 text-right">
-                                                      <div class="badge badge-warning badge-pill">12</div>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+          <div class="col-xl-5 col-lg-5 col-md-12 offset-xl-1">
+            <div class="col-xl-12 col-md-12">
+              <div class="card mb-3">
+                <div class="card-header bg-transparent p-3">
+                  <div class="d-md-flex">
+                    <div class="wcard-title wcard-header">
+                      <h3 class="wcard-title mb-0">Statistik</h3>
+                    </div>
                   </div>
+                </div>
+                <div class="card-body">
+                  <div class="contract_statistic">
+                    <table class="table mb-0">
+                      <tbody class="customer_selection">
+                        <tr>
+                          <td class="pl-0 border-0">
+                            <span class="pr-1 material-icons-outlined clr-danger">warning</span>
+                            Notwendige Nachbearbeitung
+                          </td>
+                          <td class="pr-0 border-0 text-center">
+                            <div class="badge badge-danger badge-pill">7</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <span class="pr-1 material-icons-outlined clr-succes">done_all</span>
+                            Erneuter Wechsel möglich</td>
+                          <td class="pr-0 text-center">
+                            <div class="badge badge-success badge-pill">278</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <span class="pr-1 material-icons-outlined clr-danger">block</span>
+                            Stornierte Aufträge</td>
+                          <td class="pr-0 text-center">
+                            <div class="badge badge-danger badge-pill">4</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <span class="pr-1 material-icons-outlined clr-i400">forward_to_inbox</span>
+                            Eingereichte Aufträge im September</td>
+                          <td class="pr-0 text-center">
+                            <div class="badge badge-info badge-pill">45</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="pl-0">
+                            <span class="pr-1 material-icons-outlined clr-warning">local_parking</span>
+                            Geparkte Aufträge
+                          </td>
+                          <td class="pr-0 text-center">
+                            <div class="badge badge-warning badge-pill">12</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-          </div>
-
+            </div>
           </div>
         </div>
-
       </div>
       <!-- END content -->
     </div>
