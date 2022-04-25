@@ -1,0 +1,175 @@
+.customer_contracts{
+
+  //später ausschalten oder ändern
+  .filter-wrap {
+    max-width: 930px;
+    padding: 30px 0 0;
+  }
+
+  //später ausschalten oder ändern
+  .content-section{
+    max-width: 900px;
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+
+  .form-line {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .filter{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 0 30px 30px;
+  }
+
+  .status-groups {
+    margin-bottom: 30px;
+  }
+
+  .status-groups__item-wrap {
+    position: relative;
+    margin-right: 15px;
+  }
+
+  .status-groups__item-wrap [type="checkbox"] {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    line-height: normal;
+  }
+
+  input {
+    border: 1px solid #ccddec;
+    border-radius: 4px;
+    padding-left: 10px;
+    height: 36px;
+    width: 100%;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0 transparent;
+  }
+
+  .status-groups__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 14px;
+    border: 1px solid #008eff;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #233b50;
+    white-space: nowrap;
+  }
+
+  .status-groups__item-wrap 
+  [type="checkbox"]:checked+.status-groups__item{
+    background-color: #008eff;
+    color: #fff;
+  }
+
+  .filter .search-line {
+    margin-bottom: 40px;
+  }
+
+  .filter .search-line .filter-number {
+    position: relative;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .filter .search-line .form-cell {
+    margin-right: 0;
+  }
+
+  .filter .form-cell {
+    margin-right: 15px;
+  }
+
+  .form-cell {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 25px;
+    border: 0;
+  }
+
+  .filter .search-line .filter-number .icon-view {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    font-size: 18px;
+    color: #c2d1dc;
+  }
+
+  [class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .filter .search-line .form-cell label {
+    display: block; // hier muss none rein, nach debug
+
+    @media (max-width: 640px){display: block;}
+  }
+
+  .form-cell label {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #233b50;
+  }
+
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .filter .search-line .filter-number input {
+    padding-left: 30px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .filter .search-line input {
+    border-right: 0;
+    border-radius: 0;
+  }
+
+  .form-cell input {
+    font-size: 15px;
+    font-weight: 600;
+    color: #233b50;
+  }
+
+
+}

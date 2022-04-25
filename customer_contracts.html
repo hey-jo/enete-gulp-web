@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+
+  <title>Hello, world!</title>
+</head>
+<!-- End Head -->
+
+<body>
+  <div class="container-fluid" style="height: 100%;">
+    <!-- Block Header -->
+    <header class="row header">
+      <!-- Logo Desktop -->
+      <div class="col-3 d-none d-xl-block">
+        <div class="logo_wrap_desk">
+          <img class="logo_desk" alt="Logo" src="img/logo.svg">
+        </div>
+      </div>
+      <!-- Logo Desktop Ende-->
+
+      <!-- Logo iPad -->
+      <div class="col-2 d-none d-md-block d-xl-none">
+        <div class="logo_wrap_ipad">
+          <img class="logo_ipad" alt="Logo" src="img/logo_klein.svg">
+        </div>
+      </div>
+      <!-- Logo iPad Ende -->
+      <!-- Search and Favoriten iPad / Desktop-->
+      <div class="col-7 col-xl-7 d-none d-md-block">
+        <div class="wrap_search_and_fav_ipad_desk">
+          <!-- Search iPad -->
+          <button class="btn search_ipad d-none d-md-block d-xl-none">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- Search iPad END -->
+          <!-- Search Desk -->
+          <div class="d-none d-xl-block">
+            <div class="form-group has-search ">
+              <input type="text" class="form-control" placeholder="SUCHE...">
+              <span class="fa fa-search form-control-feedback"></span>
+            </div>
+          </div>
+          <!-- Search Desk -->
+          <div class="fav_ipad">
+            <button type="button" class="btn btn-outline-white">
+              <i class="fas fa-star"></i>
+              <span class="btn_name_ipad">Provision</span>
+            </button>
+            <button type="button" class="btn btn-outline-white">
+              <i class="fas fa-star"></i>
+              <span class="btn_name_ipad">Statistik</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search and favoriten iPad Ende -->
+
+      <div class="col-3 col-xl-2 d-none d-md-block">
+        <div class="user_and_logut_wrap_ipad_desk">
+          <button class="btn btn-outline-white"><i class="far fa-user"></i></button>
+          <button class="btn btn-outline-white"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+      </div>
+
+      <!-- Bock Navigation Mobile -->
+      <div class="col-4 d-block d-md-none">
+        <nav class="navbar navbar-expand-md navbar-light custom_mobil_nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+      <!-- Bock Navigation Mobile Ende -->
+
+      <!-- Block Title Mobil-->
+      <div class="col-4 header_title_wrapp d-block d-md-none">
+        <span class="header_title">Dashboard</span>
+      </div>
+      <!-- Block Title Mobil Ende-->
+
+      <!-- Block Bell and Logo Mobil-->
+      <div class="col-4 d-block d-md-none">
+        <div class="logo_and_ball">
+          <div class="bell_wrapp">
+            <i class="fas fa-bell"></i>
+            <span class="bell_circle"></span>
+          </div>
+          <div class="logo_wrapp">
+            <img class="logo" alt="Logo" src="img/logo_klein.svg">
+          </div>
+        </div>
+      </div>
+      <!-- Block Bell and Logo Mobil Ende -->
+    </header>
+    <!-- Block Header Ende -->
+
+    <!-- Menu Mobil -->
+    <div class="row mobile_menu_collapse">
+      <div class="col collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Mobil Ende -->
+
+    <!-- cntent wrap-->
+    <div class="row content_wrap overflow-hidden">
+      <!-- ipad & desc Main menu -->
+      <div class="nav_wrap d-none d-md-flex">
+        <nav class="sidebar_menu">
+          <ul class="list-unstyled components">
+            <li>
+              <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a> -->
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/index.html">
+                  <i class="fas fa-home menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Home</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="product_selection.html">
+                  <i class="fas fa-shopping-cart menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Produkte</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-user-friends menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Kundenportal</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-sign-in-alt menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Vertriebsportal</span>
+                </a>
+                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
+                  data-toggle="collapse" data-target="#vertriebSubmenu" aria-controls="vertriebSubmenu"
+                  aria-expanded="false"></button>
+              </div>
+              <ul class="collapse list-unstyled" id="vertriebSubmenu">
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-home sub_menu_icon"></i>
+                      <span class="sub_menu_title">Mein Team</span>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-home sub_menu_icon"></i>
+                      <span class="sub_menu_title">Statistik</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/incentives_selection.html">
+                  <i class="fas fa-gift menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Incentives</span>
+                </a>
+                <button class="btn sub_menu_togle dropdown-toggle d-none d-xl-block" type="button"
+                  data-toggle="collapse" data-target="#incentivesSubmenu" aria-controls="incentivesSubmenu"
+                  aria-expanded="false"></button>
+              </div>
+              <ul class="collapse list-unstyled" id="incentivesSubmenu">
+                <li>
+                  <div class="sub_menu_item_wrap">
+                    <a class="sub_menu_item" href="#">
+                      <i class="fas fa-briefcase sub_menu_icon"></i>
+                      <span class="sub_menu_title">Team Ranking</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-bookmark menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Bildung</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-user-plus menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Vision Club</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="#">
+                  <i class="fas fa-camera menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Galerie</span>
+                </a>
+              </div>
+            </li>
+            <li class="active">
+              <div class="menu_item_wrap">
+                <a class="menu_item" href="/billing_selection.html">
+                  <i class="fas fa-credit-card menu_icon"></i>
+                  <span class="menu_title d-none d-xl-block">Abrechnungen</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- END ipad & desc Main menu -->
+
+      <!-- content -->
+      <div class="ene_content col content">
+        <div class="row">
+          <div class="col bread_krums d-none d-md-block">Meine Verträge</div>
+        </div>
+
+        <div class="123">
+          <div class="col-xs-12">
+            <div class="customer_contracts filter">
+              <div class="content-section filter-wrap js-filter-wrap">
+                <form id="filterContracts" class="filter" action="/partner-area/contracts/ ">
+                    <div class="form-line status-groups js-statuses">
+                        <div class="status-groups__item-wrap">
+                            <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress" data-bind="filter_group_in_progress">
+                            <span class="status-groups__item">Im Wechselprozess</span>
+                        </div>
+
+                        <div class="status-groups__item-wrap">
+                            <input type="checkbox" class="js-statuses-checkbox single" id="group-positive" data-bind="filter_group_positive">
+                            <span class="status-groups__item">Wechsel positiv</span>
+                        </div>
+
+                        <div class="status-groups__item-wrap">
+                            <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress" data-bind="filter_group_post_processing">
+                            <span class="status-groups__item">Nachbearbeitung</span>
+                        </div>
+
+                        <div class="status-groups__item-wrap">
+                            <input type="checkbox" class="js-statuses-checkbox single" id="group-post-processing" data-bind="filter_all_storno">
+                            <span class="status-groups__item">Storno</span>
+                        </div>
+
+                        <div class="status-groups__item-wrap">
+                            <input type="checkbox" class="js-statuses-checkbox all">
+                            <span class="status-groups__item">Alle Statusmeldungen</span>
+                        </div>
+                    </div>
+
+                    <div class="form-line search-line">
+                        <div class="form-cell filter-number">
+                            <span class="icon-view"></span>
+                            <label>Auftr. Nr., Zähler-Nr., Name, Externe Nr.:</label>
+                            <input type="text" id="filter_search" name="filter[search]" placeholder="Auftr. Nr., Zähler-Nr., Name, Externe Nr." class="">
+                        </div>
+
+                        <div class="form-cell">
+                            <label>PLZ:</label>
+                            <input type="text" id="filter_zip" name="filter[zip]" placeholder="PLZ" class="filter-zip">
+                        </div>
+
+
+                        <div class="form-cell">
+                            <label>Energieversorger:</label>
+                            <input type="text" id="filter_company" name="filter[company]" placeholder="Energieversorger" class="filter-company company-autocomplete-field ui-autocomplete-input" autocomplete="off">
+                        </div>
+
+                        <div class="select-period js-select-period">
+                            <label>Kalendar:</label>
+
+                            <div class="input-wrap">
+                                <input type="text" class="js-filter-range">
+                                <span class="icon-calendar"></span>
+                            </div>
+
+                            <div style="display: none;">
+                                <input type="text" id="filter_from" name="filter[from]" class="select-date js-filter-from" value="26.03.2022">
+                                <input type="text" id="filter_to" name="filter[to]" class="select-date js-filter-to" value="25.04.2022">
+                            </div>
+                        </div>
+
+                            <button type="submit" id="filter_save" name="filter[save]" class="search-line__btn">Suchen</button>
+
+                    </div>
+
+                    <div class="expanded-options js-expanded-options">
+                        <div class="form-line flex-wrap">
+                            <div class="form-cell filter-status">
+                                <div class="custom-select">
+                                    <button class="select" type="button" id="statusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Auftragsstatus <span class="count" title="">(0)</span>
+                                    </button>
+                                    <ul id="filter_companyStatusCbx" class="dropdown-menu" aria-labelledby="statusDropdown">
+                                        <li>
+                                            <input type="checkbox" id="filter_group_draft" name="filter[group_draft]" class="" value="1">
+                                            <label for="filter_group_draft" class="status-group-draft">
+                                                <span></span>
+                                                Entwurf
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_new" name="filter[group_new]" class="" value="1">
+                                            <label for="filter_group_new" class="status-group-new">
+                                                <span></span>
+                                                vom VP erfasst
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_ready_sending" name="filter[group_ready_sending]" class="" value="1">
+                                            <label for="filter_group_ready_sending" class="status-group-ready_sending">
+                                                <span></span>
+                                                Bereit zur Übertragung
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_sending" name="filter[group_sending]" class="" value="1">
+                                            <label for="filter_group_sending" class="status-group-sending">
+                                                <span></span>
+                                                In Übertragung
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_in_progress" name="filter[group_in_progress]" class="" value="1">
+                                            <label for="filter_group_in_progress" class="status-group-in_progress">
+                                                <span></span>
+                                                Im Wechselprozess
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_positive" name="filter[group_positive]" class="" value="1">
+                                            <label for="filter_group_positive" class="status-group-positive">
+                                                <span></span>
+                                                Wechsel positiv
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_post_processing" name="filter[group_post_processing]" class="" value="1">
+                                            <label for="filter_group_post_processing" class="status-group-post_processing">
+                                                <span></span>
+                                                Notwendige Nachbearbeitung durch VP
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_extend" name="filter[group_extend]" class="" value="1">
+                                            <label for="filter_group_extend" class="status-group-extend">
+                                                <span></span>
+                                                Vertrag hat sich verlängert
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_negative" name="filter[group_negative]" class="" value="1">
+                                            <label for="filter_group_negative" class="status-group-negative">
+                                                <span></span>
+                                                Wechsel negativ (alle)
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_all_storno" name="filter[all_storno]" class="head-cbx" value="1">
+                                            <label for="filter_all_storno" class="status-group-negative head-label">
+                                                <span></span>
+                                                Storno:
+                                            </label>
+                                            <ul class="sub-status">
+                                                <li>
+                                                    <input type="checkbox" id="filter_status_22" name="filter[status_22]" class="" value="1">
+                                                    <label for="filter_status_22" class="status-group-negative">
+                                                        <span></span>
+                                                            Boni negativ
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="filter_status_20" name="filter[status_20]" class="" value="1">
+                                                    <label for="filter_status_20" class="status-group-negative">
+                                                        <span></span>
+                                                            Vertragsbindung beim Vorversorger
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="filter_status_18" name="filter[status_18]" class="" value="1">
+                                                    <label for="filter_status_18" class="status-group-negative">
+                                                        <span></span>
+                                                            Widerruf des Auftrages
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_technical_cancel" name="filter[group_technical_cancel]" class="" value="1">
+                                            <label for="filter_group_technical_cancel" class="status-group-technical_cancel">
+                                                <span></span>
+                                                Technisches Storno
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_immutable" name="filter[group_immutable]" class="" value="1">
+                                            <label for="filter_group_immutable" class="status-group-immutable">
+                                                <span></span>
+                                                Interne Statusmeldungen
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="filter_group_expired" name="filter[group_expired]" class="" value="1">
+                                            <label for="filter_group_expired" class="status-group-expired">
+                                                <span></span>
+                                                Vertrag beendet
+                                            </label>
+                                        </li>
+                                        <li class="text-right">
+                                            <button class="btn btn-success dismiss" type="button">Wählen</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-cell filter-energy-type">
+                                <label class="custom-select">
+                                    <select id="filter_energyType" name="filter[energyType]" class=""><option value="">Typ</option><option value="electro">Strom</option><option value="gas">Gas</option><option value="heat">Wärme</option></select>
+                                </label>
+                            </div>
+
+                            <div class="form-cell filter-provision">
+                                <label class="custom-select">
+                                    <select id="filter_provision" name="filter[provision]" class=""><option value="">Provision</option><option value="open">Offen</option><option value="paid">Ausgezahlt</option><option value="will_be_taken">Wird zurückbelastet</option><option value="taken">Zurückbelastet</option></select>
+                                </label>
+                            </div>
+
+                            <div class="form-cell filter-client-type">
+                                <label class="custom-select">
+                                    <select id="filter_clientType" name="filter[clientType]" class=""><option value="">Verbraucher</option><option value="client_type_private">privat</option><option value="client_type_commercial">gewerblich</option></select>
+                                </label>
+                            </div>
+
+                            <div class="form-cell filter-owner">
+                                <label class="custom-select">
+                                    <select id="filter_owner" name="filter[owner]" class=""><option value="self">Eigene Aufträge</option><option value="all">Alle Aufträge</option></select>
+                                </label>
+                            </div>
+
+                            <div class="form-cell filter-doc">
+                                <label class="custom-select">
+                                    <select id="filter_doc" name="filter[doc]" class=""><option value="">Dokument</option><option value="miss">Originalauftrag/Scan fehlt</option><option value="check">Originalauftrag/Scan wird geprüft</option><option value="check_invoice">Noch nicht geprüfte Kundenrechnungen</option><option value="rejected">Originalauftrag/Scan abgelehnt</option><option value="approve">Originalauftrag/Scan freigegeben</option><option value="on_sign">verschickt zur E-Unterschrift</option></select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-line mb40">
+                            <div class="form-cell">
+                                <input type="checkbox" id="filter_signed" name="filter[signed]" class="" value="1">
+                                <label for="filter_signed">
+                                    Blitz-Unterschrift
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   <div class="form-line space-between">
+                        <div class="trigger js-trigger-expanded-options">
+                            <span class="icon icon-options"></span>
+                            zusätzliche Optionen
+                        </div>
+                        <div class="form-cell only-without-later">
+                            <input type="checkbox" id="filter_onlyWithoutLater" name="filter[onlyWithoutLater]" class="" value="1">
+                            <label for="filter_onlyWithoutLater">
+                                Folgeauftrag nicht vorhanden
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-cell" style="display: none;">
+                        <label class="custom-select js-dateType-select">
+                            <select id="filter_dateType" name="filter[dateType]" class=""><option value="start">Auftragsdatum</option><option value="terminate">Vertragsende</option></select>
+                        </label>
+                    </div>
+
+                    
+
+                </form>
+
+
+                <div id="filterContractsOptions" class="selected-options" style="display: none;"> </div>
+            </div>
+            </div>
+            <div class="white-box">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- END content -->
+
+      </div>
+      <!-- END cntent wrap -->
+
+      <!-- second mobile menu -->
+      <div class="row secon_mobile_menu d-flex d-md-none">
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-home"></i>
+          </button>
+
+        </div>
+        <div class="col">
+          <button class="btn btn_custom active">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-user-friends"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-gift"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+      </div>
+      <!--END second mobile menu -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      <script src="js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
