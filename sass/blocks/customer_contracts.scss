@@ -7,34 +7,75 @@
   }
 
   //später ausschalten oder ändern
-  .content-section{
+  .content-section {
     max-width: 900px;
     margin-bottom: 25px;
     padding: 25px 30px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+    @media (max-width: 1200px){
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .form-line {
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px;
+
+    @media (max-width: 1200px){
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 640px){
+      flex-direction: column;
+    }
   }
 
-  .filter{
+  .form-line:last-child {
+    margin-bottom: 0;
+  }
+  
+  .form-line:empty {
+    display: none;
+  }
+
+  &.filter{
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     padding: 0 30px 30px;
+
+    @media (max-width: 1200px){
+      padding: 0 20px 30px;
+    }
+
+    @media (max-width: 940px){
+      padding: 0;
+    }
+
+    @media (max-width: 640px){
+      position: relative;
+    }
   }
 
   .status-groups {
     margin-bottom: 30px;
+
+    @media (max-width: 740px) { display: none; }
+
   }
 
   .status-groups__item-wrap {
     position: relative;
     margin-right: 15px;
+
+    @media (max-width: 940px){
+      &:first-child{ display: none; }
+    }
   }
 
   .status-groups__item-wrap [type="checkbox"] {
@@ -67,6 +108,11 @@
     -moz-appearance: none;
     appearance: none;
     outline: 0 transparent;
+
+    ::placeholder{ 
+      color: #7992a7;
+      font-size: 15px;
+    }
   }
 
   .status-groups__item {
@@ -83,7 +129,8 @@
   }
 
   .status-groups__item-wrap 
-  [type="checkbox"]:checked+.status-groups__item{
+  [type="checkbox"]:checked
+  +.status-groups__item{
     background-color: #008eff;
     color: #fff;
   }
@@ -100,10 +147,25 @@
 
   .filter .search-line .form-cell {
     margin-right: 0;
+
+    input::placeholder{
+      color: #7992a7;
+      font-weight: 400;
+
+      @media (max-width: 640px){
+        color: transparent;
+      }
+
+      
+    }
   }
 
   .filter .form-cell {
     margin-right: 15px;
+
+    @media (max-width: 640px){
+      margin-bottom: 20px;
+    }
   }
 
   .form-cell {
@@ -123,22 +185,10 @@
     color: #c2d1dc;
   }
 
-  [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
   .filter .search-line .form-cell label {
-    display: block; // hier muss none rein, nach debug
+    display: none; // hier muss none rein, nach debug
 
-    @media (max-width: 640px){display: block;}
+    @media (max-width: 640px){ display: block; }
   }
 
   .form-cell label {
@@ -155,21 +205,59 @@
     font-weight: bold;
   }
 
-  .filter .search-line .filter-number input {
+  .filter .search-line input {
     padding-left: 30px;
     border-radius: 4px 0 0 4px;
+    display: none;
+
+    @media (max-width: 640px){
+      padding-left: 10px;
+      display: block;
+    }
   }
 
   .filter .search-line input {
     border-right: 0;
     border-radius: 0;
+
+    @media (max-width: 640px){
+      width: 100%;
+      border-right: 1px solid #ccddec;
+      border-radius: 4px;
+    }
   }
 
   .form-cell input {
     font-size: 15px;
     font-weight: 600;
     color: #233b50;
+
+    &:empty{ color: red; }
+  }
+
+  .filter .search-line .filter-number {
+    position: relative;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .filter .search-line .filter-number .icon-view {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    font-size: 18px;
+    color: #c2d1dc;
+
+    @media (max-width: 640px){
+      display: none;
+    }
+  }
+
+  .form-control[disabled], .form-control[readonly], fieldset[disabled], input:disabled, textarea:disabled {
+    background-color: #f3f6f8 !important;
+    color: #5c6978 !important;
   }
 
 
 }
+
