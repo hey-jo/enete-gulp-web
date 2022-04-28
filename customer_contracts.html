@@ -14,6 +14,16 @@
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
 
+      <!-- Optional JavaScript -->
+
+      <!-- Start DateRangePicker -->
+      
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+      <!-- End Optional JavaScript -->
   <title>Hello, world!</title>
 </head>
 <!-- End Head -->
@@ -247,7 +257,7 @@
         <div class="123">
           <div class="col-xs-12">
             <div class="customer_contracts filter">
-              <div class="content-section filter-wrap js-filter-wrap">
+              <div class="content-section container-fluid filter-wrap js-filter-wrap">
                 <form id="filterContracts" class="filter" action="/partner-area/contracts/ ">
                     <div class="form-line status-groups js-statuses">
                         <div class="status-groups__item-wrap">
@@ -293,21 +303,71 @@
                             <label>Energieversorger:</label>
                             <input type="text" id="filter_company" name="filter[company]" placeholder="Energieversorger" class="filter-company company-autocomplete-field ui-autocomplete-input" autocomplete="off">
                         </div>
-
-                        <div class="select-period js-select-period">
+                        <div class="select-period js-select-period selectbox pull-right">
                             <label>Kalendar:</label>
 
                             <div class="input-wrap">
-                                <input type="text" class="js-filter-range">
-                                  <!-- <div>28.03.2022 - 27.04.2022</div> -->
-                                <span class="icon-calendar"></span>
+                                <input type="text" id="daterange" class="js-filter-range selectbox pull-right">
+                                <span class="icon-calendar fa fa-calendar pl-2 pt-1"></span>
+                                <input type="checkbox" id="grow">
+                                <label for="grow" class="grow">
+                                    <img src="/img/homebox3.png" width="180" height="371" alt="…">
+                                </label>
                             </div>
 
-                            <div style="display: none;">
+                            <div style="display:none;">
                                 <input type="text" id="filter_from" name="filter[from]" class="select-date js-filter-from" value="26.03.2022">
                                 <input type="text" id="filter_to" name="filter[to]" class="select-date js-filter-to" value="25.04.2022">
                             </div>
                         </div>
+                        <!-- Start Date Range Picker-->
+                        <script>
+                          $('#daterange').daterangepicker({
+                          "showDropdowns": true,
+                          "minYear": 2008,
+                          "maxYear": 2022,
+                          "autoApply": true,
+                          "locale": {
+                              "format": "DD.MM.YYYY",
+                              "separator": " - ",
+                              "applyLabel": "Apply",
+                              "cancelLabel": "Cancel",
+                              "fromLabel": "From",
+                              "toLabel": "To",
+                              "customRangeLabel": "Custom",
+                              "weekLabel": "W",
+                              "daysOfWeek": [
+                                  "SO",
+                                  "MO",
+                                  "DI",
+                                  "MI",
+                                  "DO",
+                                  "FR",
+                                  "SA"
+                              ],
+                              "monthNames": [
+                                  "Januar",
+                                  "Februar",
+                                  "März",
+                                  "April",
+                                  "Mai",
+                                  "Juni",
+                                  "Juli",
+                                  "August",
+                                  "September",
+                                  "Oktober",
+                                  "November",
+                                  "Dezember"
+                              ],
+                              "firstDay": 1
+                            },
+                            "startDate": "01/04/2022",
+                            "endDate": "28/04/2022"
+                          }, function(start, end, label) {
+                            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                          });
+                      </script>
+                        <!-- End Daten Range Picker -->
 
                             <button type="submit" id="filter_save" name="filter[save]" class="search-line__btn">Suchen</button>
 
@@ -560,6 +620,7 @@
       <!--END second mobile menu -->
 
       <!-- Optional JavaScript -->
+
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
       <script src="js/all.min.js"></script>

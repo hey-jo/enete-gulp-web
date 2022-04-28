@@ -2,14 +2,14 @@
 
   //später ausschalten oder ändern
   .filter-wrap {
-    max-width: 930px;
-    padding: 30px 0 0;
+    max-width: 9930px;
+    padding: 300px 0 0;
   }
 
   //später ausschalten oder ändern
   .content-section {
-    max-width: 900px;
-    margin-bottom: 25px;
+    max-width: 100%;
+    margin: 25px 0;
     padding: 25px 30px;
     background-color: #fff;
     border-radius: 3px;
@@ -103,8 +103,6 @@
     height: 36px;
     width: 100%;
     font-size: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     outline: 0 transparent;
 
@@ -152,6 +150,19 @@
         width: 100%; // !important prüfen
         overflow: visible;
       }
+
+      & input#grow { display: none; }
+
+      & label.grow { 
+        margin: 2em auto; 
+        max-width: 200px; 
+        transition: 1s; 
+        display: block; cursor: pointer;
+      }
+
+      & input#grow:checked + label.grow { max-width: 70%; }
+
+      &.open{ @media (max-width: 940px){ width: 220px; } }
 
       & label{
         display: none;
@@ -207,9 +218,9 @@
     }
 
     &-company {
-      width: 150px;
+      width: 300px;
 
-      @media (max-width: 940px){ width: 140px; }
+      @media (max-width: 1320px){ width: 140px; }
     }
 
   }
