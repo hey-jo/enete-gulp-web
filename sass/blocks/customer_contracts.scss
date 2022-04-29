@@ -143,6 +143,10 @@
       @media (max-width: 940px){
         width: 33px;
         transition: width .4s;
+
+        &:hover{
+          width: 200px;
+        }
       }
 
       @media (max-width: 640px){
@@ -150,17 +154,6 @@
         width: 100%; // !important prüfen
         overflow: visible;
       }
-
-      & input#grow { display: none; }
-
-      & label.grow { 
-        margin: 2em auto; 
-        max-width: 200px; 
-        transition: 1s; 
-        display: block; cursor: pointer;
-      }
-
-      & input#grow:checked + label.grow { max-width: 70%; }
 
       &.open{ @media (max-width: 940px){ width: 220px; } }
 
