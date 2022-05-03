@@ -135,6 +135,29 @@
   .filter .search-line {
     margin-bottom: 40px;
 
+    &__btn{
+      width: 100px;
+      padding: 0;
+      border: 0;
+      border-radius: 0 4px 4px 0;
+      background-color: $clr-danger;
+      font-weight: 700;
+      color: #fff;
+      outline: 0;
+
+      @media (max-width: 940px) {
+        width: 80px;
+      }
+
+      @media (max-width: 640px) {
+        position: relative;
+        bottom: 50px;
+        width: 100%;
+        height: 36px;
+        border-radius: 4px;
+      }
+    }
+
     & .select-period{
       width: 200px;
       height: 36px;
@@ -183,8 +206,14 @@
           left: 0;
           padding-left: 30px;
           font-weight: 700;
+          font-size: 14px;
           color: #233b50;
+          border: 1px solid #ccddec;
           background-color: transparent;
+        }
+
+        & span{
+          color: #8f9bb3;
         }
       }
     }
