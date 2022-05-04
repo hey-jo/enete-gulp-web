@@ -59,6 +59,66 @@
     @media (max-width: 640px){
       position: relative;
     }
+
+    & .trigger{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      line-height: 20px;
+      color: $clr-b600;
+      cursor: pointer;
+      transition: color .3s;
+
+      & .icon{
+        margin-right: 20px;
+        font-size: 30px;
+        transition: color .2s;
+        color: rgba(143, 155, 179, 0.52);
+      }
+
+    }
+
+    & .space-between{
+      justify-content: space-between;
+    }
+  }
+
+  [type="checkbox"]+label{
+    display: inline;
+    position: relative;
+    padding-left: 28px;
+    font-size: 15px;
+    color: #7e8a95;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #008eff;
+      border-radius: 4px;
+      background-color: #fff;
+
+      &:hover::before{
+        border: 1px solid #29a3db;
+      }
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      display: block;
+      left: 4px;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      background-color: #eee;
+    }
+
   }
 
   .status-groups {
@@ -88,6 +148,13 @@
     margin: 0;
     opacity: 0;
     cursor: pointer;
+
+    &:checked+.status-groups__item {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+      border: 1px solid;
+      border-color: #3E66FB;
+      color: #3E66FB
+    }
   }
 
   input[type="checkbox"], input[type="radio"] {
@@ -118,19 +185,14 @@
     justify-content: center;
     height: 30px;
     padding: 0 14px;
-    border: 1px solid #008eff;
+    border: 1px solid #3e66fb;
     border-radius: 50px;
     font-size: 15px;
     color: #233b50;
     white-space: nowrap;
   }
 
-  .status-groups__item-wrap 
-  [type="checkbox"]:checked
-  +.status-groups__item{
-    background-color: #008eff;
-    color: #fff;
-  }
+
 
   .filter .search-line {
     margin-bottom: 40px;
@@ -297,7 +359,7 @@
     margin-bottom: 5px;
     font-size: 13px;
     font-weight: 400;
-    color: #233b50;
+    //color: #233b50; später prüfen, checkbox+label ändert nicht die Farben, wenn an
   }
 
   label {
