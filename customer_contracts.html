@@ -309,13 +309,8 @@
                             <label>Kalendar:</label>
 
                             <div class="input-wrap">
-                                <input type="text" id="daterange" class="js-filter-range selectbox pull-right">
+                                <input type="text" id="daterange" class="js-filter-range selectbox pull-right shadow-none">
                                 <span class="icon-calendar fa fa-calendar-alt pl-2 pt-1"></span>
-                            </div>
-
-                            <div style="display:none;">
-                                <input type="text" id="filter_from" name="filter[from]" class="select-date js-filter-from" value="26.03.2022">
-                                <input type="text" id="filter_to" name="filter[to]" class="select-date js-filter-to" value="25.04.2022">
                             </div>
                         </div>
                         <!-- Start Date Range Picker-->
@@ -362,7 +357,9 @@
                             "startDate": "01/04/2022",
                             "endDate": "28/04/2022"
                           }, function(start, end, label) {
+                            alert("Im Livesystem einbauen: Button über Kalender Auftragsdatum (aktiv) oder Vertragsende.");
                             console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+                            
                           });
                       </script>
                         <!-- End Daten Range Picker -->
