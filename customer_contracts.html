@@ -368,10 +368,10 @@
 
                     </div>
 
-                    <div class="expanded-options js-expanded-options">
+                    <div class="collapse" id="collapseCustomerContractsFilter">
                         <div class="form-line flex-wrap">
                             <div class="form-cell filter-status">
-                                <div class="custom-select">
+                                <div class="custom-selectt">
                                     <button class="select" type="button" id="statusDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                         Auftragsstatus <span class="count" title="">(0)</span>
                                     </button>
@@ -498,37 +498,37 @@
                             </div>
 
                             <div class="form-cell filter-energy-type">
-                                <label class="custom-select">
+                                <label class="custom-selectt">
                                     <select id="filter_energyType" name="filter[energyType]" class=""><option value="">Typ</option><option value="electro">Strom</option><option value="gas">Gas</option><option value="heat">Wärme</option></select>
                                 </label>
                             </div>
 
                             <div class="form-cell filter-provision">
-                                <label class="custom-select">
+                                <label class="custom-selectt">
                                     <select id="filter_provision" name="filter[provision]" class=""><option value="">Provision</option><option value="open">Offen</option><option value="paid">Ausgezahlt</option><option value="will_be_taken">Wird zurückbelastet</option><option value="taken">Zurückbelastet</option></select>
                                 </label>
                             </div>
 
                             <div class="form-cell filter-client-type">
-                                <label class="custom-select">
+                                <label class="custom-selectt">
                                     <select id="filter_clientType" name="filter[clientType]" class=""><option value="">Verbraucher</option><option value="client_type_private">privat</option><option value="client_type_commercial">gewerblich</option></select>
                                 </label>
                             </div>
 
                             <div class="form-cell filter-owner">
-                                <label class="custom-select">
+                                <label class="custom-selectt">
                                     <select id="filter_owner" name="filter[owner]" class=""><option value="self">Eigene Aufträge</option><option value="all">Alle Aufträge</option></select>
                                 </label>
                             </div>
 
                             <div class="form-cell filter-doc">
-                                <label class="custom-select">
+                                <label class="custom-selectt">
                                     <select id="filter_doc" name="filter[doc]" class=""><option value="">Dokument</option><option value="miss">Originalauftrag/Scan fehlt</option><option value="check">Originalauftrag/Scan wird geprüft</option><option value="check_invoice">Noch nicht geprüfte Kundenrechnungen</option><option value="rejected">Originalauftrag/Scan abgelehnt</option><option value="approve">Originalauftrag/Scan freigegeben</option><option value="on_sign">verschickt zur E-Unterschrift</option></select>
                                 </label>
                             </div>
                         </div>
 
-                        <div class="form-line mb40">
+                        <div class="form-line mb-4">
                             <div class="form-cell">
                                 <input type="checkbox" id="filter_signed" name="filter[signed]" class="" value="1">
                                 <label for="filter_signed">
@@ -541,9 +541,11 @@
 
 
                    <div class="form-line space-between">
-                        <div class="trigger js-trigger-expanded-options">
+                        <div class="trigger js-trigger-expanded-options" data-toggle="collapse" data-target="#collapseCustomerContractsFilter" aria-expanded="false" aria-controls="collapseExample">
+
                           <span class="icon material-icons-outlined">tune</span>
                             zusätzliche Optionen
+
                         </div>
                         <div class="form-cell only-without-later">
                             <input type="checkbox" id="filter_onlyWithoutLater" name="filter[onlyWithoutLater]" class="" value="1">
@@ -554,7 +556,7 @@
                     </div>
 
                     <div class="form-cell" style="display: none;">
-                        <label class="custom-select js-dateType-select">
+                        <label class="custom-selectt js-dateType-select">
                             <select id="filter_dateType" name="filter[dateType]" class=""><option value="start">Auftragsdatum</option><option value="terminate">Vertragsende</option></select>
                         </label>
                     </div>

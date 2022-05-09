@@ -21,6 +21,10 @@
     }
   }
 
+  .expanded-options {
+    display: none;
+  }
+
   .form-line {
     display: flex;
     margin-bottom: 20px;
@@ -69,17 +73,38 @@
       cursor: pointer;
       transition: color .3s;
 
+      &:hover{ 
+        color: $clr-primary;
+        cursor: pointer;
+        
+        & .icon{ color: $clr-primary }
+      }
+
       & .icon{
         margin-right: 20px;
         font-size: 30px;
         transition: color .2s;
         color: rgba(143, 155, 179, 0.52);
       }
-
     }
 
     & .space-between{
       justify-content: space-between;
+    }
+
+    & .filter-status{
+      min-width: 180px;
+      max-width: 330px;
+      flex: 1;
+    }
+
+    & .filter-energy-type { width: 120px; }
+
+    & .filter-owner { width: 235px; }
+
+    & .filter-client-type{
+      width: 205px;
+      margin-right: 0;
     }
   }
 
@@ -338,7 +363,7 @@
      & .form-cell{ 
       margin-bottom: 20px; 
       
-      & .custom-select{ margin-bottom: 0; }
+      & .custom-selectt{ margin-bottom: 0; }
     }
   }
 
@@ -349,6 +374,16 @@
     justify-content: flex-end;
     margin-right: 25px;
     border: 0;
+
+    & select{
+      height: 36px;
+      border-radius: 4px;
+      font-size: 15px;
+      color: #233b50;
+      background: #fff;
+      outline: 0;
+      cursor: pointer;
+    }
   }
 
   .filter .search-line .filter-number .icon-view {
@@ -448,10 +483,21 @@
   
   }
 
-  & .custom-select {
+  & label.custom-selectt{
     position: relative;
     display: block;
     margin: 0;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  & .custom-selectt {
+    position: relative;
+    display: block;
+    margin: 0;
+  
 
     &::after{
       width: 0;
@@ -459,7 +505,7 @@
       border-style: solid;
       border-width: 5px 4px 0 4px;
       border-color: #868fab transparent transparent transparent;
-      position: absolute;
+      position: relative;
       top: 15px;
       right: 15px;
       bottom: 0;
@@ -482,11 +528,11 @@
       }
     }
 
-    & .show>.dropdown-menu {
-      display: block;
-    }
+    & .show { display: block; }
 
-    & .select {
+    & .show>.dropdown-menu { display: block; }
+
+    & select, .select {
       display: inline-block;
       border: 1px solid #ccddec;
       padding: 4px 3px 3px 10px;
