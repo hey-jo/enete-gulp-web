@@ -98,6 +98,24 @@
       flex: 1;
 
       & .status-group-draft { color: #e0e0e0; }
+
+      & .status-group-ready-sending { color: #2eb4ff; }
+
+      & .status-group-sending { color: #a781e5; }
+
+      & .status-group-in-progress { color: #ffa81e; }
+
+      & .status-group-post-processing { color: #92493a; }
+
+      & .status-group-extend { color: #258764; }
+
+      & .status-group-negative,
+        .status-group-technical_cancel { color: #eb5757; }
+
+      & .status-group-immutable,
+        .status-group-expired { color: #010101; }
+
+
     }
 
     & .filter-energy-type { width: 120px; }
@@ -551,6 +569,8 @@
       border-radius: 0;
       max-height: 80vh;
       overflow-y: auto;
+
+      & .head-label { font-weight: 900; }
 
       & label{
         display: block;
