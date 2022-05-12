@@ -4,6 +4,10 @@
   .filter-wrap {
     max-width: 9930px;
     padding: 300px 0 0;
+
+    &.shwo{
+      margin-bottom: 130px;
+    }
   }
 
   //später ausschalten oder ändern
@@ -71,13 +75,18 @@
       line-height: 20px;
       color: $clr-b600;
       cursor: pointer;
+      margin-left: -5px;
       transition: color .3s;
 
+      @media (max-width: 640px){
+        margin: 10px 0px 10px -5px;
+      }
+
       &:hover{ 
-        color: $clr-primary;
+        color: $clr-danger;
         cursor: pointer;
         
-        & .icon{ color: $clr-primary }
+        & .icon{ color: $clr-danger }
       }
 
       & .icon{
@@ -125,6 +134,18 @@
     & .filter-client-type{
       width: 205px;
       margin-right: 0;
+    }
+
+    & .form-cell{
+
+      @media (max-width: 640px){
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 
@@ -403,6 +424,8 @@
 
     @media (max-width: 640px){
       margin-bottom: 20px;
+
+      &:last-child { margin-bottom: 00; }
     }
   }
 
@@ -484,7 +507,7 @@
     font-weight: 600;
     color: #233b50;
 
-    &:empty{ color: red; }
+    &:empty{ color: #233b50; }
   }
 
   .filter .search-line .filter-number {
@@ -614,6 +637,37 @@
         cursor: pointer;
       }
     }
+  }
+
+  & .selected-options {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 0;
+    border-top: 1px solid #e2eaf0;
+
+    & .options-item{
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      height: 25px;
+      padding-left: 10px;
+      margin: 0 10px 10px 0;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #233b50;
+      background-color: #e2eaf0;
+    }
+
+    & .cancel-filter{
+      padding: 5px 10px 5px 10px;
+      font-size: 18px;
+      cursor: pointer;
+
+    }
+
   }
 
 

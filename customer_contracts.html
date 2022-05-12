@@ -544,13 +544,13 @@
 
 
                    <div class="form-line space-between">
-                        <div class="trigger js-trigger-expanded-options" data-toggle="collapse" data-target="#collapseCustomerContractsFilter" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="trigger js-trigger-expanded-options order-2 order-sm-1" data-toggle="collapse" data-target="#collapseCustomerContractsFilter" aria-expanded="false" aria-controls="collapseExample">
 
                           <span class="icon material-icons-outlined">expand</span>
                             zusätzliche Optionen
 
                         </div>
-                        <div class="form-cell only-without-later">
+                        <div class="form-cell only-without-later order-1 order-sm-2">
                             <input type="checkbox" id="filter_onlyWithoutLater" name="filter[onlyWithoutLater]" class="" value="1">
                             <label for="filter_onlyWithoutLater">
                                 Vertragswechsel möglich
@@ -569,7 +569,9 @@
                 </form>
 
 
-                <div id="filterContractsOptions" class="selected-options" style="display: none;"> </div>
+                <div id="filterContractsOptions" class="selected-options" style="">
+                  <span class="options-item" data-id="filter_search" data-default-value="">Oks Anatolij<span class="cancel-filter">×</span></span>
+                  <span class="options-item" data-id="filter_zip" data-default-value="">49661<span class="cancel-filter">×</span></span></div>
             </div>
             </div>
             <div class="white-box">
