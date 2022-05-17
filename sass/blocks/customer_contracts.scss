@@ -2,8 +2,8 @@
 
   //später ausschalten oder ändern
   .filter-wrap {
-    max-width: 9930px;
-    padding: 300px 0 0;
+    max-width: 930px;
+    padding: 30px 0 0;
 
     &.show{
       margin-bottom: 130px;
@@ -53,11 +53,10 @@
   &.filter{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
-    padding: 0 20px 30px;
+    padding: 0 20px 0px;
 
     @media (max-width: 1200px){
-      padding: 0 20px 30px;
+      padding: 0px 20px;
     }
 
     @media (max-width: 940px){
@@ -672,8 +671,82 @@
 
   // Starting style contracts
 
-  .contracts-wrap{
-    padding: 0 20px 30px;
+  +.contracts-wrap{
+    margin: 0px 20px;
+
+    @media (max-width: 1200px){
+      margin: 0px 20px;
+    }
+
+    @media (max-width: 940px){
+      margin: 0;
+    }
+
+    @media (max-width: 640px){
+      margin: 0;
+    }
+
+    & .contracts-heading{
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    & .contracts-list{
+      margin-left: 10px;
+
+      & tr:nth-child(2) td { border-top: 0;}
+
+      & th{
+        padding: 0 25px 5px 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: #c2d1dc;
+        text-align: left;
+
+        &.company-logo{
+          width: 100px;
+          padding-left: 0;
+
+        }
+      }
+
+      & td{
+        height: 72px;
+        padding: 20px 25px 5px 0;
+        font-size: 15px;
+        line-height: 23px;
+        border-top: 1px solid #c2d1dc;
+        vertical-align: top;
+        color: #233b50;
+      }
+
+      & i.fas{ 
+        size: 24px;
+        display: inline-block;
+        padding: 0.64em 0.74em;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+        border-radius: 60px;
+        border: 1px solid;
+        border-color: #3E66FB;
+        color: #3E66FB;
+      }
+
+      & i.icon{ 
+        display: inline-block;
+        padding: 0.2em 0.2em;
+
+        &.energy{
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
+          border-radius: 60px;
+          border: 1px solid;
+          border-color: $clr-warning;
+          color: #F3BB1C;
+        }
+      }
+
+      
+    }
   }
 
 
