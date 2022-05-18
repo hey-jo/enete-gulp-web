@@ -719,33 +719,83 @@
         border-top: 1px solid #c2d1dc;
         vertical-align: top;
         color: #233b50;
+
+        &.company-logo>img { max-width: 75px; }
+
+        & .tariff-table-logo{ max-height: 40px; }
       }
 
       & i.fas{ 
         size: 24px;
         display: inline-block;
-        padding: 0.64em 0.74em;
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
-        border-radius: 60px;
-        border: 1px solid;
-        border-color: #3E66FB;
-        color: #3E66FB;
+        padding: 0.44em 0.54em;
+        //background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+        border-radius: 100%;
+        //border: 1px solid;
+
+        &.energy{
+          border-color: #3E66FB;
+          color: #3E66FB;
+        }
+
+        &.doc{
+          border-color: $clr-b600;
+          color: $clr-b600;
+          opacity: 80%;
+        }
       }
 
       & i.icon{ 
         display: inline-block;
-        padding: 0.2em 0.2em;
+        padding: 0.3em 0.3em;
+        font-size: 19px;
 
         &.energy{
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
           border-radius: 60px;
-          border: 1px solid;
-          border-color: $clr-warning;
-          color: #F3BB1C;
+          //border: 1px solid;
+          //border-color: $clr-warning;
+          color:  $clr-b600;
+        }
+
+        &.internet{
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+          border-radius: 60px;
+          //border: 1px solid;
+          //border-color: #3E66FB;
+          color: $clr-b600;
+        }
+
+        &.other{
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #babbc0;
+          border-radius: 60px;
+          //border: 1px solid;
+          //border-color: #999999;
+          color: $clr-b600;
+          &.prov { opacity: 50%; }
+        }
+
+        &.danger {
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F03738;
+          border-radius: 100%;
+          //border: 1px solid;
+          border-color: $clr-danger;
+          color: $clr-danger;
+          &.prov { opacity: 70%; }
+        }
+
+        &.success {
+          background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+          border-radius: 100%;
+          //border: 1px solid;
+          //border-color: #3CC13B;
+          color: #3CC13B;
+          &.prov { opacity: 60%; }
         }
       }
 
-      
+      & span.icon{ font-size: 28px; }
+      // Ende .contracts-list
     }
   }
 
