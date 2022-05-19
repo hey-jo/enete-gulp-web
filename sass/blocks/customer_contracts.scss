@@ -690,25 +690,50 @@
       margin-bottom: 20px;
       font-size: 24px;
       font-weight: 700;
+      color: $clr-b700;
     }
 
     & .contracts-list{
       margin-left: 10px;
 
-      & tr:nth-child(2) td { border-top: 0;}
+      //& tr:nth-child(2) td { border-top: 0;}
 
       & th{
-        padding: 0 25px 5px 0;
+        padding: 0 5px 5px 0;
         font-size: 13px;
         font-weight: 400;
         color: #c2d1dc;
         text-align: left;
 
-        &.company-logo{
-          width: 100px;
+        &.type {
+          width: 5%;
           padding-left: 0;
-
         }
+
+        &.company-logo { width: 10%; }
+
+        &.contract-number { width: 10%; }
+
+        &.sign-date { width: 10%; }
+
+        &.customer-name {
+          width: 20%; // hier nachjustieren statt 100%
+        }
+
+        &.status {
+          width: 10%;
+          text-align: center;
+        }
+
+        &.points { width: 5%;}
+
+        &.leader-bonus { width: 10%;}
+
+        &.provi { width: 5%;}
+
+        &.seller { width: 15%; }
+
+        &.docu-and-action { width: 30%; }
       }
 
       & td{
@@ -718,11 +743,27 @@
         line-height: 23px;
         border-top: 1px solid #c2d1dc;
         vertical-align: top;
-        color: #233b50;
+        color: $clr-b1000;
 
         &.company-logo>img { max-width: 75px; }
 
         & .tariff-table-logo{ max-height: 40px; }
+
+        &:nth-child(2) { 
+          cursor: pointer;
+
+        }
+
+        &:nth-child(6) { 
+          //background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
+          text-align: center;
+
+        }
+
+        &:nth-child(7) { 
+          padding-left: 15px;
+
+        }
       }
 
       & i.fas{ 
@@ -733,6 +774,8 @@
         border-radius: 100%;
         //border: 1px solid;
 
+        &.big { font-size: 28px; }
+
         &.energy{
           border-color: #3E66FB;
           color: #3E66FB;
@@ -741,7 +784,15 @@
         &.doc{
           border-color: $clr-b600;
           color: $clr-b600;
-          opacity: 80%;
+          opacity: 50%;
+          font-size: 20px;
+        }
+
+        &.doc-ok{
+          border-color: $clr-b600;
+          color: #3CC13B;
+          opacity: 50%;
+          font-size: 20px;
         }
       }
 
@@ -749,6 +800,8 @@
         display: inline-block;
         padding: 0.3em 0.3em;
         font-size: 19px;
+
+        &.big { font-size: 24px; }
 
         &.energy{
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
@@ -796,6 +849,7 @@
 
       & span.icon{ font-size: 28px; }
       // Ende .contracts-list
+
     }
   }
 

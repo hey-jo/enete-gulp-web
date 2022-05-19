@@ -574,28 +574,25 @@
                   <span class="options-item" data-id="filter_zip" data-default-value="">49661<span class="cancel-filter">×</span></span></div>
             </div>
             </div>
-            <div class="col-xs-12 contracts-wrap white-box">
+            <div class="col-xs-3 contracts-wrap white-box">
               <div class="contracts-heading">
                 <span>Eigene Aufträge (150)</span>
               </div>
-              <div class="123">
-                <table class="invoice contracts-list">
+              <div class="table-responsive">
+                <table class="contracts-list">
                   <tbody>
                   <tr>
+                    <th class="type">Typ</th>
                     <th class="company-logo">Produkt</th>
-                    <th class="company-logo">Auftrags-Nr.</th>
-                    <th class="company-logo">Erfasst am</th>
-                    <th class="company-logo">Typ</th>
-                    <th class="company-logo">Name</th>
-                    <th class="company-logo">Status</th>
-                    <th class="company-logo">Punkte</th>
-                    <th class="company-logo">LB</th>
-                    <th class="company-logo">Provision</th>
-                    <th class="company-logo">Verkäufer</th>
-                    <th class="company-logo">Dokument</th>
-                    <th class="company-logo">DETAILS</th>
-                    <th class="company-logo">Aktionen</th>
-                    <th class="company-logo"></th>
+                    <th class="contract-number">Auftrags-Nr.</th>
+                    <th class="sign-date">Erfasst am</th>
+                    <th class="customer-name">Name</th>
+                    <th class="status">Status</th>
+                    <th class="points">Punkte</th>
+                    <th class="leader-bonus">LB</th>
+                    <th class="provi">Provision</th>
+                    <th class="seller">Verkäufer</th>
+                    <th class="docu-and-action">Aktionen</th>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined energy">electric_bolt</i></td>
@@ -603,11 +600,21 @@
                     <td>637557</td>
                     <td>18.05.2022</td>
                     <td>Valerijs Servuts</td>
-                    <td><span class="icon material-icons-outlined clr-danger">warning</span></td>
+                    <td>
+                      <!-- Tooltip -->
+                      <div class="tooltip_contracts">
+                        <span class="pl-3 material-icons-outlined clr-danger">warning</span>
+                        <span class="text_contracts">
+                          Bitte den Auftrag nachbearbeiten. Übermittlung nicht möglich. 
+                          Straße bei der Lieferanschrift stimmt nicht
+                        </span>
+                      </div>
+                    </td>
                     <td>47</td>
                     <td>37,03 €</td>
                     <td><i class="icon material-icons-outlined other prov">euro</i></td>
                     <td>49000028 Rosa Stepanow</td>
+                    <td><i class="fas fa-paperclip doc big"></i></td>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined energy">local_fire_department</i></td>
@@ -615,11 +622,20 @@
                     <td>637513</td>
                     <td>17.05.2022</td>
                     <td>Raisa Kolhanova Olena Trikina-Gerdau</td>
-                    <td><span class="icon material-icons-outlined clr-i400">forward_to_inbox</span></td>
+                    <td>
+                      <!-- Tooltip -->
+                      <div class="tooltip_contracts">
+                        <span class="pl-3 material-icons-outlined clr-i400">forward_to_inbox</span>
+                        <span class="text_contracts">
+                          Erfolgreich übertragen
+                        </span>
+                      </div>
+                    </td>
                     <td>41</td>
                     <td>19,88 €</td>
                     <td><i class="icon material-icons-outlined other prov">euro</i></td>
                     <td>49000028 Rosa Stepanow</td>
+                    <td><i class="fas fa-paperclip doc"></i></td>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined energy">electric_bolt</i></td>
@@ -627,23 +643,32 @@
                     <td>637554</td>
                     <td>16.05.2022</td>
                     <td>Michael Potrubeiko</td>
-                    <td><span class="icon material-icons-outlined clr-succes">done</span></td>
+                    <td>
+                      <div class="tooltip_contracts">
+                        <span class="pl-2 material-icons-outlined clr-succes">done</span>
+                        <span class="text_contracts">
+                          Erfolgreich übertragen
+                        </span>
+                      </div>
+                    </td>
                     <td>26</td>
                     <td>4,73 €</td>
                     <td><i class="icon material-icons-outlined success prov">euro</i></td>
                     <td>49000029 Olga Schef</td>
+                    <td><i class="fas fa-paperclip doc-ok"></i></td>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined internet">router</i></td>
                     <td class="company-logo"><img class="tariff-table-logo py-1" src="img/o2-logo.svg"></td>
                     <td>637105</td>
                     <td>13.05.2022</td>
-                    <td>Albert Konstanz</td>
+                    <td class="company-logo">Albert Konstanz</td>
                     <td><span class="icon material-icons-outlined clr-i400">more_time</span></td>
                     <td>26</td>
                     <td>4,73 €</td>
                     <td><i class="icon material-icons-outlined other prov">euro</i></td>
                     <td>49000028 Rosa Stepanow</td>
+                    <td><i class="fas fa-paperclip doc-ok"></i></td>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined internet">signal_cellular_alt</i></td>
@@ -656,6 +681,7 @@
                     <td>3,00 €</td>
                     <td><i class="icon material-icons-outlined danger prov">euro</i></td>
                     <td>49000028 Rosa Stepanow</td>
+                    <td><i class="fas fa-paperclip doc"></i></td>
                   </tr>
                   <tr>
                     <td><i class="icon material-icons-outlined other">question_mark</i></td>
