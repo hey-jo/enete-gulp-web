@@ -717,7 +717,7 @@
         &.sign-date { width: 10%; }
 
         &.customer-name {
-          width: 20%; // hier nachjustieren statt 100%
+          width: 20%;
         }
 
         &.status {
@@ -733,7 +733,11 @@
 
         &.seller { width: 15%; }
 
-        &.docu-and-action { width: 30%; }
+        &.docu-and-action {
+          width: 40%;
+          padding-right: 0;
+          text-align: right;
+        }
       }
 
       & td{
@@ -745,9 +749,38 @@
         vertical-align: top;
         color: $clr-b1000;
 
-        &.company-logo>img { max-width: 75px; }
+        &.type{
+          padding-left: 2px;
+          // Statusbar links zusätzlich zu Status-Icons
+          .statusbar{
+            position: relative;
+            //background-color: red;
+            top: calc((100% - 56px) / 2);
+            left: 0px;
+            margin-left: -11px;
+            height: 30px;
+            width: 3px;
+
+            &.danger { background-color: $clr-danger; }
+
+            &.info { background-color: $clr-i400; }
+
+            &.succes { background-color: $clr-succes; }
+
+            &.warning { background-color: $clr-warning; }
+          }
+        }
+
+        &.company-logo>img, div { max-width: 75px; }
 
         & .tariff-table-logo{ max-height: 40px; }
+
+        &.docu-and-action {
+          width: 30%;
+          padding-right: 0;
+          text-align: right;
+
+        }
 
         &:nth-child(2) { 
           cursor: pointer;
@@ -786,18 +819,25 @@
           color: $clr-b600;
           opacity: 50%;
           font-size: 20px;
+
+          &.small {
+            font-size: 12px;
+            color: $clr-primary;
+            opacity: 100%;
+          }
         }
 
         &.doc-ok{
           border-color: $clr-b600;
           color: #3CC13B;
-          opacity: 50%;
+          opacity: 40%;
           font-size: 20px;
         }
       }
 
       & i.icon{ 
         display: inline-block;
+        margin-left: 3px;
         padding: 0.3em 0.3em;
         font-size: 19px;
 
@@ -848,9 +888,14 @@
       }
 
       & span.icon{ font-size: 28px; }
+
+      & .action{ text-align: right; }
+
       // Ende .contracts-list
 
     }
+
+
   }
 
 

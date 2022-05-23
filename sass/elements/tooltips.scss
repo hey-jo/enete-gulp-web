@@ -129,7 +129,7 @@
 
 .tooltip_contracts {
     position: relative;
-    display: block;
+    display: inline-block;
     cursor: pointer;
 
     &:hover .text_contracts {
@@ -140,8 +140,14 @@
   
   .text_contracts {
     visibility: hidden;
-    min-width: 130px;
-    width: max-content;
+    position: absolute;
+    margin-left: -200px; /* this is the trick that will make sure the content can go up to 180px (an arbitrary big value) */
+    max-height: 180px; /* your max-width*/
+    padding: 10px;
+    z-index: 1;
+    top: -12px;
+    right: 223%;
+    background:blue;
     background-color: $clr-i600;
     color: #fff;
     text-align: left;
@@ -151,11 +157,6 @@
     font-size: 10px;
     line-height: 15px;
     border-radius: 6px;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    top: -12px;
-    right: 160%;
     transition: all 0.15s ease-in-out;
 
     &::after{
@@ -167,6 +168,52 @@
         border-width: 8px 0 8px 10px;
         border-style: solid;
         border-color: transparent transparent transparent $clr-i600;
+    }
+  }
+
+}
+
+.tooltip_rightof_item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover .text_rightof_item {
+        visibility: visible;
+        transform: scale(1.15) translate3d(0,0,0);
+    }
+
+  
+  .text_rightof_item {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -200px; /* this is the trick that will make sure the content can go up to 180px (an arbitrary big value) */
+    max-height: 180px; /* your max-width*/
+    padding: 10px;
+    z-index: 1;
+    top: -12px;
+    right: -300%;
+    background:blue;
+    background-color: $clr-i600;
+    color: #fff;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    border-radius: 6px;
+    transition: all 0.15s ease-in-out;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 40%;
+        right: 99%;
+        margin-top: -3px;
+        border-width: 8px 10px 10px 8px;
+        border-style: solid;
+        border-color: transparent $clr-i600  transparent transparent;
     }
   }
 

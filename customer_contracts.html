@@ -594,38 +594,87 @@
                     <th class="seller">Verkäufer</th>
                     <th class="docu-and-action">Aktionen</th>
                   </tr>
+                  <!-- Auftrag 1 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined energy">electric_bolt</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo" src="img/Vattenfall_logo.svg"></td>
+                    <td class="type">
+                      <span class="statusbar danger"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-n3">
+                        <i class="icon material-icons-outlined energy">electric_bolt</i>
+                        <span class="text_rightof_item">
+                          Strom
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item">
+                        <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
+                        <span class="text_rightof_item">
+                          Vattenfall Easy24 Pur Gas rNKB (ID 410)
+                        </span>
+                      </div>
+                    </td>
                     <td>637557</td>
                     <td>18.05.2022</td>
                     <td>Valerijs Servuts</td>
                     <td>
-                      <!-- Tooltip -->
+                      <!-- Tooltip Status -->
                       <div class="tooltip_contracts">
-                        <span class="pl-3 material-icons-outlined clr-danger">warning</span>
+                        <span class="material-icons-outlined clr-danger">warning</span>
                         <span class="text_contracts">
                           Bitte den Auftrag nachbearbeiten. Übermittlung nicht möglich. 
                           Straße bei der Lieferanschrift stimmt nicht
+                          Bitte den Auftrag nachbearbeiten.
                         </span>
                       </div>
                     </td>
                     <td>47</td>
                     <td>37,03 €</td>
-                    <td><i class="icon material-icons-outlined other prov">euro</i></td>
+                    <td>
+                       <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined other prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">offen</span>
+                      </div>
+                    </td>
                     <td>49000028 Rosa Stepanow</td>
-                    <td><i class="fas fa-paperclip doc big"></i></td>
+                    <td class="docu-and-action">
+                      <!-- Tooltip Scan -->
+                      <div class="tooltip_contracts">
+                        <i class="fas fa-paperclip doc"></i>
+                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                      </div>
+                    </td>
                   </tr>
+                  <!-- Auftrag 2 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined energy">local_fire_department</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo" src="img/EnBW.svg"></td>
+                    <td class="type">
+                      <span class="statusbar info"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-n2">
+                        <i class="icon material-icons-outlined energy">local_fire_department</i>
+                        <span class="text_rightof_item">
+                          Gas
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item">
+                        <img class="tariff-table-logo" src="img/EnBW.svg">
+                        <span class="text_rightof_item">
+                          EnBW Sorgenfrei und Grün Profistrom (ID 13486)
+                        </span>
+                      </div>
+                    </td>
                     <td>637513</td>
                     <td>17.05.2022</td>
                     <td>Raisa Kolhanova Olena Trikina-Gerdau</td>
                     <td>
-                      <!-- Tooltip -->
+                      <!-- Tooltip Status -->
                       <div class="tooltip_contracts">
-                        <span class="pl-3 material-icons-outlined clr-i400">forward_to_inbox</span>
+                        <span class="material-icons-outlined clr-i400">forward_to_inbox</span>
                         <span class="text_contracts">
                           Erfolgreich übertragen
                         </span>
@@ -633,68 +682,220 @@
                     </td>
                     <td>41</td>
                     <td>19,88 €</td>
-                    <td><i class="icon material-icons-outlined other prov">euro</i></td>
+                    <td>
+                      <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined other prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">offen</span>
+                      </div>
+                    </td>
                     <td>49000028 Rosa Stepanow</td>
-                    <td><i class="fas fa-paperclip doc"></i></td>
+                    <td class="docu-and-action">
+                      <!-- Tooltip Scan -->
+                      <div class="tooltip_contracts">
+                        <i class="fas fa-paperclip doc"></i>
+                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                      </div>
+                    </td>
                   </tr>
+                  <!-- Auftrag 3 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined energy">electric_bolt</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo" src="img/Vattenfall_logo.svg"></td>
+                    <td class="type">
+                      <span class="statusbar succes"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-n3">
+                        <i class="icon material-icons-outlined energy">electric_bolt</i>
+                        <span class="text_rightof_item">
+                          Strom
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item">
+                        <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
+                        <span class="text_rightof_item">
+                          Vattenfall Easy24 Pur Strom rNKB (ID 410)
+                        </span>
+                      </div>
+                    </td>
                     <td>637554</td>
                     <td>16.05.2022</td>
                     <td>Michael Potrubeiko</td>
                     <td>
+                       <!-- Tooltip Status -->
                       <div class="tooltip_contracts">
-                        <span class="pl-2 material-icons-outlined clr-succes">done</span>
+                        <span class="material-icons-outlined clr-succes">done</span>
                         <span class="text_contracts">
-                          Erfolgreich übertragen
+                          In Belieferung
                         </span>
                       </div>
                     </td>
                     <td>26</td>
                     <td>4,73 €</td>
-                    <td><i class="icon material-icons-outlined success prov">euro</i></td>
+                    <td>
+                      <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined success prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">überwiesen</span>
+                      </div>
                     <td>49000029 Olga Schef</td>
-                    <td><i class="fas fa-paperclip doc-ok"></i></td>
+                    <td class="docu-and-action">
+                      <!-- Tooltip Scan -->
+                      <div class="tooltip_contracts">
+                        <i class="fas fa-paperclip doc-ok"></i>
+                        <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
+                      </div>
+                    </td>
                   </tr>
+                  <!-- Auftrag 4 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined internet">router</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo py-1" src="img/o2-logo.svg"></td>
+                    <td class="type">
+                      <span class="statusbar info"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-2">
+                        <i class="icon material-icons-outlined internet">router</i>
+                        <span class="text_rightof_item">
+                          Internet zuhause
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item pr-5">
+                        <img class="tariff-table-logo py-1" src="img/o2-logo.svg">
+                        <span class="text_rightof_item">
+                          O2 my Home XL 24 MO (ID 123)
+                        </span>
+                      </div>
+                    </td>
                     <td>637105</td>
                     <td>13.05.2022</td>
                     <td class="company-logo">Albert Konstanz</td>
-                    <td><span class="icon material-icons-outlined clr-i400">more_time</span></td>
+                    <td>
+                       <!-- Tooltip Status -->
+                      <div class="tooltip_contracts">
+                        <span class="material-icons-outlined clr-i400">more_time</span>
+                        <span class="text_contracts">
+                          Erfolgreich übertragen. Warten auf Rufnummernportierung
+                        </span>
+                      </div>
+                    </td>
                     <td>26</td>
                     <td>4,73 €</td>
-                    <td><i class="icon material-icons-outlined other prov">euro</i></td>
+                    <td>
+                      <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined other prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">offen</span>
+                      </div>
+                    </td>
                     <td>49000028 Rosa Stepanow</td>
-                    <td><i class="fas fa-paperclip doc-ok"></i></td>
+                    <td class="docu-and-action">
+                      <!-- Tooltip Scan -->
+                      <div class="tooltip_contracts">
+                        <i class="fas fa-paperclip doc-ok"></i>
+                        <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
+                      </div>
                   </tr>
+                  <!-- Auftrag 5 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined internet">signal_cellular_alt</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo py-2" src="img/blau_logo.svg"></td>
+                    <td class="type">
+                      <span class="statusbar danger"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-n4">
+                        <i class="icon material-icons-outlined internet">signal_cellular_alt</i>
+                        <span class="text_rightof_item">
+                          Mobilfunk
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item pr-4">
+                        <img class="tariff-table-logo py-2" src="img/blau_logo.svg">
+                        <span class="text_rightof_item">
+                          Blau Allnet VVL PK VVB 3 (ID 03)
+                        </span>
+                      </div>
+                    </td>
                     <td>637028</td>
                     <td>13.05.2022</td>
                     <td>Sebastian Neumann</td>
-                    <td><span class="icon material-icons-outlined clr-danger">block</span></td>
+                    <td>
+                       <!-- Tooltip Status -->
+                      <div class="tooltip_contracts">
+                        <span class="material-icons-outlined clr-danger">block</span>
+                        <span class="text_contracts">
+                          Abgelehnt! Negative Bonität
+                        </span>
+                      </div>
+                    </td>
                     <td>11</td>
                     <td>3,00 €</td>
-                    <td><i class="icon material-icons-outlined danger prov">euro</i></td>
+                    <td>
+                      <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined danger prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">zurückbelastet</span>
+                      </div>
+                    </td>
                     <td>49000028 Rosa Stepanow</td>
-                    <td><i class="fas fa-paperclip doc"></i></td>
+                    <td class="docu-and-action">
+                      <!-- Tooltip Scan -->
+                      <div class="tooltip_contracts">
+                        <i class="fas fa-paperclip doc"></i>
+                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                      </div>
+                    </td>
                   </tr>
+                  <!-- Auftrag 6 -->
                   <tr>
-                    <td><i class="icon material-icons-outlined other">question_mark</i></td>
-                    <td class="company-logo"><img class="tariff-table-logo" src="img/shell-energy-logo.png"></td>
+                    <td class="type">
+                      <span class="statusbar warning"></span>
+                      <!-- Tooltip Typ -->
+                      <div class="tooltip_rightof_item pr-n4">
+                        <i class="icon material-icons-outlined other">question_mark</i>
+                        <span class="text_rightof_item">
+                          Sonstiges
+                        </span>
+                      </div>
+                    </td>
+                    <td class="company-logo">
+                      <!-- Tooltip Tarif -->
+                      <div class="tooltip_rightof_item">
+                        <img class="tariff-table-logo" src="img/shell-energy-logo.png">
+                        <span class="text_rightof_item">
+                          Shell THG-Quote (ID Fantasie)
+                        </span>
+                      </div>
+                    </td>
                     <td>636897</td>
                     <td>12.05.2022</td>
                     <td>Viktor Eifert Max Mustermann GmbH & Co. Kg</td>
-                    <td><span class="icon material-icons-outlined clr-warning">local_parking</span></td>
+                    <td>
+                       <!-- Tooltip Status -->
+                      <div class="tooltip_contracts">
+                        <span class="material-icons-outlined clr-warning">local_parking</span>
+                        <span class="text_contracts">
+                          Geparkter Auftrag im Entwrufsmodus
+                        </span>
+                      </div>
+                    </td>
                     <td>130</td>
                     <td>63,03 €</td>
-                    <td><i class="icon material-icons-sharp other prov">euro</i></td>
+                    <td>
+                      <!-- Tooltip Provision -->
+                      <div class="tooltip_contracts">
+                        <i class="icon material-icons-outlined other prov">euro</i>
+                        <span class="text_contracts mr-n3 mt-1">offen</span>
+                      </div>
+                    </td>
                     <td>49003609 Susanne Schef</td>
-                    <td><i class="fas fa-paperclip doc"></i></td>
+                    <td class="docu-and-action">
+                        <i class="fas fa-pen doc small"></i>
+                        <i class="fas fa-trash doc small"></i>
+                    </td>
                   </tr> 
                   </tbody>
                 </table>
