@@ -712,7 +712,7 @@
 
         &.company-logo { width: 10%; }
 
-        &.contract-number { width: 10%; }
+        &.contract-number { width: 7%; }
 
         &.sign-date { width: 10%; }
 
@@ -721,24 +721,29 @@
         }
 
         &.status {
-          width: 10%;
+          width: 8%;
           text-align: center;
         }
 
         &.points { width: 5%;}
 
-        &.leader-bonus { width: 10%;}
+        &.leader-bonus { min-width: 100px; width: 7%;}
 
         &.provi { width: 5%;}
 
-        &.seller { width: 15%; }
+        &.start { width: 10%; }
+
+        &.end { width: 10%; }
 
         &.docu-and-action {
-          width: 40%;
+          width: 5%;
           padding-right: 0;
           text-align: right;
         }
+        
       }
+      
+      tr:nth-of-type(even) { background-color: rgba(247, 247, 247, 0.425);}
 
       & td{
         height: 72px;
@@ -776,7 +781,7 @@
         & .tariff-table-logo{ max-height: 40px; }
 
         &.docu-and-action {
-          width: 30%;
+          width: 5%;
           padding-right: 0;
           text-align: right;
 
@@ -895,9 +900,52 @@
 
     }
 
+    
+    @media (max-width: 1343px){
+      .contracts-list .leader-bonus,
+      .contracts-list .end{
+        display: none;
+      }
+    }
+
+    @media (max-width: 1470px){
+      .contracts-list .type,
+      .contracts-list .end{
+        display: none;
+      }
+    }
+
+    @media (max-width: 1046px){
+      .contracts-list .start{
+        display: none;
+      }
+    }
+
+    @media (max-width: 940px){
+      .contracts-list .contract-number{
+        display: none;
+      }
+    }
+
+    @media (max-width: 730px){
+      .contracts-list .provi,
+      .contracts-list .points{
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px){
+      .contracts-list .sign-date{
+        display: none;
+      }
+    }
+
+    @media (max-width: 380px){
+      .contracts-list .company-logo{
+        display: none;
+      }
+    }
 
   }
-
-
 }
 

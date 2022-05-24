@@ -14,16 +14,16 @@
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet">
 
-      <!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
 
-      <!-- Start DateRangePicker -->
-      
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- Start DateRangePicker -->
 
-      <!-- End Optional JavaScript -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- End Optional JavaScript -->
   <title>Hello, world!</title>
 </head>
 <!-- End Head -->
@@ -259,706 +259,809 @@
             <div class="customer_contracts filter">
               <div class="content-section container-fluid filter-wrap js-filter-wrap">
                 <form id="filterContracts" class="filter" action="/partner-area/contracts/ ">
-                    <div class="form-line status-groups js-statuses">
-                        <div class="status-groups__item-wrap">
-                            <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress" data-bind="filter_group_in_progress">
-                            <span class="status-groups__item">Im Wechselprozess</span>
-                        </div>
-
-                        <div class="status-groups__item-wrap">
-                            <input type="checkbox" class="js-statuses-checkbox single" id="group-positive" data-bind="filter_group_positive">
-                            <span class="status-groups__item">Wechsel positiv</span>
-                        </div>
-
-                        <div class="status-groups__item-wrap">
-                            <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress" data-bind="filter_group_post_processing">
-                            <span class="status-groups__item">Nachbearbeitung</span>
-                        </div>
-
-                        <div class="status-groups__item-wrap">
-                            <input type="checkbox" class="js-statuses-checkbox single" id="group-post-processing" data-bind="filter_all_storno">
-                            <span class="status-groups__item">Storno</span>
-                        </div>
-
-                        <div class="status-groups__item-wrap">
-                            <label for="group-post-all-status" id="btn-radio3">
-                              <input type="checkbox" class="js-statuses-checkbox all" id="group-post-all-status">
-                              <span class="status-groups__item">Alle Statusmeldungen</span>
-                          </label>
-                        </div>
+                  <div class="form-line status-groups js-statuses">
+                    <div class="status-groups__item-wrap">
+                      <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress"
+                        data-bind="filter_group_in_progress">
+                      <span class="status-groups__item">Im Wechselprozess</span>
                     </div>
 
-                    <div class="form-line search-line">
-                        <div class="form-cell filter-number">
-                            <span class="icon-view fa fa-search"></span>
-                            <label>Auftr. Nr., Zähler-Nr., Name, Externe Nr.:</label>
-                            <input type="text" id="filter_search" name="filter[search]" placeholder="Auftr. Nr., Zähler-Nr., Name, Externe Nr." class="">
-                        </div>
-
-                        <div class="form-cell">
-                            <label>PLZ:</label>
-                            <input type="text" id="filter_zip" name="filter[zip]" placeholder="PLZ" class="filter-zip">
-                        </div>
-
-
-                        <div class="form-cell">
-                            <label>Energieversorger:</label>
-                            <input type="text" id="filter_company" name="filter[company]" placeholder="Energieversorger" class="filter-company company-autocomplete-field ui-autocomplete-input" autocomplete="off">
-                        </div>
-                        <div class="select-period js-select-period selectbox pull-right">
-                            <label>Kalendar:</label>
-
-                            <div class="input-wrap">
-                                <input type="text" id="daterange" class="js-filter-range selectbox pull-right shadow-none">
-                                <span class="icon-calendar fa fa-calendar-alt pl-2 pt-1"></span>
-                            </div>
-                        </div>
-                        <!-- Start Date Range Picker-->
-                        <script>
-                          $('#daterange').daterangepicker({
-                          "showDropdowns": true,
-                          "minYear": 2008,
-                          "maxYear": 2022,
-                          "autoApply": true,
-                          "locale": {
-                              "format": "DD.MM.YYYY",
-                              "separator": " - ",
-                              "applyLabel": "Apply",
-                              "cancelLabel": "Cancel",
-                              "fromLabel": "From",
-                              "toLabel": "To",
-                              "customRangeLabel": "Custom",
-                              "weekLabel": "W",
-                              "daysOfWeek": [
-                                  "SO",
-                                  "MO",
-                                  "DI",
-                                  "MI",
-                                  "DO",
-                                  "FR",
-                                  "SA"
-                              ],
-                              "monthNames": [
-                                  "Januar",
-                                  "Februar",
-                                  "März",
-                                  "April",
-                                  "Mai",
-                                  "Juni",
-                                  "Juli",
-                                  "August",
-                                  "September",
-                                  "Oktober",
-                                  "November",
-                                  "Dezember"
-                              ],
-                              "firstDay": 1
-                            },
-                            "startDate": "01/04/2022",
-                            "endDate": "28/04/2022"
-                          }, function(start, end, label) {
-                            alert("Im Livesystem einbauen: Button über Kalender Auftragsdatum (aktiv) oder Vertragsende.");
-                            console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-                            
-                          });
-                      </script>
-                        <!-- End Daten Range Picker -->
-
-                            <button type="submit" id="filter_save" name="filter[save]" class="search-line__btn">Suchen</button>
-
+                    <div class="status-groups__item-wrap">
+                      <input type="checkbox" class="js-statuses-checkbox single" id="group-positive"
+                        data-bind="filter_group_positive">
+                      <span class="status-groups__item">Wechsel positiv</span>
                     </div>
 
-                    <div class="collapse" id="collapseCustomerContractsFilter">
-                        <div class="form-line flex-wrap">
-                            <div class="form-cell filter-status">
-                                <div class="custom-selectt">
-                                    <button class="select" type="button"
-                                    id="statusDropdown" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="true"
-                                    data-flip="false" data-style="dropupAuto:false;">
-                                    Auftragsstatus <span class="count" title="">(0)</span>
-                                    </button>
-                                    <ul id="filter_companyStatusCbx" class="dropdown-menu" aria-labelledby="statusDropdown">
-                                        <li>
-                                            <input type="checkbox" id="filter_group_draft" name="filter[group_draft]" class="" value="1">
-                                            <label for="filter_group_draft" class="status-group-draft">
-                                                <span></span>
-                                                Entwurf
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_new" name="filter[group_new]" class="" value="1">
-                                            <label for="filter_group_new" class="status-group-new">
-                                                <span></span>
-                                                vom VP erfasst
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_ready_sending" name="filter[group_ready_sending]" class="" value="1">
-                                            <label for="filter_group_ready_sending" class="status-group-ready_sending">
-                                                <span></span>
-                                                Bereit zur Übertragung
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_sending" name="filter[group_sending]" class="" value="1">
-                                            <label for="filter_group_sending" class="status-group-sending">
-                                                <span></span>
-                                                In Übertragung
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_in_progress" name="filter[group_in_progress]" class="" value="1">
-                                            <label for="filter_group_in_progress" class="status-group-in_progress">
-                                                <span></span>
-                                                Im Wechselprozess
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_positive" name="filter[group_positive]" class="" value="1">
-                                            <label for="filter_group_positive" class="status-group-positive">
-                                                <span></span>
-                                                Wechsel positiv
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_post_processing" name="filter[group_post_processing]" class="" value="1">
-                                            <label for="filter_group_post_processing" class="status-group-post_processing">
-                                                <span></span>
-                                                Notwendige Nachbearbeitung durch VP
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_extend" name="filter[group_extend]" class="" value="1">
-                                            <label for="filter_group_extend" class="status-group-extend">
-                                                <span></span>
-                                                Vertrag hat sich verlängert
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_negative" name="filter[group_negative]" class="" value="1">
-                                            <label for="filter_group_negative" class="status-group-negative">
-                                                <span></span>
-                                                Wechsel negativ (alle)
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_all_storno" name="filter[all_storno]" class="head-cbx" value="1">
-                                            <label for="filter_all_storno" class="status-group-negative head-label">
-                                                <span></span>
-                                                Storno:
-                                            </label>
-                                            <ul class="sub-status">
-                                                <li>
-                                                    <input type="checkbox" id="filter_status_22" name="filter[status_22]" class="" value="1">
-                                                    <label for="filter_status_22" class="status-group-negative">
-                                                        <span></span>
-                                                            Boni negativ
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="filter_status_20" name="filter[status_20]" class="" value="1">
-                                                    <label for="filter_status_20" class="status-group-negative">
-                                                        <span></span>
-                                                            Vertragsbindung beim Vorversorger
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="filter_status_18" name="filter[status_18]" class="" value="1">
-                                                    <label for="filter_status_18" class="status-group-negative">
-                                                        <span></span>
-                                                            Widerruf des Auftrages
-                                                    </label>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_technical_cancel" name="filter[group_technical_cancel]" class="" value="1">
-                                            <label for="filter_group_technical_cancel" class="status-group-technical_cancel">
-                                                <span></span>
-                                                Technisches Storno
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_immutable" name="filter[group_immutable]" class="" value="1">
-                                            <label for="filter_group_immutable" class="status-group-immutable">
-                                                <span></span>
-                                                Interne Statusmeldungen
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" id="filter_group_expired" name="filter[group_expired]" class="" value="1">
-                                            <label for="filter_group_expired" class="status-group-expired">
-                                                <span></span>
-                                                Vertrag beendet
-                                            </label>
-                                        </li>
-                                        <li class="text-right">
-                                            <button class="btn btn-success dismiss" type="button">Wählen</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                    <div class="status-groups__item-wrap">
+                      <input type="checkbox" class="js-statuses-checkbox single" id="group-in-progress"
+                        data-bind="filter_group_post_processing">
+                      <span class="status-groups__item">Nachbearbeitung</span>
+                    </div>
 
-                            <div class="form-cell filter-energy-type">
-                                <label class="custom-selectt">
-                                    <select id="filter_energyType" name="filter[energyType]" class=""><option value="">Typ</option><option value="electro">Strom</option><option value="gas">Gas</option><option value="heat">Wärme</option></select>
-                                </label>
-                            </div>
+                    <div class="status-groups__item-wrap">
+                      <input type="checkbox" class="js-statuses-checkbox single" id="group-post-processing"
+                        data-bind="filter_all_storno">
+                      <span class="status-groups__item">Storno</span>
+                    </div>
 
-                            <div class="form-cell filter-provision">
-                                <label class="custom-selectt">
-                                    <select id="filter_provision" name="filter[provision]" class=""><option value="">Provision</option><option value="open">Offen</option><option value="paid">Ausgezahlt</option><option value="will_be_taken">Wird zurückbelastet</option><option value="taken">Zurückbelastet</option></select>
-                                </label>
-                            </div>
+                    <div class="status-groups__item-wrap">
+                      <label for="group-post-all-status" id="btn-radio3">
+                        <input type="checkbox" class="js-statuses-checkbox all" id="group-post-all-status">
+                        <span class="status-groups__item">Alle Statusmeldungen</span>
+                      </label>
+                    </div>
+                  </div>
 
-                            <div class="form-cell filter-client-type">
-                                <label class="custom-selectt">
-                                    <select id="filter_clientType" name="filter[clientType]" class=""><option value="">Verbraucher</option><option value="client_type_private">privat</option><option value="client_type_commercial">gewerblich</option></select>
-                                </label>
-                            </div>
+                  <div class="form-line search-line">
+                    <div class="form-cell filter-number">
+                      <span class="icon-view fa fa-search"></span>
+                      <label>Auftr. Nr., Zähler-Nr., Name, Externe Nr.:</label>
+                      <input type="text" id="filter_search" name="filter[search]"
+                        placeholder="Auftr. Nr., Zähler-Nr., Name, Externe Nr." class="">
+                    </div>
 
-                            <div class="form-cell filter-owner">
-                                <label class="custom-selectt">
-                                    <select id="filter_owner" name="filter[owner]" class=""><option value="self">Eigene Aufträge</option><option value="all">Alle Aufträge</option></select>
-                                </label>
-                            </div>
-
-                            <div class="form-cell filter-doc">
-                                <label class="custom-selectt">
-                                    <select id="filter_doc" name="filter[doc]" class=""><option value="">Dokument</option><option value="miss">Originalauftrag/Scan fehlt</option><option value="check">Originalauftrag/Scan wird geprüft</option><option value="check_invoice">Noch nicht geprüfte Kundenrechnungen</option><option value="rejected">Originalauftrag/Scan abgelehnt</option><option value="approve">Originalauftrag/Scan freigegeben</option><option value="on_sign">verschickt zur E-Unterschrift</option></select>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-line mb-4">
-                            <div class="form-cell">
-                                <input type="checkbox" id="filter_signed" name="filter[signed]" class="" value="1">
-                                <label for="filter_signed">
-                                    Blitz-Unterschrift
-                                </label>
-                            </div>
-                        </div>
+                    <div class="form-cell">
+                      <label>PLZ:</label>
+                      <input type="text" id="filter_zip" name="filter[zip]" placeholder="PLZ" class="filter-zip">
                     </div>
 
 
-
-                   <div class="form-line space-between">
-                        <div class="trigger js-trigger-expanded-options order-2 order-sm-1" data-toggle="collapse" data-target="#collapseCustomerContractsFilter" aria-expanded="false" aria-controls="collapseExample">
-
-                          <span class="icon material-icons-outlined">expand</span>
-                            zusätzliche Optionen
-
-                        </div>
-                        <div class="form-cell only-without-later order-1 order-sm-2">
-                            <input type="checkbox" id="filter_onlyWithoutLater" name="filter[onlyWithoutLater]" class="" value="1">
-                            <label for="filter_onlyWithoutLater">
-                                Vertragswechsel möglich
-                            </label>
-                        </div>
+                    <div class="form-cell">
+                      <label>Energieversorger:</label>
+                      <input type="text" id="filter_company" name="filter[company]" placeholder="Energieversorger"
+                        class="filter-company company-autocomplete-field ui-autocomplete-input" autocomplete="off">
                     </div>
+                    <div class="select-period js-select-period selectbox pull-right">
+                      <label>Kalendar:</label>
 
-                    <div class="form-cell" style="display: none;">
-                        <label class="custom-selectt js-dateType-select">
-                            <select id="filter_dateType" name="filter[dateType]" class=""><option value="start">Auftragsdatum</option><option value="terminate">Vertragsende</option></select>
+                      <div class="input-wrap">
+                        <input type="text" id="daterange" class="js-filter-range selectbox pull-right shadow-none">
+                        <span class="icon-calendar fa fa-calendar-alt pl-2 pt-1"></span>
+                      </div>
+                    </div>
+                    <!-- Start Date Range Picker-->
+                    <script>
+                      $('#daterange').daterangepicker({
+                        "showDropdowns": true,
+                        "minYear": 2008,
+                        "maxYear": 2022,
+                        "autoApply": true,
+                        "locale": {
+                          "format": "DD.MM.YYYY",
+                          "separator": " - ",
+                          "applyLabel": "Apply",
+                          "cancelLabel": "Cancel",
+                          "fromLabel": "From",
+                          "toLabel": "To",
+                          "customRangeLabel": "Custom",
+                          "weekLabel": "W",
+                          "daysOfWeek": [
+                            "SO",
+                            "MO",
+                            "DI",
+                            "MI",
+                            "DO",
+                            "FR",
+                            "SA"
+                          ],
+                          "monthNames": [
+                            "Januar",
+                            "Februar",
+                            "März",
+                            "April",
+                            "Mai",
+                            "Juni",
+                            "Juli",
+                            "August",
+                            "September",
+                            "Oktober",
+                            "November",
+                            "Dezember"
+                          ],
+                          "firstDay": 1
+                        },
+                        "startDate": "01/04/2022",
+                        "endDate": "28/04/2022"
+                      }, function (start, end, label) {
+                        alert("Im Livesystem einbauen: Button über Kalender Auftragsdatum (aktiv) oder Vertragsende.");
+                        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+
+                      });
+                    </script>
+                    <!-- End Daten Range Picker -->
+
+                    <button type="submit" id="filter_save" name="filter[save]" class="search-line__btn">Suchen</button>
+
+                  </div>
+
+                  <div class="collapse" id="collapseCustomerContractsFilter">
+                    <div class="form-line flex-wrap">
+                      <div class="form-cell filter-status">
+                        <div class="custom-selectt">
+                          <button class="select" type="button" id="statusDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="true" data-flip="false" data-style="dropupAuto:false;">
+                            Auftragsstatus <span class="count" title="">(0)</span>
+                          </button>
+                          <ul id="filter_companyStatusCbx" class="dropdown-menu" aria-labelledby="statusDropdown">
+                            <li>
+                              <input type="checkbox" id="filter_group_draft" name="filter[group_draft]" class=""
+                                value="1">
+                              <label for="filter_group_draft" class="status-group-draft">
+                                <span></span>
+                                Entwurf
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_new" name="filter[group_new]" class="" value="1">
+                              <label for="filter_group_new" class="status-group-new">
+                                <span></span>
+                                vom VP erfasst
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_ready_sending" name="filter[group_ready_sending]"
+                                class="" value="1">
+                              <label for="filter_group_ready_sending" class="status-group-ready_sending">
+                                <span></span>
+                                Bereit zur Übertragung
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_sending" name="filter[group_sending]" class=""
+                                value="1">
+                              <label for="filter_group_sending" class="status-group-sending">
+                                <span></span>
+                                In Übertragung
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_in_progress" name="filter[group_in_progress]"
+                                class="" value="1">
+                              <label for="filter_group_in_progress" class="status-group-in_progress">
+                                <span></span>
+                                Im Wechselprozess
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_positive" name="filter[group_positive]" class=""
+                                value="1">
+                              <label for="filter_group_positive" class="status-group-positive">
+                                <span></span>
+                                Wechsel positiv
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_post_processing"
+                                name="filter[group_post_processing]" class="" value="1">
+                              <label for="filter_group_post_processing" class="status-group-post_processing">
+                                <span></span>
+                                Notwendige Nachbearbeitung durch VP
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_extend" name="filter[group_extend]" class=""
+                                value="1">
+                              <label for="filter_group_extend" class="status-group-extend">
+                                <span></span>
+                                Vertrag hat sich verlängert
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_negative" name="filter[group_negative]" class=""
+                                value="1">
+                              <label for="filter_group_negative" class="status-group-negative">
+                                <span></span>
+                                Wechsel negativ (alle)
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_all_storno" name="filter[all_storno]" class="head-cbx"
+                                value="1">
+                              <label for="filter_all_storno" class="status-group-negative head-label">
+                                <span></span>
+                                Storno:
+                              </label>
+                              <ul class="sub-status">
+                                <li>
+                                  <input type="checkbox" id="filter_status_22" name="filter[status_22]" class=""
+                                    value="1">
+                                  <label for="filter_status_22" class="status-group-negative">
+                                    <span></span>
+                                    Boni negativ
+                                  </label>
+                                </li>
+                                <li>
+                                  <input type="checkbox" id="filter_status_20" name="filter[status_20]" class=""
+                                    value="1">
+                                  <label for="filter_status_20" class="status-group-negative">
+                                    <span></span>
+                                    Vertragsbindung beim Vorversorger
+                                  </label>
+                                </li>
+                                <li>
+                                  <input type="checkbox" id="filter_status_18" name="filter[status_18]" class=""
+                                    value="1">
+                                  <label for="filter_status_18" class="status-group-negative">
+                                    <span></span>
+                                    Widerruf des Auftrages
+                                  </label>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_technical_cancel"
+                                name="filter[group_technical_cancel]" class="" value="1">
+                              <label for="filter_group_technical_cancel" class="status-group-technical_cancel">
+                                <span></span>
+                                Technisches Storno
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_immutable" name="filter[group_immutable]" class=""
+                                value="1">
+                              <label for="filter_group_immutable" class="status-group-immutable">
+                                <span></span>
+                                Interne Statusmeldungen
+                              </label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="filter_group_expired" name="filter[group_expired]" class=""
+                                value="1">
+                              <label for="filter_group_expired" class="status-group-expired">
+                                <span></span>
+                                Vertrag beendet
+                              </label>
+                            </li>
+                            <li class="text-right">
+                              <button class="btn btn-success dismiss" type="button">Wählen</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="form-cell filter-energy-type">
+                        <label class="custom-selectt">
+                          <select id="filter_energyType" name="filter[energyType]" class="">
+                            <option value="">Typ</option>
+                            <option value="electro">Strom</option>
+                            <option value="gas">Gas</option>
+                            <option value="heat">Wärme</option>
+                          </select>
                         </label>
+                      </div>
+
+                      <div class="form-cell filter-provision">
+                        <label class="custom-selectt">
+                          <select id="filter_provision" name="filter[provision]" class="">
+                            <option value="">Provision</option>
+                            <option value="open">Offen</option>
+                            <option value="paid">Ausgezahlt</option>
+                            <option value="will_be_taken">Wird zurückbelastet</option>
+                            <option value="taken">Zurückbelastet</option>
+                          </select>
+                        </label>
+                      </div>
+
+                      <div class="form-cell filter-client-type">
+                        <label class="custom-selectt">
+                          <select id="filter_clientType" name="filter[clientType]" class="">
+                            <option value="">Verbraucher</option>
+                            <option value="client_type_private">privat</option>
+                            <option value="client_type_commercial">gewerblich</option>
+                          </select>
+                        </label>
+                      </div>
+
+                      <div class="form-cell filter-owner">
+                        <label class="custom-selectt">
+                          <select id="filter_owner" name="filter[owner]" class="">
+                            <option value="self">Eigene Aufträge</option>
+                            <option value="all">Alle Aufträge</option>
+                          </select>
+                        </label>
+                      </div>
+
+                      <div class="form-cell filter-doc">
+                        <label class="custom-selectt">
+                          <select id="filter_doc" name="filter[doc]" class="">
+                            <option value="">Dokument</option>
+                            <option value="miss">Originalauftrag/Scan fehlt</option>
+                            <option value="check">Originalauftrag/Scan wird geprüft</option>
+                            <option value="check_invoice">Noch nicht geprüfte Kundenrechnungen</option>
+                            <option value="rejected">Originalauftrag/Scan abgelehnt</option>
+                            <option value="approve">Originalauftrag/Scan freigegeben</option>
+                            <option value="on_sign">verschickt zur E-Unterschrift</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
 
-                    
+                    <div class="form-line mb-4">
+                      <div class="form-cell">
+                        <input type="checkbox" id="filter_signed" name="filter[signed]" class="" value="1">
+                        <label for="filter_signed">
+                          Blitz-Unterschrift
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="form-line space-between">
+                    <div class="trigger js-trigger-expanded-options order-2 order-sm-1" data-toggle="collapse"
+                      data-target="#collapseCustomerContractsFilter" aria-expanded="false"
+                      aria-controls="collapseExample">
+
+                      <span class="icon material-icons-outlined">expand</span>
+                      zusätzliche Optionen
+
+                    </div>
+                    <div class="form-cell only-without-later order-1 order-sm-2">
+                      <input type="checkbox" id="filter_onlyWithoutLater" name="filter[onlyWithoutLater]" class=""
+                        value="1">
+                      <label for="filter_onlyWithoutLater">
+                        Vertragswechsel möglich
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-cell" style="display: none;">
+                    <label class="custom-selectt js-dateType-select">
+                      <select id="filter_dateType" name="filter[dateType]" class="">
+                        <option value="start">Auftragsdatum</option>
+                        <option value="terminate">Vertragsende</option>
+                      </select>
+                    </label>
+                  </div>
+
+
 
                 </form>
 
 
                 <div id="filterContractsOptions" class="selected-options">
-                  <span class="options-item" data-id="filter_search" data-default-value="">Oks Anatolij<span class="cancel-filter">×</span></span>
-                  <span class="options-item" data-id="filter_zip" data-default-value="">49661<span class="cancel-filter">×</span></span></div>
-            </div>
+                  <span class="options-item" data-id="filter_search" data-default-value="">Oks Anatolij<span
+                      class="cancel-filter">×</span></span>
+                  <span class="options-item" data-id="filter_zip" data-default-value="">49661<span
+                      class="cancel-filter">×</span></span>
+                </div>
+              </div>
             </div>
             <div class="col-xs-3 contracts-wrap white-box">
-              <div class="contracts-heading">
+              <div class="contracts-heading pl-2 pl-md-0">
                 <span>Eigene Aufträge (150)</span>
               </div>
               <div class="table-responsive">
                 <table class="contracts-list">
                   <tbody>
-                  <tr>
-                    <th class="type">Typ</th>
-                    <th class="company-logo">Produkt</th>
-                    <th class="contract-number">Auftrags-Nr.</th>
-                    <th class="sign-date">Erfasst am</th>
-                    <th class="customer-name">Name</th>
-                    <th class="status">Status</th>
-                    <th class="points">Punkte</th>
-                    <th class="leader-bonus">LB</th>
-                    <th class="provi">Provision</th>
-                    <th class="seller">Verkäufer</th>
-                    <th class="docu-and-action">Aktionen</th>
-                  </tr>
-                  <!-- Auftrag 1 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar danger"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-n3">
-                        <i class="icon material-icons-outlined energy">electric_bolt</i>
-                        <span class="text_rightof_item">
-                          Strom
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item">
-                        <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
-                        <span class="text_rightof_item">
-                          Vattenfall Easy24 Pur Gas rNKB (ID 410)
-                        </span>
-                      </div>
-                    </td>
-                    <td>637557</td>
-                    <td>18.05.2022</td>
-                    <td>Valerijs Servuts</td>
-                    <td>
-                      <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-danger">warning</span>
-                        <span class="text_contracts">
-                          Bitte den Auftrag nachbearbeiten. Übermittlung nicht möglich. 
-                          Straße bei der Lieferanschrift stimmt nicht
-                          Bitte den Auftrag nachbearbeiten.
-                        </span>
-                      </div>
-                    </td>
-                    <td>47</td>
-                    <td>37,03 €</td>
-                    <td>
-                       <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined other prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">offen</span>
-                      </div>
-                    </td>
-                    <td>49000028 Rosa Stepanow</td>
-                    <td class="docu-and-action">
-                      <!-- Tooltip Scan -->
-                      <div class="tooltip_contracts">
-                        <i class="fas fa-paperclip doc"></i>
-                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <!-- Auftrag 2 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar info"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-n2">
-                        <i class="icon material-icons-outlined energy">local_fire_department</i>
-                        <span class="text_rightof_item">
-                          Gas
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item">
-                        <img class="tariff-table-logo" src="img/EnBW.svg">
-                        <span class="text_rightof_item">
-                          EnBW Sorgenfrei und Grün Profistrom (ID 13486)
-                        </span>
-                      </div>
-                    </td>
-                    <td>637513</td>
-                    <td>17.05.2022</td>
-                    <td>Raisa Kolhanova Olena Trikina-Gerdau</td>
-                    <td>
-                      <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-i400">forward_to_inbox</span>
-                        <span class="text_contracts">
-                          Erfolgreich übertragen
-                        </span>
-                      </div>
-                    </td>
-                    <td>41</td>
-                    <td>19,88 €</td>
-                    <td>
-                      <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined other prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">offen</span>
-                      </div>
-                    </td>
-                    <td>49000028 Rosa Stepanow</td>
-                    <td class="docu-and-action">
-                      <!-- Tooltip Scan -->
-                      <div class="tooltip_contracts">
-                        <i class="fas fa-paperclip doc"></i>
-                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <!-- Auftrag 3 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar succes"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-n3">
-                        <i class="icon material-icons-outlined energy">electric_bolt</i>
-                        <span class="text_rightof_item">
-                          Strom
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item">
-                        <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
-                        <span class="text_rightof_item">
-                          Vattenfall Easy24 Pur Strom rNKB (ID 410)
-                        </span>
-                      </div>
-                    </td>
-                    <td>637554</td>
-                    <td>16.05.2022</td>
-                    <td>Michael Potrubeiko</td>
-                    <td>
-                       <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-succes">done</span>
-                        <span class="text_contracts">
-                          In Belieferung
-                        </span>
-                      </div>
-                    </td>
-                    <td>26</td>
-                    <td>4,73 €</td>
-                    <td>
-                      <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined success prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">überwiesen</span>
-                      </div>
-                    <td>49000029 Olga Schef</td>
-                    <td class="docu-and-action">
-                      <!-- Tooltip Scan -->
-                      <div class="tooltip_contracts">
-                        <i class="fas fa-paperclip doc-ok"></i>
-                        <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <!-- Auftrag 4 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar info"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-2">
-                        <i class="icon material-icons-outlined internet">router</i>
-                        <span class="text_rightof_item">
-                          Internet zuhause
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item pr-5">
-                        <img class="tariff-table-logo py-1" src="img/o2-logo.svg">
-                        <span class="text_rightof_item">
-                          O2 my Home XL 24 MO (ID 123)
-                        </span>
-                      </div>
-                    </td>
-                    <td>637105</td>
-                    <td>13.05.2022</td>
-                    <td class="company-logo">Albert Konstanz</td>
-                    <td>
-                       <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-i400">more_time</span>
-                        <span class="text_contracts">
-                          Erfolgreich übertragen. Warten auf Rufnummernportierung
-                        </span>
-                      </div>
-                    </td>
-                    <td>26</td>
-                    <td>4,73 €</td>
-                    <td>
-                      <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined other prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">offen</span>
-                      </div>
-                    </td>
-                    <td>49000028 Rosa Stepanow</td>
-                    <td class="docu-and-action">
-                      <!-- Tooltip Scan -->
-                      <div class="tooltip_contracts">
-                        <i class="fas fa-paperclip doc-ok"></i>
-                        <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
-                      </div>
-                  </tr>
-                  <!-- Auftrag 5 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar danger"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-n4">
-                        <i class="icon material-icons-outlined internet">signal_cellular_alt</i>
-                        <span class="text_rightof_item">
-                          Mobilfunk
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item pr-4">
-                        <img class="tariff-table-logo py-2" src="img/blau_logo.svg">
-                        <span class="text_rightof_item">
-                          Blau Allnet VVL PK VVB 3 (ID 03)
-                        </span>
-                      </div>
-                    </td>
-                    <td>637028</td>
-                    <td>13.05.2022</td>
-                    <td>Sebastian Neumann</td>
-                    <td>
-                       <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-danger">block</span>
-                        <span class="text_contracts">
-                          Abgelehnt! Negative Bonität
-                        </span>
-                      </div>
-                    </td>
-                    <td>11</td>
-                    <td>3,00 €</td>
-                    <td>
-                      <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined danger prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">zurückbelastet</span>
-                      </div>
-                    </td>
-                    <td>49000028 Rosa Stepanow</td>
-                    <td class="docu-and-action">
-                      <!-- Tooltip Scan -->
-                      <div class="tooltip_contracts">
-                        <i class="fas fa-paperclip doc"></i>
-                        <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <!-- Auftrag 6 -->
-                  <tr>
-                    <td class="type">
-                      <span class="statusbar warning"></span>
-                      <!-- Tooltip Typ -->
-                      <div class="tooltip_rightof_item pr-n4">
-                        <i class="icon material-icons-outlined other">question_mark</i>
-                        <span class="text_rightof_item">
-                          Sonstiges
-                        </span>
-                      </div>
-                    </td>
-                    <td class="company-logo">
-                      <!-- Tooltip Tarif -->
-                      <div class="tooltip_rightof_item">
-                        <img class="tariff-table-logo" src="img/shell-energy-logo.png">
-                        <span class="text_rightof_item">
-                          Shell THG-Quote (ID Fantasie)
-                        </span>
-                      </div>
-                    </td>
-                    <td>636897</td>
-                    <td>12.05.2022</td>
-                    <td>Viktor Eifert Max Mustermann GmbH & Co. Kg</td>
-                    <td>
-                       <!-- Tooltip Status -->
-                      <div class="tooltip_contracts">
-                        <span class="material-icons-outlined clr-warning">local_parking</span>
-                        <span class="text_contracts">
-                          Geparkter Auftrag im Entwrufsmodus
-                        </span>
-                      </div>
-                    </td>
-                    <td>130</td>
-                    <td>63,03 €</td>
-                    <td>
-                      <!-- Tooltip Provision -->
-                      <div class="tooltip_contracts">
-                        <i class="icon material-icons-outlined other prov">euro</i>
-                        <span class="text_contracts mr-n3 mt-1">offen</span>
-                      </div>
-                    </td>
-                    <td>49003609 Susanne Schef</td>
-                    <td class="docu-and-action">
+                    <tr>
+                      <th class="type">Typ</th>
+                      <th class="company-logo">Produkt</th>
+                      <th class="contract-number">Auftrags-Nr.</th>
+                      <th class="sign-date">Erfasst am</th>
+                      <th class="customer-name">Name</th>
+                      <th class="status">Status</th>
+                      <th class="points">Punkte</th>
+                      <th class="leader-bonus">Leader-Bonus</th>
+                      <th class="provi">Provision</th>
+                      <th class="start">Beginn</th>
+                      <th class="end">Ende</th>
+                      <th class="docu-and-action pr-2 pl-md-0">Aktionen</th>
+                    </tr>
+                    <!-- Auftrag 1 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar danger"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-n3">
+                          <i class="icon material-icons-outlined energy">electric_bolt</i>
+                          <span class="text_rightof_item">
+                            Strom
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item">
+                          <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
+                          <span class="text_rightof_item">
+                            Vattenfall Easy24 Pur Gas rNKB (ID 410)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          637557 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49000028 Rosa Stepanow
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">18.05.2022</td>
+                      <td class="customer-name">Valerijs Servuts</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-danger">warning</span>
+                          <span class="text_contracts">
+                            Bitte den Auftrag nachbearbeiten. Übermittlung nicht möglich.
+                            Straße bei der Lieferanschrift stimmt nicht
+                            Bitte den Auftrag nachbearbeiten.
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">47</td>
+                      <td class="leader-bonus">37,03 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined other prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">offen</span>
+                        </div>
+                      </td>
+                      <td class="start">25.06.2022</td>
+                      <td class="end">--</td>
+                      <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc"></i>
+                          <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Auftrag 2 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar info"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-n2">
+                          <i class="icon material-icons-outlined energy">local_fire_department</i>
+                          <span class="text_rightof_item">
+                            Gas
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item">
+                          <img class="tariff-table-logo" src="img/EnBW.svg">
+                          <span class="text_rightof_item">
+                            EnBW Sorgenfrei und Grün Profistrom (ID 13486)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          637513 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49000028 Rosa Stepanow
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">17.05.2022</td>
+                      <td class="customer-name">Raisa Kolhanova Olena Trikina-Gerdau</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-i400">forward_to_inbox</span>
+                          <span class="text_contracts">
+                            Erfolgreich übertragen
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">41</td>
+                      <td class="leader-bonus">19,88 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined other prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">offen</span>
+                        </div>
+                      </td>
+                      <td class="start">19.08.2022</td>
+                      <td class="end">--</td>
+                      <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc"></i>
+                          <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Auftrag 3 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar succes"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-n3">
+                          <i class="icon material-icons-outlined energy">electric_bolt</i>
+                          <span class="text_rightof_item">
+                            Strom
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item">
+                          <img class="tariff-table-logo" src="img/Vattenfall_logo.svg">
+                          <span class="text_rightof_item">
+                            Vattenfall Easy24 Pur Strom rNKB (ID 410)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          637513 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49000029 Olga Schef
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">16.05.2022</td>
+                      <td class="customer-name">Michael Potrubeiko</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-succes">done</span>
+                          <span class="text_contracts">
+                            In Belieferung
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">26</td>
+                      <td class="leader-bonus">4,73 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined success prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">überwiesen</span>
+                        </div>
+                      <td class="start">13.08.2022</td>
+                      <td class="end">12.08.2023</td>
+                      <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc-ok"></i>
+                          <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- Auftrag 4 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar info"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-2">
+                          <i class="icon material-icons-outlined internet">router</i>
+                          <span class="text_rightof_item">
+                            Internet zuhause
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item pr-5">
+                          <img class="tariff-table-logo py-1" src="img/o2-logo.svg">
+                          <span class="text_rightof_item">
+                            O2 my Home XL 24 MO (ID 123)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          637105 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49000028 Rosa Stepanow
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">13.05.2022</td>
+                      <td class="customer-name">Albert Konstanz</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-i400">more_time</span>
+                          <span class="text_contracts">
+                            Erfolgreich übertragen. Warten auf Rufnummernportierung
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">26</td>
+                      <td class="leader-bonus">4,73 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined other prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">offen</span>
+                        </div>
+                      </td>
+                      <td class="start">22.06.2022</td>
+                      <td class="end">--</td>
+                      <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc-ok"></i>
+                          <span class="text_contracts mr-n3 mt-1">Scan freigegeben</span>
+                        </div>
+                    </tr>
+                    <!-- Auftrag 5 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar danger"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-n4">
+                          <i class="icon material-icons-outlined internet">signal_cellular_alt</i>
+                          <span class="text_rightof_item">
+                            Mobilfunk
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item pr-4">
+                          <img class="tariff-table-logo py-2" src="img/blau_logo.svg">
+                          <span class="text_rightof_item">
+                            Blau Allnet VVL PK VVB 3 (ID 03)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          637028 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49000028 Rosa Stepanow
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">13.05.2022</td>
+                      <td class="customer-name">Sebastian Neumann</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-danger">block</span>
+                          <span class="text_contracts">
+                            Abgelehnt! Negative Bonität
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">11</td>
+                      <td class="leader-bonus">3,00 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined danger prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">zurückbelastet</span>
+                        </div>
+                      </td>
+                      <td class="start">--</td>
+                      <td class="end">--</td>
+                      <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc"></i>
+                          <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <!--  class="contract-number"6 -->
+                    <tr>
+                      <td class="type">
+                        <span class="statusbar warning"></span>
+                        <!-- Tooltip Typ -->
+                        <div class="tooltip_rightof_item pr-n4">
+                          <i class="icon material-icons-outlined other">question_mark</i>
+                          <span class="text_rightof_item">
+                            Sonstiges
+                          </span>
+                        </div>
+                      </td>
+                      <td class="company-logo">
+                        <!-- Tooltip Tarif -->
+                        <div class="tooltip_rightof_item">
+                          <img class="tariff-table-logo" src="img/shell-energy-logo.png">
+                          <span class="text_rightof_item">
+                            Shell THG-Quote (ID Fantasie)
+                          </span>
+                        </div>
+                      </td>
+                      <td class="contract-number">
+                        <div class="tooltip_rightof_item" style="display: block; position: relative;">
+                          636897 <i class="fa fa-info-circle"></i>
+                          <span class="text_rightof_item ml-5 pl-5">
+                            49003609 Susanne Schef
+                          </span>
+                        </div>
+                      </td>
+                      <td class="sign-date">12.05.2022</td>
+                      <td class="customer-name">Viktor Eifert Max Mustermann GmbH & Co. Kg</td>
+                      <td class="status">
+                        <!-- Tooltip Status -->
+                        <div class="tooltip_contracts">
+                          <span class="material-icons-outlined clr-warning">local_parking</span>
+                          <span class="text_contracts">
+                            Geparkter Auftrag im Entwrufsmodus
+                          </span>
+                        </div>
+                      </td>
+                      <td class="points">130</td>
+                      <td class="leader-bonus">63,03 €</td>
+                      <td class="provi">
+                        <!-- Tooltip Provision -->
+                        <div class="tooltip_contracts">
+                          <i class="icon material-icons-outlined other prov">euro</i>
+                          <span class="text_contracts mr-n3 mt-1">offen</span>
+                        </div>
+                      </td>
+                      <td class="start">--</td>
+                      <td class="end">--</td>
+                      <td class="docu-and-action">
                         <i class="fas fa-pen doc small"></i>
                         <i class="fas fa-trash doc small"></i>
-                    </td>
-                  </tr> 
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
-            </div>
               </div>
             </div>
-
-            </div>
           </div>
-        </div>
 
-        <!-- END content -->
-
-      </div>
-      <!-- END cntent wrap -->
-
-      <!-- second mobile menu -->
-      <div class="row secon_mobile_menu d-flex d-md-none">
-        <div class="col">
-          <button class="btn btn_custom">
-            <i class="fas fa-home"></i>
-          </button>
-
-        </div>
-        <div class="col">
-          <button class="btn btn_custom active">
-            <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-        <div class="col">
-          <button class="btn btn_custom">
-            <i class="fas fa-user-friends"></i>
-          </button>
-        </div>
-        <div class="col">
-          <button class="btn btn_custom">
-            <i class="fas fa-sign-in-alt"></i>
-          </button>
-        </div>
-        <div class="col">
-          <button class="btn btn_custom">
-            <i class="fas fa-gift"></i>
-          </button>
-        </div>
-        <div class="col">
-          <button class="btn btn_custom">
-            <i class="fas fa-ellipsis-h"></i>
-          </button>
         </div>
       </div>
-      <!--END second mobile menu -->
+    </div>
 
-      <!-- Optional JavaScript -->
+    <!-- END content -->
 
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </div>
+  <!-- END cntent wrap -->
 
-      <script src="js/all.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+  <!-- second mobile menu -->
+  <div class="row secon_mobile_menu d-flex d-md-none">
+    <div class="col">
+      <button class="btn btn_custom">
+        <i class="fas fa-home"></i>
+      </button>
+
+    </div>
+    <div class="col">
+      <button class="btn btn_custom active">
+        <i class="fas fa-shopping-cart"></i>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn_custom">
+        <i class="fas fa-user-friends"></i>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn_custom">
+        <i class="fas fa-sign-in-alt"></i>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn_custom">
+        <i class="fas fa-gift"></i>
+      </button>
+    </div>
+    <div class="col">
+      <button class="btn btn_custom">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+    </div>
+  </div>
+  <!--END second mobile menu -->
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
