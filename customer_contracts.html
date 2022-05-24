@@ -290,6 +290,13 @@
                         <span class="status-groups__item">Alle Statusmeldungen</span>
                       </label>
                     </div>
+
+                    <div class="status-groups__item-wrap start pl-5">
+                      <label for="group-post-all-status" id="btn-radio4">
+                        <input type="checkbox" class="js-statuses-checkbox all" id="group-post-all-status">
+                        <span class="status-groups__item">Beginn fehlt</span>
+                      </label>
+                    </div>
                   </div>
 
                   <div class="form-line search-line">
@@ -650,7 +657,7 @@
                       <th class="docu-and-action pr-2 pl-md-0">Aktionen</th>
                     </tr>
                     <!-- Auftrag 1 -->
-                    <tr>
+                    <tr data-toggle="modal" data-target="#exampleModalLong">
                       <td class="type">
                         <span class="statusbar danger"></span>
                         <!-- Tooltip Typ -->
@@ -1002,6 +1009,29 @@
                     </tr>
                   </tbody>
                 </table>
+
+                <!-- Starte meinen Modal TEST -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">
+                          <i class="material-icons-outlined">description</i> 637557 - Vattenfall Easy24 Pur Gas rNKB<br/>
+                          <i class="material-icons-outlined">account_circle</i> Herr Valerijs Servuts</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+
               </div>
             </div>
           </div>

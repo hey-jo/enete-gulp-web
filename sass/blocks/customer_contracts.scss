@@ -197,9 +197,14 @@
     position: relative;
     margin-right: 15px;
 
-    @media (max-width: 940px){
+    @media (max-width: 1352px){
+      &:last-child{ display: none; }
+    }
+
+    @media (max-width: 1002px){
       &:first-child{ display: none; }
     }
+
   }
 
   .status-groups__item-wrap [type="checkbox"] {
