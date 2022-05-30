@@ -657,7 +657,7 @@
                       <th class="docu-and-action pr-2 pl-md-0">Aktionen</th>
                     </tr>
                     <!-- Auftrag 1 -->
-                    <tr data-toggle="modal" data-target="#exampleModalLong">
+                    <tr data-toggle="modal" data-target="#CustomerContractsModalLong">
                       <td class="type">
                         <span class="statusbar danger"></span>
                         <!-- Tooltip Typ -->
@@ -1012,19 +1012,214 @@
 
                 <!-- Starte meinen Modal TEST -->
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-lg" role="document">
+                <div class="modal hide fade" id="CustomerContractsModalLong" tabindex="-1" role="dialog" aria-labelledby="CustomerContractsModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                     <div class="modal-content">
-                      <div class="modal-header">
+                      <div class="modal-header border-1">
                         <h5 class="modal-title" id="myModalLabel">
-                          <i class="material-icons-outlined">description</i> 637557 - Vattenfall Easy24 Pur Gas rNKB<br/>
-                          <i class="material-icons-outlined">account_circle</i> Herr Valerijs Servuts</h5>
+                          <i class="material-icons-outlined">description</i><span class="pb-2">637557 - Vattenfall Easy24 Pur Gas rNKB</span><br/>
+                          <i class="material-icons-outlined">account_circle</i> <span class="pb-2">Herr Valerijs Servuts</span></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        ...
+                        <!-- Modal Details Deckblatt -->
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="deal-card-flex">
+                              <div class="features-card primary">
+                                <div class="card-content-title">Tarifübersicht</div>
+                                <div class="card-features-wrapper-flex">
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Anbieter</div>
+                                    <div class="card-feature-value positive">Vattenfall</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Produkt</div>
+                                    <div class="card-feature-value positive">Easy24 Pur Gas rNKB</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Abnehmer</div>
+                                    <div class="card-feature-value">Privat</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Tariftyp</div>
+                                    <div class="card-feature-value">Strom</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="features-card">
+                                <div class="card-content-title">Kundendaten</div>
+                                <div class="card-features-wrapper-flex">
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name positive"><strong>Herr Vera und Vasili Frunza</strong></div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Panoramastr. 8</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">74613 Öhringen</div>
+                                  </div>
+                                  <div class="card-sub-line my-2"></div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">geboren am:</div>
+                                    <div class="card-feature-value">11.01.1991</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Tel.:</div>
+                                    <div class="card-feature-value">+49 0176 34606202</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Mail:</div>
+                                    <div class="card-feature-value">vasyca3@gmail.com</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="deal-card-flex">
+                              <div class="features-card primary">
+                                <div class="card-content-title">Tarifdaten</div>
+                                <div class="card-features-wrapper-flex">
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Grundpreis</div>
+                                    <div class="card-feature-value positive">196,23 € / Jahr</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Arbeitspreis</div>
+                                    <div class="card-feature-value positive">39,62 ct / kWh</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Vertragslaufzeit</div>
+                                    <div class="card-feature-value">24 Monate</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">E-Preisgarantie</div>
+                                    <div class="card-feature-value">24 Monate</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Kündigungsfrist</div>
+                                    <div class="card-feature-value">1 Monat</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="features-card">
+                                <div class="card-content-title">Bankdaten</div>
+                                <div class="card-features-wrapper-flex">
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name"><strong>Herr Vera und Vasili Frunza</strong></div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Panoramastr. 8</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">74613 Öhringen</div>
+                                  </div>
+                                  <div class="card-sub-line my-2"></div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Bank:</div>
+                                    <div class="card-feature-value">Targobank</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">IBAN:</div>
+                                    <div class="card-feature-value">DE90300209003716102017</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">BIC:</div>
+                                    <div class="card-feature-value">CMCIDEDDXXX</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="features-card">
+                                <div class="card-content-title">Belieferung</div>
+                                <div class="card-features-wrapper-flex">
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Auftragsnummer</div>
+                                    <div class="card-feature-value positive">900032317825</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Netzbetreiber</div>
+                                    <div class="card-feature-value">Netze BW GmbH</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Vorjahresverbrauch</div>
+                                    <div class="card-feature-value">4000 kWh / Jahr</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Status</div>
+                                    <div class="card-feature-value">7100 - Abgeschlossen EP</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">gew. Lieferdatum</div>
+                                    <div class="card-feature-value">11.04.2022</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Zählernummer</div>
+                                    <div class="card-feature-value">21358850</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">bish. Kundenummer</div>
+                                    <div class="card-feature-value">701030148098</div>
+                                  </div>
+                                  <div class="card-features-wrapper border-bottom border-dashed">
+                                    <div class="card-feature-name">Vorversorger</div>
+                                    <div class="card-feature-value">EnBW Energie Baden-Württemberg AG</div>
+                                  </div>
+                                  <div class="card-features-wrapper">
+                                    <div class="card-feature-name">Unterschriftsdatum</div>
+                                    <div class="card-feature-value">11.04.2022</div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <div class="row tariff_action">
+                              <div class="col-12 col-md-6">
+                                <p class="text-success small pt-2">
+                                  <i class="fa fa-info-circle"></i>
+                                  &nbsp;Die unten angegebene Notiz ist nur für einen Vertriebspartner bearbeitbar.
+                                </p>
+                                <textarea class="form-control" name="notice_text" rows="6"></textarea>
+                                <button class="btn-custom btn-sm tariff_action_switch btn-report btn-block mt-3" data-target="action:order:savenotice" data-array="{ order_no: 60399 }">Notiz speichern</button>
+                              </div>
+                              <div class="col-12 col-md-6 tariff_action">
+                                <table class="table table-striped">
+                                  <thead>
+                                      <tr>
+                                          <th colspan="2">Lieferdatum nachtragen</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td colspan="2">
+                                              <div class="form-group">
+                                                  <select class="form-control" id="reseller-order-date_delivery_type" name="date_delivery_type">
+                                                      <option value="1" selected="">Lieferdatum ist voraussichtlich</option>
+                                                      <option value="2">Lieferdatum ist bestätigt</option>
+                                                  </select>
+                                              </div>
+                                              <div class="form-group">
+                                                  <div class="input-group input-group-sm date">
+                                                      <input value="" id="--date_delivery" type="text" class="- form-control" name="date_delivery" placeholder="Lieferdatum">
+                                                      <span class="input-group-addon">
+                                                          <i class="glyphicon glyphicon-th"></i>
+                                                      </span>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group">
+                                                  <input class="form-control input-sm" placeholder="Kundennummer" id="reseller-order-order_customer_no" name="order_customer_no" value="">
+                                              </div>
+                                              <button class="btn-custom btn-sm tariff_action_switch btn-report btn-block">
+                                                  Datum setzen
+                                              </button>									
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
