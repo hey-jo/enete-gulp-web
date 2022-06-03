@@ -951,12 +951,27 @@
       }
     }
 
+    
+
   }
 }
 
-.modal-backdrop {
-  z-index: 100;
+#CustomerContractsModalLong{
+  .modal-header{
+    .modal-title{
+      @media (max-width: 550px){
+        font-size: 13px;
+        font-weight: 400;
+
+        i.material-icons-outlined{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
 }
+
 
 
 

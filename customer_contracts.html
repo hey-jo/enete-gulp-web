@@ -657,7 +657,7 @@
                       <th class="docu-and-action pr-2 pl-md-0">Aktionen</th>
                     </tr>
                     <!-- Auftrag 1 -->
-                    <tr data-toggle="modal" data-target="#CustomerContractsModalLong">
+                    <tr data-toggle="modal" data-target="#CustomerContractsModalLong" data-backdrop="static">
                       <td class="type">
                         <span class="statusbar danger"></span>
                         <!-- Tooltip Typ -->
@@ -1003,6 +1003,11 @@
                       <td class="start">--</td>
                       <td class="end">--</td>
                       <td class="docu-and-action">
+                        <!-- Tooltip Scan -->
+                        <div class="tooltip_contracts">
+                          <i class="fas fa-paperclip doc"></i>
+                          <span class="text_contracts mr-n3 mt-1">Auftragsformular wird geprüft</span>
+                        </div>
                         <i class="fas fa-pen doc small"></i>
                         <i class="fas fa-trash doc small"></i>
                       </td>
@@ -1010,16 +1015,25 @@
                   </tbody>
                 </table>
 
-                <!-- Starte meinen Modal TEST -->
+                <!-- Starte meinen Modal -->
+                <!-- Z-Index-Bug beheben-->
+                <script type="text/javascript">
+                  $(document).ready(function () {
+              
+                      $("#CustomerContractsModalLong").appendTo("body");
+              
+              
+                     });
+                </script>
                 <!-- Modal -->
                 <div class="modal hide fade" id="CustomerContractsModalLong" tabindex="-1" role="dialog" aria-labelledby="CustomerContractsModalLongTitle" aria-hidden="true">
                   <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                       <div class="modal-header border-1">
                         <h5 class="modal-title" id="myModalLabel">
-                          <i class="material-icons-outlined">description</i><span class="pb-2">637557 - Vattenfall Easy24 Pur Gas rNKB</span><br/>
-                          <i class="material-icons-outlined">account_circle</i> <span class="pb-2">Herr Valerijs Servuts</span></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <i class="material-icons-outlined">description</i><span class="pb-2-md">637557 - Vattenfall Easy24 Pur Gas rNKB</span><br/>
+                          <i class="material-icons-outlined">account_circle</i> <span class="pb-2-md">Herr Valerijs Servuts</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-backdrop="static" data-keyboard="false">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
