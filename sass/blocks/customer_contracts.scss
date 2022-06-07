@@ -952,6 +952,7 @@
     }
 
     
+    
 
   }
 }
@@ -967,6 +968,50 @@
           font-size: 20px;
         }
       }
+    }
+  }
+
+}
+
+// span vertikale Ausrichtung verschoben durch Anweisung aus radio.css
+#myModalLabel span{ vertical-align: super; }
+
+#tabContent{
+
+  .tab-pane {
+    margin: 2px 5px 0px 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .tab-pane:hover, .tab-pane.active {
+    border-bottom: 1px solid $clr-primary;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $clr-primary;
+  }
+
+  .box {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .modal-backdrop { 
+    background-color: #64B5F6;
+  }
+
+  .line {
+    background-color: #CFD8DC;
+    height: 1px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tab-pane a {
+        font-size: 12px;
     }
   }
 
