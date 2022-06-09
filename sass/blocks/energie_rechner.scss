@@ -393,11 +393,15 @@
     }
 }
 
-.modal-header{
-    padding: 16px 16px 12px;
-    border-bottom: none;
-    color:#192A3E;
-    .modal-title{
+// Bug Modal Header wirkt sich auf alle Modals aus
+.energie-rechner-filter-modal {
+    
+    .modal-header {
+        padding: 16px 16px 12px;
+        border-bottom: none;
+        color:#192A3E;
+    }
+    .modal-title {
         font-size: 18px;
         font-weight: 500;
         font-family: Poppins;

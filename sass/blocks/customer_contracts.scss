@@ -1,4 +1,4 @@
-.customer_contracts{
+.customer_contracts {
 
   //später ausschalten oder ändern
   .filter-wrap {
@@ -55,19 +55,19 @@
     flex-direction: row;
     padding: 0 20px 0px;
 
-    @media (max-width: 1200px){
+    @media (max-width: 1200px) {
       padding: 0px 20px;
     }
 
-    @media (max-width: 940px){
+    @media (max-width: 940px) {
       padding: 0;
     }
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
       position: relative;
     }
 
-    & .trigger{
+    & .trigger {
       display: flex;
       align-items: center;
       font-size: 15px;
@@ -81,14 +81,14 @@
         margin: 10px 0px 10px -5px;
       }
 
-      &:hover{ 
+      &:hover { 
         color: $clr-danger;
         cursor: pointer;
         
-        & .icon{ color: $clr-danger }
+        & .icon { color: $clr-danger }
       }
 
-      & .icon{
+      & .icon {
         margin-right: 20px;
         font-size: 30px;
         transition: color .2s;
@@ -135,7 +135,7 @@
       margin-right: 0;
     }
 
-    & .form-cell{
+    & .form-cell {
 
       @media (max-width: 640px){
         max-width: 100%;
@@ -148,7 +148,7 @@
     }
   }
 
-  [type="checkbox"]+label{
+  [type="checkbox"]+label {
     display: inline;
     position: relative;
     padding-left: 28px;
@@ -156,7 +156,7 @@
     color: #7e8a95;
     cursor: pointer;
 
-    &::before{
+    &::before {
       content: '';
       position: absolute;
       left: 0;
@@ -167,12 +167,12 @@
       border-radius: 4px;
       background-color: #fff;
 
-      &:hover::before{
+      &:hover::before {
         border: 1px solid #29a3db;
       }
     }
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       display: block;
@@ -197,11 +197,11 @@
     position: relative;
     margin-right: 15px;
 
-    @media (max-width: 1352px){
+    @media (max-width: 1352px) {
       &:last-child{ display: none; }
     }
 
-    @media (max-width: 1002px){
+    @media (max-width: 1002px) {
       &:first-child{ display: none; }
     }
 
@@ -318,12 +318,12 @@
       }
     }
 
-    & .select-period{
+    & .select-period {
       width: 200px;
       height: 36px;
       overflow: hidden;
 
-      @media (max-width: 940px){
+      @media (max-width: 940px) {
         width: 33px;
         transition: width .4s;
 
@@ -332,7 +332,7 @@
         }
       }
 
-      @media (max-width: 640px){
+      @media (max-width: 640px) {
         margin-bottom: 55px;
         width: 100%; // !important prüfen
         overflow: visible;
@@ -340,7 +340,7 @@
 
       &.open, .show{ @media (max-width: 940px){ width: 220px; } }
 
-      & label{
+      & label {
         display: none;
 
         @media (max-width: 640px) {
@@ -352,12 +352,12 @@
         }
       }
 
-      & .input-wrap{
+      & .input-wrap {
         position: relative;
         width: 100%;
         height: 100%;
 
-        & input{
+        & input {
           position: absolute;
           z-index: 3;
           top: 0;
@@ -373,7 +373,7 @@
           outline: 0 transparent;
         }
 
-        & span{
+        & span {
           color: #8f9bb3;
         }
       }
@@ -413,11 +413,11 @@
   .filter .search-line .form-cell {
     margin-right: 0;
 
-    input::placeholder{
+    input::placeholder {
       color: #7992a7;
       font-weight: 400;
 
-      @media (max-width: 640px){
+      @media (max-width: 640px) {
         color: transparent;
       }    
     }
@@ -426,20 +426,20 @@
   .filter .form-cell {
     margin-right: 15px;
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
       margin-bottom: 20px;
 
       &:last-child { margin-bottom: 00; }
     }
   }
 
-  .filter .flex-wrap{
+  .filter .flex-wrap {
      flex-wrap: wrap;
      
-     & .form-cell{ 
+     & .form-cell { 
       margin-bottom: 20px; 
       
-      & .custom-selectt{ margin-bottom: 0; }
+      & .custom-selectt { margin-bottom: 0; }
     }
   }
 
@@ -451,7 +451,7 @@
     margin-right: 25px;
     border: 0;
 
-    & select{
+    & select {
       height: 36px;
       border-radius: 4px;
       font-size: 15px;
@@ -473,7 +473,7 @@
   .filter .search-line .form-cell label {
     display: none;
 
-    @media (max-width: 640px){ display: block; }
+    @media (max-width: 640px) { display: block; }
   }
 
   .form-cell label {
@@ -497,7 +497,7 @@
     border-right: 0;
     border-radius: 0;
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
       padding-left: 10px;
       display: block;
       width: 100% !important;
@@ -511,7 +511,7 @@
     font-weight: 600;
     color: #233b50;
 
-    &:empty{ color: #233b50; }
+    &:empty { color: #233b50; }
   }
 
   .filter .search-line .filter-number {
@@ -527,7 +527,7 @@
     font-size: 18px;
     color: #c2d1dc;
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
       display: none;
     }
   }
@@ -537,7 +537,7 @@
     color: #5c6978 !important;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -559,12 +559,12 @@
   
   }
 
-  & label.custom-selectt{
+  & label.custom-selectt {
     position: relative;
     display: block;
     margin: 0;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -575,7 +575,7 @@
     margin: 0;
   
 
-    &::after{
+    &::after {
       width: 0;
       height: 0;
       border-style: solid;
@@ -589,7 +589,7 @@
       content: "";
     }
 
-    & .dropdown-menu{
+    & .dropdown-menu {
       width: 100%;
       margin: 0;
       padding: 12px 12px;
@@ -599,7 +599,7 @@
 
       & .head-label { font-weight: 900; }
 
-      & label{
+      & label {
         display: block;
         margin: 0;
         font-weight: 400;
@@ -637,7 +637,7 @@
       background: #fff;
       transition: all .3s;
 
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -649,7 +649,7 @@
     padding: 10px 0 0;
     border-top: 1px solid #e2eaf0;
 
-    & .options-item{
+    & .options-item {
       display: flex;
       -ms-flex-align: center;
       align-items: center;
@@ -665,7 +665,7 @@
       background-color: #e2eaf0;
     }
 
-    & .cancel-filter{
+    & .cancel-filter {
       padding: 5px 10px 5px 10px;
       font-size: 18px;
       cursor: pointer;
@@ -676,34 +676,34 @@
 
   // Starting style contracts
 
-  +.contracts-wrap{
+  +.contracts-wrap {
     margin: 0px 20px;
 
-    @media (max-width: 1200px){
+    @media (max-width: 1200px) {
       margin: 0px 20px;
     }
 
-    @media (max-width: 940px){
+    @media (max-width: 940px) {
       margin: 0;
     }
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
       margin: 0;
     }
 
-    & .contracts-heading{
+    & .contracts-heading {
       margin-bottom: 20px;
       font-size: 24px;
       font-weight: 700;
       color: $clr-b700;
     }
 
-    & .contracts-list{
+    & .contracts-list {
       margin-left: 10px;
 
       //& tr:nth-child(2) td { border-top: 0;}
 
-      & th{
+      & th {
         padding: 0 5px 5px 0;
         font-size: 13px;
         font-weight: 400;
@@ -750,7 +750,7 @@
       
       tr:nth-of-type(even) { background-color: rgba(247, 247, 247, 0.425);}
 
-      & td{
+      & td {
         height: 72px;
         padding: 20px 25px 5px 0;
         font-size: 15px;
@@ -759,10 +759,10 @@
         vertical-align: top;
         color: $clr-b1000;
 
-        &.type{
+        &.type {
           padding-left: 2px;
           // Statusbar links zusätzlich zu Status-Icons
-          .statusbar{
+          .statusbar {
             position: relative;
             //background-color: red;
             top: calc((100% - 56px) / 2);
@@ -783,7 +783,7 @@
 
         &.company-logo>img, div { max-width: 75px; }
 
-        & .tariff-table-logo{ max-height: 40px; }
+        & .tariff-table-logo { max-height: 40px; }
 
         &.docu-and-action {
           width: 5%;
@@ -819,12 +819,12 @@
 
         &.big { font-size: 28px; }
 
-        &.energy{
+        &.energy {
           border-color: #3E66FB;
           color: #3E66FB;
         }
 
-        &.doc{
+        &.doc {
           border-color: $clr-b600;
           color: $clr-b600;
           opacity: 50%;
@@ -837,7 +837,7 @@
           }
         }
 
-        &.doc-ok{
+        &.doc-ok {
           border-color: $clr-b600;
           color: #3CC13B;
           opacity: 40%;
@@ -853,7 +853,7 @@
 
         &.big { font-size: 24px; }
 
-        &.energy{
+        &.energy {
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
           border-radius: 60px;
           //border: 1px solid;
@@ -861,7 +861,7 @@
           color:  $clr-b600;
         }
 
-        &.internet{
+        &.internet {
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3E66FB;
           border-radius: 60px;
           //border: 1px solid;
@@ -869,7 +869,7 @@
           color: $clr-b600;
         }
 
-        &.other{
+        &.other {
           background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #babbc0;
           border-radius: 60px;
           //border: 1px solid;
@@ -897,55 +897,55 @@
         }
       }
 
-      & span.icon{ font-size: 28px; }
+      & span.icon { font-size: 28px; }
 
-      & .action{ text-align: right; }
+      & .action { text-align: right; }
 
       // Ende .contracts-list
 
     }
 
     
-    @media (max-width: 1343px){
+    @media (max-width: 1343px) {
       .contracts-list .leader-bonus,
       .contracts-list .end{
         display: none;
       }
     }
 
-    @media (max-width: 1470px){
+    @media (max-width: 1470px) {
       .contracts-list .type,
       .contracts-list .end{
         display: none;
       }
     }
 
-    @media (max-width: 1046px){
+    @media (max-width: 1046px) {
       .contracts-list .start{
         display: none;
       }
     }
 
-    @media (max-width: 940px){
+    @media (max-width: 940px) {
       .contracts-list .contract-number{
         display: none;
       }
     }
 
-    @media (max-width: 730px){
+    @media (max-width: 730px) {
       .contracts-list .provi,
       .contracts-list .points{
         display: none;
       }
     }
 
-    @media (max-width: 480px){
+    @media (max-width: 480px) {
       .contracts-list .sign-date{
         display: none;
       }
     }
 
-    @media (max-width: 380px){
+    @media (max-width: 380px) {
       .contracts-list .company-logo{
         display: none;
       }
@@ -957,10 +957,11 @@
   }
 }
 
-#CustomerContractsModalLong{
+#CustomerContractsModalLong {
   .modal-header{
+    padding-bottom: 10px;
     .modal-title{
-      @media (max-width: 550px){
+      @media (max-width: 550px) {
         font-size: 13px;
         font-weight: 400;
 
@@ -974,24 +975,31 @@
 }
 
 // span vertikale Ausrichtung verschoben durch Anweisung aus radio.css
-#myModalLabel span{ vertical-align: super; }
+#myModalLabel span { vertical-align: super; }
 
-#tabContent{
+#tabContent {
 
   .tab-pane {
+    max-width: 30%;
+    min-height: 50px;
     margin: 2px 5px 0px 5px;
     padding: 10px;
     cursor: pointer;
-    //background-color: #e2eaf0;
+    background-color: #e2eaf06c;
+
+    a { color: $clr-b1000; }
   }
 
   .tab-pane:hover, .tab-pane.active {
-    border-bottom: 2px solid $clr-primary;
+    border-top: 2px solid $clr-primary;
+    background-color: #e2eaf0;
+    cursor: default;
   }
 
   a:hover {
     text-decoration: none;
-    color: $clr-primary;
+    color: $clr-b700;
+    font-weight: 600;
   }
 
   .box {
@@ -1008,6 +1016,24 @@
     background-color: #CFD8DC;
     height: 1px;
     width: 100%;
+  }
+
+  .badge {
+    display: inline-block;
+    min-width: 10px;
+    margin-left: 3px;
+    padding: 3px 7px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    background-color: $clr-danger;
+    border-radius: 50px;
+
+    @media screen and (max-width: 768px) { font-size: 10px;}
   }
 
   @media screen and (max-width: 768px) {
@@ -1078,4 +1104,82 @@
     padding: 20px 45px 0 0;
   }
 
+}
+
+#commission {
+
+  .provision-table th {
+    padding-bottom: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #c0cad2;
+  }
+
+  .provision-table td {
+    font-size: 15px;
+  }
+
+  .provision-table tr:last-child td {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 640px) {
+
+    .provision-table tr:first-child {
+      display: none;
+    }
+
+    .provision-table tr .col1::before {
+      content: 'Gutschrifts-Nr';
+    }
+
+    .provision-table tr .col2::before {
+      content: 'Datum';
+    }
+
+    .provision-table tr .col3::before {
+      content: 'Betrag';
+    }
+
+    .provision-table tr .col4::before {
+      content: 'Bezahlt am';
+    }
+
+    .provision-table tr .col1 {
+      width: 100%;
+      -ms-flex: initial;
+      flex: initial;
+      padding: 10px 0 0;
+      border-bottom: 0;
+    }
+
+    .provision-table tr {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .provision-table tr td {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex: 1;
+      flex: 1;
+      width: auto;
+      padding: 15px 0 10px;
+    }
+
+    .provision-table tr td::before {
+      padding-bottom: 5px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #c0cad2;
+    }
+
+  }
+
+  
 }
