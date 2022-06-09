@@ -1039,16 +1039,17 @@
                       </div>
                       <div class="line"></div>
                       <div class="modal-body">
-                        <ul class="nav nav-tabs" id="tabContent">
-                          <li class="tab-pane active"><a href="#details" data-toggle="tab">Übersicht</a></li>
-                          <li class="tab-pane"></li><a href="#documents" data-toggle="tab">Dokumente</a></li>
-                          <li class="tab-pane"></li><a href="#notification" data-toggle="tab">Bemerkung VP</a></li>
+                        <ul class="nav nav-tabs" id="tabContent" role="tabpanel">
+                          <li class="tab-pane"><a href="#details" data-toggle="tab">Übersicht</a></li>
+                          <li class="tab-pane"><a href="#documents" data-toggle="tab">Dokumente</a></li>
+                          <li class="tab-pane"><a href="#notification" data-toggle="tab">Bemerkung VP</a></li>
+                          <li class="tab-pane"><a href="#commission" data-toggle="tab">Provision</a></li>
                         </ul>
                     
                         <div class="tab-content pt-4">
                         
-                          <div class="tab-pane active" id="details">
-                            <div class="control-group">
+                          <div role="tabpanel" class="tab-pane active" id="details">
+
                               <!-- Modal Details Deckblatt -->
                               <div class="row">
                                 <div class="col-12 px-n5">
@@ -1244,15 +1245,47 @@
                                   </div>
                                 </div>
                               </div>
-                            </div>
+
                           </div>
                           
-                          <div class="tab-pane" id="documents">
-                            content 0
+                          <div role="tabpanel" class="tab-pane" id="documents">
+
+                            <div class="row no-gutters">
+                              <div id="files-table-wrapper" class="col-md-12"><table class="table table-striped table-hover">
+                                <thead>
+                                <tr>
+                                <th colspan="4">Dokument</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td style="width: 50px;"><div class="checkbox c-checkbox c-checkbox-readonly" style="margin: 0;"><label><input type="checkbox" name="" value="0" disabled=""><span class="fa fa-check"></span></label></div></td><td style="width: 50px;"><button type="button" class="btn btn-xs btn-default" disabled=""><i class="fa fa-file"></i></button></td><td>Personalausweis / Reisepass Vorderseite</td><td style="width: 50px;"></td></tr>
+                                <tr><td style="width: 50px;"><div class="checkbox c-checkbox c-checkbox-readonly" style="margin: 0;"><label><input type="checkbox" name="" value="0" disabled=""><span class="fa fa-check"></span></label></div></td><td style="width: 50px;"><button type="button" class="btn btn-xs btn-default" disabled=""><i class="fa fa-file"></i></button></td><td>Personalausweis Rückseite</td><td style="width: 50px;"></td></tr>
+                                <tr><td style="width: 50px;"><div class="checkbox c-checkbox c-checkbox-readonly" style="margin: 0;"><label><input type="checkbox" name="" value="0" disabled=""><span class="fa fa-check"></span></label></div></td><td style="width: 50px;"><button type="button" class="btn btn-xs btn-default" disabled=""><i class="fa fa-file"></i></button></td><td>Kopie Vertragsformular mit Unterschriften</td><td style="width: 50px;"></td></tr>
+                                </tbody>
+                                </table>
+                              </div>
+
+                              <div class="dropzone">
+                                  <input type="file" #fileDropRef id="fileDropRef" multiple (change)="fileBrowseHandler ($event.target.files)">
+                                  <div class="file-wrapper"><input class="file-input" id="js-file-input" type="file" />
+                                    <i class="material-icons-outlined rotate--45" style="padding: 20px 45px 0 0;">photo</i>
+                                    <i class="material-icons-outlined" style="padding: 0 15px;">file_upload</i>
+                                    <i class="material-icons-outlined rotate-45  pb-4" style="padding: 20px 0 0 45px;">upload_file</i>
+                                    <h3>Hereinziehen und ablegen</h3>
+                                    <h3>ODER</h3>
+                                    <label for="fileDropRef">Datei durchsuchen</label>
+                                  </div>
+                              </div>
+                            </div>
+
                           </div> 
                           
-                          <div class="tab-pane" id="notification">
-                            content 1 
+                          <div role="tabpanel" class="tab-pane" id="notification">
+                            content Notizen
+                          </div>
+
+                          <div role="tabpanel" class="tab-pane" id="commission">
+                            content Prov 
                           </div>
                           
                         </div>
