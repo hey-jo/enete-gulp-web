@@ -974,10 +974,18 @@
 
 }
 
-// span vertikale Ausrichtung verschoben durch Anweisung aus radio.css
+// span vertikale Ausrichtung ist verschoben durch Anweisung aus radio.css
 #myModalLabel span { vertical-align: super; }
 
+//.tab-pane:has(ul + li) { border-top: 2px solid $clr-primary; }
+
 #tabContent {
+
+  //:is(li:not(a) .active) { border-top: 20px solid $clr-primary; }
+
+  li:has(a:active) { border-top: 20px solid $clr-primary; }
+
+  //.tab-pane:has(a:empty) { border-top: 20px solid $clr-primary; }
 
   .tab-pane {
     max-width: 30%;
@@ -988,9 +996,11 @@
     background-color: #e2eaf06c;
 
     a { color: $clr-b1000; }
+
   }
 
-  .tab-pane:hover, .tab-pane.active {
+
+  .tab-pane:hover, .nav-tabs>li>a.active:focus {
     border-top: 2px solid $clr-primary;
     background-color: #e2eaf0;
     cursor: default;
@@ -1123,6 +1133,8 @@
     border-bottom: 0;
     padding-bottom: 0;
   }
+
+  .accordion-tarifprov-wrap { padding: 0; }
 
   @media (max-width: 640px) {
 

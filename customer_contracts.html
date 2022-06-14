@@ -1038,14 +1038,14 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <ul class="nav nav-tabs border-0" id="tabContent" role="tabpanel">
-                          <li class="tab-pane"><a href="#details" data-toggle="tab">Übersicht</a></li>
-                          <li class="tab-pane"><a href="#documents" data-toggle="tab">Dokumente<span class="badge pull-right">3</span></a></li>
-                          <li class="tab-pane"><a href="#notification" data-toggle="tab">Bemerkung VP</a></li>
-                          <li class="tab-pane"><a href="#commission" data-toggle="tab">Provision</a></li>
+                        <ul class="nav nav-pills border-0" id="tabContent" role="tabpanel">
+                          <li class="tab-pane active"><a href="#details" data-toggle="tab" aria-controls="vt-tab-1" role="button" aria-expanded="false">Übersicht</a></li>
+                          <li class="tab-pane"><a href="#documents" data-toggle="tab" aria-controls="vt-tab-2" role="button" aria-expanded="false">Dokumente<span class="badge pull-right">3</span></a></li>
+                          <li class="tab-pane"><a href="#notification" data-toggle="tab" aria-controls="vt-tab-3" role="button" aria-expanded="false">Bemerkung VP</a></li>
+                          <li class="tab-pane"><a href="#commission" data-toggle="tab" aria-controls="vt-tab-4" role="button" aria-expanded="false">Provision</a></li>
                         </ul>
                     
-                        <div class="tab-content pt-4">
+                        <div class="tab-content clearfix pt-4">
                         
                           <div role="tabpanel" class="tab-pane active" id="details">
 
@@ -1284,9 +1284,10 @@
                           </div>
 
                           <div role="tabpanel" class="tab-pane" id="commission">
-                            content Pro
+
                             <div class="line"></div>
-                            <div class="accordion-tarifprov-wrap">
+                            
+                            <div class="accordion-tarifprov-wrap mx-n3">
                               <table class="table tarif-prov">
                                 <tbody>
                                   <tr>
@@ -1348,7 +1349,7 @@
                                     </td>
                                  </tr>
                               </tbody>
-                           </table>
+                            </table>
                           </div>
   
                             </div> 
