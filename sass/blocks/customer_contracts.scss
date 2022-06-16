@@ -979,11 +979,18 @@
 
 //.tab-pane:has(ul + li) { border-top: 2px solid $clr-primary; }
 
+
+
 #tabContent {
 
   //:is(li:not(a) .active) { border-top: 20px solid $clr-primary; }
 
   li:has(a:active) { border-top: 20px solid $clr-primary; }
+
+  .nav-tabs li a.active, .nav-pills .tab-pane a.active {
+    background: moccasin;
+    border-bottom: 2px solid green;
+  }
 
   //.tab-pane:has(a:empty) { border-top: 20px solid $clr-primary; }
 
@@ -995,13 +1002,20 @@
     cursor: pointer;
     background-color: #e2eaf06c;
 
-    a { color: $clr-b1000; }
+    a { 
+      color: $clr-b1000;
+      border-top: 2px solid transparent;
+      border-radius: 0;
+      padding: 10px 0 0 0; 
+
+      &.active { border-top: 2px solid $clr-primary; font-weight: 600; }
+    }
 
   }
 
 
-  .tab-pane:hover, .nav-tabs>li>a.active:focus {
-    border-top: 2px solid $clr-primary;
+  .tab-pane:hover {
+    //border-top: 2px solid $clr-primary;
     background-color: #e2eaf0;
     cursor: default;
   }
