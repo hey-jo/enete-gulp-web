@@ -679,7 +679,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          637557 <i class="fa fa-info-circle"></i>
+                          637557 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49000028 Rosa Stepanow
                           </span>
@@ -740,7 +740,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          637513 <i class="fa fa-info-circle"></i>
+                          637513 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49000028 Rosa Stepanow
                           </span>
@@ -799,7 +799,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          637513 <i class="fa fa-info-circle"></i>
+                          637513 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49000029 Olga Schef
                           </span>
@@ -857,7 +857,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          637105 <i class="fa fa-info-circle"></i>
+                          637105 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49000028 Rosa Stepanow
                           </span>
@@ -915,7 +915,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          637028 <i class="fa fa-info-circle"></i>
+                          637028 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49000028 Rosa Stepanow
                           </span>
@@ -974,7 +974,7 @@
                       </td>
                       <td class="contract-number">
                         <div class="tooltip_rightof_item" style="display: block; position: relative;">
-                          636897 <i class="fa fa-info-circle"></i>
+                          636897 <i class="fa fa-info-circle clr-b700"></i>
                           <span class="text_rightof_item ml-5 pl-5">
                             49003609 Susanne Schef
                           </span>
@@ -1027,7 +1027,7 @@
                 </script>
                 <!-- Modal -->
                 <div class="modal hide fade" id="CustomerContractsModalLong" tabindex="-1" role="dialog" aria-labelledby="CustomerContractsModalLongTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+                  <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                       <div class="modal-header border-0">
                         <h5 class="modal-title" id="myModalLabel">
@@ -1037,11 +1037,13 @@
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <div class="modal-body">
-                        <ul class="nav nav-pills border-0" id="tabContent" role="tabpanel">
+                      <div class="modal-body active">
+                        <ul class="nav nav-fill navbar-expand-md border-0" id="tabContent" role="tabpanel">
                           <li class="tab-pane"><a href="#details" data-toggle="tab" aria-controls="vt-tab-1" role="tab" aria-controls="One" aria-selected="true">Übersicht</a></li>
                           <li class="tab-pane"><a href="#documents" data-toggle="tab" aria-controls="vt-tab-2" role="tab" aria-controls="Two" aria-selected="false">Dokumente<span class="badge pull-right">3</span></a></li>
                           <li class="tab-pane"><a href="#notification" data-toggle="tab" aria-controls="vt-tab-3" role="tab" aria-controls="Three" aria-selected="false">Bemerkung VP</a></li>
+                          <li class="tab-pane"><a href="#history" data-toggle="tab" aria-controls="vt-tab-3" role="tab" aria-controls="ThreeTwo" aria-selected="false">Historie</a></li>
+                          <li class="tab-pane"><a href="#tickets" data-toggle="tab" aria-controls="vt-tab-3" role="tab" aria-controls="ThreeThree" aria-selected="false">Tickets</a></li>
                           <li class="tab-pane"><a href="#commission" data-toggle="tab" aria-controls="vt-tab-4" role="tab" aria-controls="For" aria-selected="false">Provision</a></li>
                         </ul>
                     
@@ -1200,7 +1202,7 @@
                                   <div class="row tariff_action vh-50">
                                     <div class="col-12 col-md-6">
                                       <p class="text-success small pt-2">
-                                        <i class="fa fa-info-circle"></i>
+                                        <i class="fa fa-info-circle clr-b700"></i>
                                         &nbsp;Die unten angegebene Notiz ist nur für einen Vertriebspartner bearbeitbar.
                                       </p>
                                       <textarea class="form-control" name="notice_text" rows="6"></textarea>
@@ -1280,7 +1282,41 @@
                           </div> 
                           
                           <div role="tabpanel" class="tab-pane" id="notification">
-                            content Notizen
+                            <div class="container">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="card border-0">
+                                          <div class="card-body">
+                                              <div id="content">
+                                                  <ul class="timeline">
+                                                      <li class="event" data-date="24. Jun 2022 | 16:30">
+                                                          <h3>ENETE - Arthur Lehr</h3>
+                                                          <p>
+                                                            Ablehnung durch Anbieter. Eine Ablehnung des Mobilfunkauftrages kann 
+                                                            verschiedenste Ursachen haben. Aus datenschutzrechtlichen Gründen 
+                                                            werden uns diese NICHT mitgeteilt. Für Details zur Ablehnung 
+                                                            kontaktieren Sie bitte den Anbieter klarmobil direkt.
+                                                          </p>
+                                                      </li>
+                                                      <li class="event" data-date="13. Mai 2022 | 11:49">
+                                                          <h3 class="clr-i400">Meine Notiz</h3>
+                                                          <p>Zählerstand: 60.914,5 kWh</p>
+                                                      </li>
+                                                      <li class="event" data-date="05. Mai 2022 | 09:55">
+                                                          <h3>ENETE - Jakob Walder</h3>
+                                                          <p>Meldebescheinigung bitte nachreichen.</p>
+                                                      </li>
+                                                      <li class="event" data-date="26. Apr. 2022 | 19:12">
+                                                          <h3 class="clr-i400">Meine Notiz</h3>
+                                                          <p>Achtung: Zähler wurde im Nachhinein ausgetauscht.</p>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                           </div>
 
                           <div role="tabpanel" class="tab-pane" id="commission">
