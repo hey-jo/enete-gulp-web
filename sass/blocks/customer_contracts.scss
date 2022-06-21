@@ -982,11 +982,8 @@
 
 
 #tabContent {
-
-  .nav {
-    background: #FFF none repeat scroll 0% 0%;
-  }
-
+  .nav { overflow-x: scroll; } //später löschen, wenn scrollen nicht klappt
+  
   .tab-pane {
     max-width: 30%;
     min-height: 50px;
@@ -994,6 +991,7 @@
     padding: 10px;
     cursor: pointer;
     background-color: #e2eaf06c;
+    overflow-x: auto; //später löschen, wenn scrollen nicht klappt
 
     a { 
       color: $clr-b1000;
