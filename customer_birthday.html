@@ -143,7 +143,7 @@
                 </a>
               </div>
             </li>
-            <li class="active">
+            <li>
               <div class="menu_item_wrap">
                 <a class="menu_item" href="#">
                   <i class="fas fa-user-friends menu_icon"></i>
@@ -193,7 +193,7 @@
               <ul class="collapse list-unstyled" id="incentivesSubmenu">
                 <li>
                   <div class="sub_menu_item_wrap">
-                    <a class="sub_menu_item" href="/incentives_team.html">
+                    <a class="sub_menu_item" href="#">
                       <i class="fas fa-briefcase sub_menu_icon"></i>
                       <span class="sub_menu_title">Team Ranking</span>
                     </a>
@@ -225,7 +225,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li class="active">
               <div class="menu_item_wrap">
                 <a class="menu_item" href="/billing_selection.html">
                   <i class="fas fa-credit-card menu_icon"></i>
@@ -239,177 +239,130 @@
       <!-- END ipad & desc Main menu -->
 
       <!-- content -->
-      <div class="col ene_content content">
+      <div class="ene_content col content">
         <div class="row">
-          <div class="col bread_krums bg-transparent">Kundenportal</div>
+          <div class="col bread_krums d-none d-md-block">Provisionsübersicht</div>
         </div>
-        <div class="row widget_row align-items-center">
-          <div class="col-xl-5 col-lg-7 col-md-12 widget_col card-deck">
-            <div class="col-xl-12 col-lg-12 widget_col">
-              <a href="/customer_contracts.html" class="widget_wrapp active bg-white">
-                <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-file-invoice"></i>
-                </div>
-                <div class="widget_content">
-                  <span class="widget_name">Verträge</span>
-                  <span class="widget_desc d-none d-md-block">
-                    Kundenverwaltung und Auftragsübersicht.
-                  </span>
-                </div>
-                <div class="widget_icon_2_wrapp">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </a>
-            </div>
 
-            <div class="col-xl-12 col-lg-12 widget_col">
-              <a href="/billing_report.html" class="widget_wrapp active bg-white">
-                <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-file"></i>
-                </div>
-                <div class="widget_content">
-                  <span class="widget_name">Termine</span>
-                  <span class="widget_desc d-none d-md-block">
-                    Termine überwachen und anlegen.</span>
-                </div>
-                <div class="widget_icon_2_wrapp">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-xl-12 col-lg-12 widget_col">
-              <a href="/customer_birthday.html" class="widget_wrapp active bg-white">
-                <div class="widget_icon_1_wrapp">
-                  <i class="fas fa-birthday-cake"></i>
-                </div>
-                <div class="widget_content">
-                  <span class="widget_name">Geburtstage</span>
-                  <span class="widget_desc d-none d-md-block">
-                    Kundengeburtstage nicht verpassen.</span>
-                </div>
-                <div class="widget_icon_2_wrapp">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-md-12 offset-xl-1">
-            <div class="col-xl-12 col-md-12">
-              <div class="card mb-3">
-                <div class="card-header bg-transparent p-3">
-                  <div class="d-md-flex">
-                    <div class="wcard-title wcard-header">
-                      <h3 class="wcard-title mb-0">Statistik</h3>
+        <div class="123">
+          <div class="col-xs-12">
+            <div class="invoice_filter">
+              <div class="row">
+                <div class="col-12 tariff_action tariff_action_switc">
+                  <form>
+                    <div class="form-row m-2">
+                      <span class="d-none d-xl-block form-group period pr-2">Zeitraum:</span>
+                      <div class="col-5 col-sm-3 col-lg-2 form-group input-icon">
+                        <input type="text" class="mask-date form-control" placeholder="12.2021">
+                        <i class="fas fa-calendar-alt"></i>
+                      </div>
+                      <span class="til">—</span>
+                      <div class="col-5  col-sm-3 col-lg-2 form-group input-icon">
+                        <input type="text" class="mask-date form-control" placeholder="03.2022">
+                        <i class="fas fa-calendar-alt"></i>
+                      </div>
+                      <button class="btn-custom tariff_action_switch col col-lg-3 btn-report mx-1" type="button" data-toggle="collapse" data-target="#collapseBillingReport" aria-expanded="false" aria-controls="collapseExample">Vorschau<i class="fas fa-search"></i></button>
+                      <button class="btn-custom tariff_action_switch col col-lg-3 btn-report mx-1"><a href="img/billing_report.pdf" target="_blank" download>Druckansicht <i class="fas fa-print"></i></a></button>
                     </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="contract_statistic">
-                    <table class="table mb-0">
-                      <tbody class="customer_selection">
-                        <tr>
-                          <td class="pl-0 border-0">
-                            <span class="pr-1 material-icons-outlined clr-danger">warning</span>
-                            Notwendige Nachbearbeitung
-                          </td>
-                          <td class="pr-0 border-0 text-center">
-                            <div class="badge badge-danger badge-pill">7</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <span class="pr-1 material-icons-outlined clr-succes">done_all</span>
-                            Erneuter Wechsel möglich</td>
-                          <td class="pr-0 text-center">
-                            <div class="badge badge-success badge-pill">278</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <span class="pr-1 material-icons-outlined clr-danger">block</span>
-                            Stornierte Aufträge</td>
-                          <td class="pr-0 text-center">
-                            <div class="badge badge-danger badge-pill">4</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <span class="pr-1 material-icons-outlined clr-i400">forward_to_inbox</span>
-                            Eingereichte Aufträge im September</td>
-                          <td class="pr-0 text-center">
-                            <div class="badge badge-info badge-pill">45</div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="pl-0">
-                            <span class="pr-1 material-icons-outlined clr-warning">local_parking</span>
-                            Geparkte Aufträge
-                          </td>
-                          <td class="pr-0 text-center">
-                            <div class="badge badge-warning badge-pill">12</div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
+            
+            <div class="container">  
+              <div class="row">
+                <div class="col">
+                    <!-- Nav tabs -->
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                            <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+                            <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contacts</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <legend>Responsive Tabs</legend>
+                                <p>If you are on desktop Try resizing the window to mobile view to see the scroll effect</p>
+                                <p>Horizontal scrollable tabs</p>
+                                <p>Best for mobile view</p>
+                                <p>Similar to gravity MODE_SCROLLABLE in Android</p>
+            
+                              </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <legend>Profile</legend>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                <legend>Messages</legend>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                <legend>Settings</legend>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                            <div role="tabpanel" class="tab-pane" id="about">
+                                <legend>About</legend>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                            <div role="tabpanel" class="tab-pane" id="contact">
+                                <legend>Contact Us</legend>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+
           </div>
         </div>
+
+        <!-- END content -->
+
       </div>
-      <!-- END content -->
-    </div>
-    <!-- END cntent wrap -->
-  </div>
+      <!-- END cntent wrap -->
 
-  <!-- second mobile menu -->
-  <div class="row secon_mobile_menu d-flex d-md-none">
-    <div class="col">
-      <button class="btn btn_custom">
-        <i class="fas fa-home"></i>
-      </button>
+      <!-- second mobile menu -->
+      <div class="row secon_mobile_menu d-flex d-md-none">
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-home"></i>
+          </button>
 
-    </div>
-    <div class="col">
-      <button class="btn btn_custom active">
-        <i class="fas fa-shopping-cart"></i>
-      </button>
-    </div>
-    <div class="col">
-      <button class="btn btn_custom">
-        <i class="fas fa-user-friends"></i>
-      </button>
-    </div>
-    <div class="col">
-      <button class="btn btn_custom">
-        <i class="fas fa-sign-in-alt"></i>
-      </button>
-    </div>
-    <div class="col">
-      <button class="btn btn_custom">
-        <i class="fas fa-gift"></i>
-      </button>
-    </div>
-    <div class="col">
-      <button class="btn btn_custom">
-        <i class="fas fa-ellipsis-h"></i>
-      </button>
-    </div>
-  </div>
-  <!--END second mobile menu -->
+        </div>
+        <div class="col">
+          <button class="btn btn_custom active">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-user-friends"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-sign-in-alt"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-gift"></i>
+          </button>
+        </div>
+        <div class="col">
+          <button class="btn btn_custom">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+      </div>
+      <!--END second mobile menu -->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script src="js/all.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-    crossorigin="anonymous"></script>
+      <script src="js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
