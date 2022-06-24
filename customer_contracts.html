@@ -1328,72 +1328,187 @@
 
                           <div role="tabpanel" class="tab-pane" id="history">
                             <div class="container rounded bg-white">
-                              <div class="h2 font-weight-bold">Statusverlauf</div>
                               <div class="table-responsive">
                                   <table class="table">
                                       <thead>
                                           <tr>
-                                              <th scope="col">Name</th>                    
-                                              <th scope="col">Date</th>                    
-                                              <th scope="col">Time</th>                    
                                               <th scope="col">Status</th>                    
+                                              <th scope="col">Datum</th>                    
+                                              <th scope="col" class="d-none d-lg-table-cell">Zeit</th>                    
+                                              <th scope="col" class="d-none d-lg-table-cell">Benutzer</th>                    
                                           </tr>
                                       </thead>
                                       <tbody>
-                                          <tr class="bg-blue">            
-                                              <td class="pt-2">
-                                                  <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
-                                                  <div class="pl-lg-5 pl-md-3 pl-1 name">Emilia Kollette</div>
-                                              </td>                
-                                              <td class="pt-3 mt-1">25 Sep 2020</td>
-                                              <td class="pt-3">11:00 AM</td>
-                                              <td class="pt-3"><span class="fa fa-check pl-3"></span></td>
+                                          <tr class="bg-blue"> 
+                                            <td class="customer-selection">
+                                              <span class="material-icons-outlined clr-danger pl-lg-1 pl-md-3 pl-1 name">warning</span>
+                                              <div class="pl-lg-1 pl-md-3 pl-1 name">In Nacharbeit</div>
+                                            </td>                        
+                                            <td class="pt-3 mt-1">09.11.2022</td>
+                                            <td class="pt-3 d-none d-lg-table-cell">12:10</td>
+                                            <td class="pt-2 d-none d-lg-table-cell">
+                                              <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
+                                              <div class="pl-lg-5 pl-md-3 pl-1 name">Jakob Walder</div>
+                                            </td>
                                               <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
                                           </tr>
                                           <tr id="spacing-row">
                                               <td></td>
                                           </tr>
                                           <tr class="bg-blue">
-                                              <td class="pt-2">
-                                                  <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="rounded-circle" alt=""> 
-                                                  <div class="pl-lg-5 pl-md-3 pl-1 name">Anny Adams</div>
-                                              </td>
-                                              <td class="pt-3">26 Sep 2020</td>
-                                              <td class="pt-3">11:00 AM</td>
-                                              <td class="pt-3"><span class="fa fa-check pl-3"></span></td>
+                                            <td class="customer-selection">
+                                              <span class="material-icons-outlined clr-succes pl-lg-1 pl-md-3 pl-1 name">done_all</span>
+                                              <div class="pl-lg-1 pl-md-3 pl-1 name">In Belieferung</div>
+                                            </td>
+                                            <td class="pt-3">13.10.222</td>
+                                            <td class="pt-3 d-none d-lg-table-cell">11:00</td>
+                                            <td class="pt-2 d-none d-lg-table-cell">
+                                              <img src="https://images.pexels.com/photos/3765114/pexels-photo-3765114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="rounded-circle" alt=""> 
+                                              <div class="pl-lg-5 pl-md-3 pl-1 name">Nadja Stober</div>
+                                            </td>
                                               <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
                                           </tr>
                                           <tr id="spacing-row">
                                               <td></td>
                                           </tr>
                                           <tr class="bg-blue">
-                                              <td class="pt-2">
-                                                  <img src="https://images.pexels.com/photos/3779448/pexels-photo-3779448.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
-                                                  <div class="pl-lg-5 pl-md-3 pl-1 name">Arnold Linn</div>
-                                              </td>
-                                              <td class="pt-3">26 Sep 2020</td>
-                                              <td class="pt-3">02:00 PM</td>
-                                              <td class="pt-3"><span class="fa fa-check pl-3"></span></td>
-                                              <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
+                                            <td class="customer-selection">
+                                              <span class="material-icons-outlined clr-danger pl-lg-1 pl-md-3 pl-1 name">block</span>
+                                              <div class="pl-lg-1 pl-md-3 pl-1 name">Abgelehnt! Negative Bonität</div>
+                                            </td>
+                                            <td class="pt-3">26.09.2022</td>
+                                            <td class="pt-3 d-none d-lg-table-cell">14:00</td>
+                                            <td class="pt-2 d-none d-lg-table-cell">
+                                              <img src="https://images.pexels.com/photos/3779448/pexels-photo-3779448.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
+                                              <div class="pl-lg-5 pl-md-3 pl-1 name">Alexander Hartung</div>
+                                            </td>
+                                            <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
                                           </tr>
                                           <tr id="spacing-row">
                                               <td></td>
                                           </tr>
                                           <tr class="bg-blue">
-                                              <td class="pt-2">
-                                                  <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
-                                                  <div class="pl-lg-5 pl-md-3 pl-1 name">Josh Limosel</div>
-                                              </td>
-                                              <td class="pt-3">26 Sep 2020</td>
-                                              <td class="pt-3">04:00 PM</td>
-                                              <td class="pt-3"><span class="fa fa-minus pl-3"></span></td>
-                                              <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
+                                            <td class="customer-selection">
+                                              <span class="material-icons-outlined clr-i400 pl-lg-1 pl-md-3 pl-1 name">forward_to_inbox</span>
+                                              <div class="pl-lg-1 pl-md-3 pl-1 name">Erfolgreich übertragen</div>
+                                            </td>
+                                            <td class="pt-3">26.09.2022</td>
+                                            <td class="pt-3 d-none d-lg-table-cell">16:00</td>
+                                            <td class="pt-2 d-none d-lg-table-cell">
+                                              <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rounded-circle" alt=""> 
+                                              <div class="pl-lg-5 pl-md-3 pl-1 name">Renate Walder</div>
+                                            </td>
+                                            <td class="pt-3"><span class="fa fa-ellipsis-v btn"></span></td>
                                           </tr>
                                       </tbody>
                                   </table>
                               </div>
+                            </div>
                           </div>
+
+                          <div role="tabpanel" class="tab-pane" id="tickets">
+                            <div class="123">
+                              <div class=" text-center mt-1 ">
+                      
+                                  <h4>Ticket erstellen</h4>
+                                      
+                                  
+                              </div>
+                      
                           
+                          <div class="row ">
+                            <div class="col-lg-12 mx-auto">
+                              <div class="card mt-2 mx-auto p-4 bg-light">
+                                  <div class="card-body bg-light">
+                             
+                                  <div class = "container">
+                                                   <form id="contact-form" role="form">
+                      
+                                  
+                      
+                                  <div class="controls">
+                      
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="49003985" required="required" data-error="Firstname is required." disabled>
+                                                  
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Sergej Ciubara" required="required" data-error="Name" disabled>
+                                                                                  </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                  <label for="form_email">VT-Nr.</label>
+                                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="#0078866" required="required" disabled>
+                                                  
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <div class="form-group">
+                                                <label for="form_email">Reklamationsgrund *</label>
+                                                  <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                      <option value="" selected disabled>-- Grund wählen --</option>
+                                                      <option >Datenänderung</option>
+                                                      <option >Statusanfrage</option>
+                                                      <option >Provisionsanfrage</option>
+                                                      <option >Reklamation</option>
+                                                  </select>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+                                                  <label for="form_message">Nachricht *</label>
+                                                  <textarea id="form_message" name="message" class="form-control" placeholder="Beschreibe das Problem" rows="4" required="required" data-error="Bitte hinterlasse uns eine genaue Beschreibung."></textarea
+                                                      >
+                                                  </div>
+                      
+                                              </div>
+                                              <div class="dropzone m-5">
+                                                <input type="file" #fileDropRef id="fileDropRef" multiple (change)="fileBrowseHandler ($event.target.files)">
+                                                <div class="file-wrapper"><input class="file-input" id="js-file-input" type="file" />
+                                                  <i class="material-icons-outlined rotate--45" style="padding: 20px 45px 0 0;">photo</i>
+                                                  <i class="material-icons-outlined" style="padding: 0 15px;">file_upload</i>
+                                                  <i class="material-icons-outlined rotate-45  pb-4" style="padding: 20px 0 0 45px;">upload_file</i>
+                                                  <h3>Hereinziehen und ablegen</h3>
+                                                  <h3>ODER</h3>
+                                                  <label for="fileDropRef">Datei durchsuchen</label>
+                                                </div>
+                                            </div>
+                      
+                      
+                                          <div class="col-md-12">
+                                              
+                                              <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                                                  " value="Absenden" >
+                                          
+                                      </div>
+                                
+                                      </div>
+                      
+                      
+                              </div>
+                               </form>
+                              </div>
+                                  </div>
+                      
+                      
+                          </div>
+                              <!-- /.8 -->
+                      
+                          </div>
+                          <!-- /.row-->
+                      
+                      </div>
+                      </div>
                           </div>
 
 
